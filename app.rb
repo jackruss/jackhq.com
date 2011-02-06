@@ -1,8 +1,3 @@
-require "bundler/setup"
-
-require 'sinatra'
-require 'haml'
-require 'yaml'
 
 get '/' do
   @employees = YAML.load_file('employees.yaml')
