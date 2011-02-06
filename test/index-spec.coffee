@@ -1,10 +1,16 @@
-vows = require 'vows'
-assert = require 'assert'
 zombie = require 'zombie'
+assert = require 'assert'
+vows = require 'vows'
+jackhq = vows.describe('team page')
+server = "http://localhost:9292"
 
-vows.describe('home').addBatch({
-  "connect": 
-    topic: ->
-      zombie.visit "http://localhost:4567", @callback
-    "should have title Jack Russell Software": (browser) -> assert.equal browser.text('title'), "Jack Russell Software"
+jackhq.addBatch({
+  "should":
+    topic: -> zombie.visit server, @callback
+    "have Team in title": (browser) -> 
+      assert.equal browser.text('title'), "Jack Russell Software - Team"
+    "have Tom as Team mate": (browser) ->
+      assert.equal browser.text('.mate-name:first'), "Tom Wilson"
+    "have Andrew as second Team mate": (browser) ->
+      assert.equal browser.text('.mate-name:last'), "Robert Pearce"
 }).export(module)
