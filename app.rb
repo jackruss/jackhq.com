@@ -3,7 +3,7 @@ require 'haml'
 require 'yaml'
 
 get '/' do
-  @employees = YAML.load_file('employees.yaml')
+  @team = YAML.load_file('team.yaml')
   haml :index
 end
 
