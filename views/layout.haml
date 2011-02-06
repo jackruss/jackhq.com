@@ -1,0 +1,26 @@
+!!! 5
+%html
+  %head
+    %title Jack Russell Software
+    %link{:href => '/stylesheets/reset.css', :rel => 'stylesheet'}
+    %link{:href => '/stylesheets/text.css', :rel => 'stylesheet'}
+    %link{:href => '/stylesheets/960.css', :rel => 'stylesheet'}
+    %link{:href => '/stylesheets/app.css', :rel => 'stylesheet'}
+  %body
+    .container_12
+      %center
+        %img{:src => '/images/jackhq-logo.png', :alt => 'jackhq logo'}
+      %hr  
+      %center
+        #nav
+          %ul
+            %li
+              %a{:href => '/'} Team
+            %li
+              %a{:href => '/philosophy'} Philosophy
+            %li
+              %a{:href => '/community'} Community
+            %li
+              %a{:href => '/contact'} Contact
+      = yield
+ 

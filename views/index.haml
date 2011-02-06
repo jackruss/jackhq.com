@@ -1,0 +1,5 @@
+#main
+  %h2 Team
+  - @employees.each do |employee|
+    = haml :tile, :locals => { :title => employee[:name], :image => employee[:image], :image_text => employee[:name], :description => employee[:title] }
+

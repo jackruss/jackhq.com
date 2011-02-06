@@ -1,0 +1,64 @@
+---
+  -
+    :name: Tom Wilson
+    :image: /images/tom.jpg
+    :title: President and Lead Technologist
+    :twitter: @jackhq
+    :github: twilson63
+    :linked_in: jackhq
+    :blog: http://jackhq.tumblr.com/ 
+  -
+    :name: Andrew Kennedy
+    :image: /images/andrew.jpg
+    :title: Programmer/Analyst II
+    :twitter: @railsengineer
+    :github: akennedy
+    :linked_in:
+    :blog:
+  -
+    :name: Barrett Little
+    :image: /images/barrett.jpg
+    :title: Senior Programmer/Analyst
+    :twitter: @pblittle
+    :github: pblittle
+    :linked_in:
+    :blog:
+
+  -
+    :name: Russell Niller
+    :image: /images/russell.jpg
+    :title: Programmer/Analyst
+    :twitter: @rdniller
+    :github: rdniller
+    :linked_in:
+    :blog:
+
+  -
+    :name: Nick Buccairelli
+    :image: /images/nick.jpg
+    :title: Programmer/Analyst
+    :twitter: @nbuccairelli
+    :github: nbuccairelli
+    :linked_in:
+    :blog:
+  -
+    :name: Kris Windham
+    :image: /images/kris.jpg
+    :title: Programmer/Analyst II
+    :twitter: @kwindham
+    :github: gradus
+    :linked_in:
+    :blog:
+
+  -
+    :name: Colin Alstad
+    :image: /images/colin.jpg
+    :title: Programmer/Analyst II
+    :twitter: @calstad
+    :github: calstad
+  -
+    :name: Patrick Klingermann
+    :image: /images/patrick.jpg
+    :title: Programmer/Analyst II
+    :twitter: @pklingermann
+
