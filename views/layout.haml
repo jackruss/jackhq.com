@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title Jack Russell Software
+    %title= "Jack Russell Software - #{@title}"
     %link{:href => '/stylesheets/reset.css', :rel => 'stylesheet'}
     %link{:href => '/stylesheets/text.css', :rel => 'stylesheet'}
     %link{:href => '/stylesheets/960.css', :rel => 'stylesheet'}
@@ -27,3 +27,10 @@
       #footer
         %center
           %p Developing Awesome mobile and web applications for HealthcareIT
+          %ul
+            %li
+              %a{:href => 'http://jackhq.tumblr.com' } Blog
+            %li
+              %a{:href => 'http://github.com/jackhq' } Github
+            %li
+              %a{:href => 'http://twitter.com/jackhq' } Twitter

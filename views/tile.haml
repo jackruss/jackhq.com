@@ -1,7 +1,15 @@
 .grid_6
   %dl
-    %dt= title
+    %dt.mate-name= mate[:name]
     %dd.image
-      %img{:src => image, :alt => image_text, :height => 50, :width => 50}
-    %dd.description= description
+      %img{:src => mate[:image], :alt => mate[:name], :height => 50, :width => 50}
+    %dd.description
+      = mate[:title]
+      %ul.links
+        %li
+          %a{:href => "http://twitter.com/#{mate[:twitter]}"} 
+            %img{:src => '/images/small-twitter.jpg', :alt => 'twitter' }
+        %li
+          %a{:href => "http://github.com/#{mate[:github]}"} 
+            %img{:src => '/images/github-logo.png', :alt => 'github' }
   %hr{:style => 'color: white'}
