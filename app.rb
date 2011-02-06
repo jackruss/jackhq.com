@@ -1,4 +1,3 @@
-
 get '/' do
   @employees = YAML.load_file('employees.yaml')
   haml :index
