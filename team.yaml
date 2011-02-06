@@ -6,7 +6,7 @@
     :twitter: @jackhq
     :github: twilson63
     :linked_in: jackhq
-    :blog: http://jackhq.tumblr.com/ 
+    :blog: http://jackhq.tumblr.com/
   -
     :name: Andrew Kennedy
     :image: /images/andrew.jpg
@@ -37,8 +37,8 @@
     :name: Nick Buccairelli
     :image: /images/nick.jpg
     :title: Programmer/Analyst
-    :twitter: @nbuccairelli
-    :github: nbuccairelli
+    :twitter: @nbucciarelli
+    :github: nbucciarelli
     :linked_in:
     :blog:
   -
@@ -61,4 +61,9 @@
     :image: /images/patrick.jpg
     :title: Programmer/Analyst II
     :twitter: @pklingermann
+
+  -
+    :name: Robert Pearce
+    :image: /images/robert.jpg
+    :title: Apprentice
 
