@@ -1,10 +1,9 @@
 zombie = require 'zombie'
 assert = require 'assert'
 vows = require 'vows'
-jackhq = vows.describe('team page')
 server = "http://localhost:9292"
 
-jackhq.addBatch({
+vows.describe('team page').addBatch({
   "should":
     topic: -> zombie.visit server, @callback
     "have Team in title": (browser) -> 
