@@ -1,2 +1,3 @@
 sinatra
 haml
+rack-google-analytics
