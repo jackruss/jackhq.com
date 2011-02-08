@@ -2,6 +2,15 @@ require 'sinatra'
 require 'haml'
 require 'yaml'
 
+require 'rack/google-analytics' 
+
+use Rack::GoogleAnalytics, :tracker => 'UA-12104070-1'
+
+before do
+  response.headers['Cache-Control'] = 'public, max-age=300000'
+end
+
+
 get '/' do
   @title = 'Team'
   @content = 'Jack Russell Software Company, is a Ruby on Rails Development shop, providing awesome mobile and web applications to HealthcareIT, we love testing, pairing and agile development.  We are constantly striving to master our craft of software development.'
