@@ -1,5 +1,6 @@
 #main
-  %h2 Jack Russell Software Team
+  %center
+    %h2 Jack Russell Software Team
   - @team.each do |mate|
     = haml :tile, :locals => { :mate => mate }
-
+  .clear
