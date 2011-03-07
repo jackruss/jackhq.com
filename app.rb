@@ -18,6 +18,11 @@ get '/' do
   haml :index
 end
 
+get '/mobile' do
+  'Hello Mobile Device'
+end
+
+
 get '/philosophy' do
   @title = 'Philosophy'
   @content = "At Jack Russell Software, our philosophy is geared to become expert craftsman to provide the best software to our clients.  We build web and mobile applications that provide complete solutions and are focused based on our philosophy."

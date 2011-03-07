@@ -1,3 +1,4 @@
 sinatra
 haml
 rack-google-analytics
+rack-mobile-detect
