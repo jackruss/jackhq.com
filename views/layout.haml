@@ -22,7 +22,6 @@
             %img{:src => '/images/jackhq-logo.png', :alt => 'Jack Russell Software'}
 
         %p Developing Awesome mobile and web applications for HealthcareIT
- 
       #nav
         %ul
           %li
@@ -33,7 +32,9 @@
             %a{:href => '/community'} Community
           %li
             %a{:href => '/contact'} Contact
-      = yield
+
+      #main
+        = yield
       #footer
         %ul
           %li
