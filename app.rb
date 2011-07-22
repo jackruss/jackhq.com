@@ -4,11 +4,11 @@ require 'yaml'
 
 require 'rack/google-analytics' 
 
-use Rack::GoogleAnalytics, :tracker => 'UA-12104070-1'
+#use Rack::GoogleAnalytics, :tracker => 'UA-12104070-1'
 
-before do
-  response.headers['Cache-Control'] = 'public, max-age=300000'
-end
+# before do
+#   response.headers['Cache-Control'] = 'public, max-age=300000'
+# end
 
 
 get '/' do
