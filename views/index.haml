@@ -1,4 +1,6 @@
 #main
-  %h2 Jack Russell Software Team
+  %h2
+    %a{:href => '/contact'}
+      Jack Russell Software Team
   - @team.each do |mate|
     = haml :tile, :locals => { :mate => mate }
