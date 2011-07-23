@@ -1,10 +1,12 @@
 %h2 Jack Russell Software Team
-.left-section
+%ul.left-section
   - @team.each_with_index do |mate, index|
     - if (index % 2) == 0 
       = haml :tile, :locals => { :mate => mate }
 
-.right-section
+%ul.right-section
   - @team.each_with_index do |mate, index|
     - if (index % 2) > 0 
       = haml :tile, :locals => { :mate => mate }
+
+.clear
