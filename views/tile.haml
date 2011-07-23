@@ -1,14 +1,13 @@
-.grid_6
-  %dl
-    %dt.mate-name= mate[:name]
-    %dd.image
-      %img{:src => mate[:image], :alt => mate[:name], :height => 50, :width => 50}
-    %dd.description
-      = mate[:title]
-      %ul.links
-        %li
-          %a{:href => "http://twitter.com/#{mate[:twitter]}"} 
-            %img{:src => '/images/small-twitter.jpg', :alt => 'twitter' }
-        %li
-          %a{:href => "http://github.com/#{mate[:github]}"} 
-            %img{:src => '/images/github-logo.png', :alt => 'github' }
+%dl
+  %dt.mate-name= mate[:name]
+  %dd.image
+    %img{:src => mate[:image], :alt => mate[:name]}
+  %dd.description
+    = mate[:title]
+    %ul.links
+      %li
+        %a{:href => "http://twitter.com/#{mate[:twitter]}"} 
+          %img{:src => '/images/small-twitter.jpg', :alt => 'twitter' }
+      %li
+        %a{:href => "http://github.com/#{mate[:github]}"} 
+          %img{:src => '/images/github-logo.png', :alt => 'github' }
