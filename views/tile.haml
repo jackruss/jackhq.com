@@ -1,8 +1,8 @@
 %li.mate
-  %span.mate-name= mate[:name]
-  %span.image
+  .image
     %img{:src => mate[:image], :alt => mate[:name]}
-  %span.description
+  .mate-name= mate[:name]
+  .description
     = mate[:title]
     %ul.links
       %li
