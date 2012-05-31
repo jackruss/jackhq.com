@@ -10,10 +10,10 @@
   -
     :name: Andrew Kennedy
     :image: /images/andrew.jpg
-    :title: Programmer/Analyst II
-    :twitter: railsengineer
+    :title: Senior Programmer/Analyst
+    :twitter: akennedy
     :github: akennedy
-    :blog: http://railsengineer.com/
+    :blog: http://akennedy.jit.su/
   -
     :name: Barrett Little
     :image: /images/barrett.jpg
@@ -41,7 +41,7 @@
   -
     :name: Kris Windham
     :image: /images/kris.jpg
-    :title: Programmer/Analyst II
+    :title: Senior Programmer/Analyst
     :twitter: krwindham
     :github: gradus
     :linked_in:
@@ -49,7 +49,7 @@
   -
     :name: Patrick Klingemann
     :image: /images/patrick.jpg
-    :title: Programmer/Analyst II
+    :title: Senior Programmer/Analyst
     :twitter: pklingem
     :github: pklingem
   -
@@ -61,21 +61,21 @@
   -
     :name: Dereck Curry
     :image: /images/dereck_curry.jpg
-    :title: Senior Healthcare Informatics Engineer 
+    :title: Senior Healthcare Informatics Engineer
     :twitter: dereckcurry
     :github: dereckatjackrussellsoftware
   -
     :name: Brook Carter
     :image: /images/brook.jpg
     :title: Office Manager
-    :twitter: 
-    :github: 
+    :twitter:
+    :github:
   -
     :name: Kevin Stewart
     :image: /images/kevin.jpg
     :title: Programmer/Analyst
-    :twitter: 
-    :github: 
+    :twitter:
+    :github:
   -
     :name: Ian Greulich
     :image: /images/ian.png
