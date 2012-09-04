@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'haml'
 require 'yaml'
+require 'syck'
+YAML::ENGINE.yamler = 'syck'
 
 require 'rack/google-analytics' 
 
