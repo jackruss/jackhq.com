@@ -1,7 +1,7 @@
 ---
   -
     :name: Tom Wilson
-    :image: /images/tom.jpg
+    :image: /images/tompng.jpg
     :title: President and Lead Technologist
     :twitter: jackhq
     :github: twilson63
@@ -83,8 +83,32 @@
     :twitter: @chazu
     :github: chazu
   -
+    :name: Raj
+    :image: /images/raj.jpg
+    :title: Intern
+    :twitter: 
+    :github: 
+  -
     :name: Ben Cates
     :image: /images/bencates.png
     :title: Programmer/Analyst II
     :twitter: @bencates
     :github: bencates
+  -
+    :name: Stephen Wyatt
+    :image: /images/stephen.jpg
+    :title: Apprentice
+    :twitter: @stphnwyatt2
+    :github: stephenwyatt
+  -
+    :name: Vietson
+    :image: /images/son.jpg
+    :title: Programmer/Analyst
+    :twitter: 
+    :github: vsnguyen
+  -
+    :name: Bogan Painter
+    :image: /images/bogan.jpg
+    :title: Apprentice
+    :twitter: 
+    :github: 
