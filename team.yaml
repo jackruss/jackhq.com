@@ -25,7 +25,7 @@
   -
     :name: Russell Niller
     :image: /images/russell.jpg
-    :title: Programmer/Analyst
+    :title: Programmer/Analyst II
     :twitter: rdniller
     :github: rdniller
     :linked_in:
@@ -38,20 +38,6 @@
     :github: nbucciarelli
     :linked_in:
     :blog:
-  -
-    :name: Kris Windham
-    :image: /images/kris.jpg
-    :title: Senior Programmer/Analyst
-    :twitter: krwindham
-    :github: gradus
-    :linked_in:
-    :blog:
-  -
-    :name: Patrick Klingemann
-    :image: /images/patrick.jpg
-    :title: Senior Programmer/Analyst
-    :twitter: pklingem
-    :github: pklingem
   -
     :name: Dereck Curry
     :image: /images/dereck_curry.jpg
@@ -67,43 +53,25 @@
   -
     :name: Kevin Stewart
     :image: /images/kevin.jpg
-    :title: Programmer/Analyst
+    :title: Programmer/Analyst I
     :twitter:
     :github: kdstew
   -
-    :name: Ian Greulich
-    :image: /images/ian.png
-    :title: Programmer/Analyst
-    :twitter: @ian_greulich
-    :github: igreulich
-  -
-    :name: Chaz Straney
-    :image: /images/chaz.jpg
-    :title: Programmer/Analyst
-    :twitter: @chazu
-    :github: chazu
-  -
     :name: Raj Singh
     :image: /images/raj.jpg
-    :title: Intern
+    :title: Programmer/Analyst I
     :twitter: 
     :github: rssingh
   -
-    :name: Stephen Wyatt
-    :image: /images/stephen.jpg
-    :title: Apprentice
-    :twitter: @stphnwyatt2
-    :github: stephenwyatt
-  -
     :name: Vietson Nguyen
     :image: /images/son.jpg
-    :title: Programmer/Analyst
+    :title: Programmer/Analyst I
     :twitter: 
     :github: vsnguyen
   -
     :name: Bogan Painter
     :image: /images/bogan.jpg
-    :title: Apprentice
+    :title: Programmer/Analyst I
     :twitter: 
     :github: 
   -
@@ -112,3 +80,30 @@
     :title: Senior Programmer/Analyst
     :twitter: markgunnels
     :github: markgunnels
+  -
+    :name: Brent Cobb
+    :image: /images/brent.jpeg
+    :title: Programmer/Analyst I
+    :twitter: 
+    :github: brentcobb
+  -
+    :name: Joel Villahermosa
+    :image: /images/joel.jpg
+    :title: Apprentice
+    :twitter: 
+    :github: joelv
+  -
+    :name: Stokes Player
+    :image: /images/stokes-headshot.jpg
+    :title: Senior Programmer/Analyst 
+    :twitter: 
+    :github: splayer
+  -
+    :name: John Schweikart
+    :image: /images/johns.jpg
+    :title: Product Manager/Analyst
+    :twitter: 
+    :github: 
+
+
+
