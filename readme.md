@@ -7,6 +7,24 @@ Company Web Site
 * Community
 * Contact
 
+## Requires
+
+`ruby` 1.9
+
+## Dev Env
+
+```
+bundle install
+rackup
+```
+
+## Updating Site
+
+Create a branch and submit a pull request.
+
+To add/change team member simply edit the team.yaml file and add the image to the `public/img` folder
+
+
 
 ## Testing
 
@@ -20,12 +38,12 @@ On a Mac
 Install node and npm via
 with npm install:
 
-    npm install coffee-script
-    npm install vows
-    npm install zombie
+    npm install coffee-script     
+    npm install vows     
+    npm install zombie     
 
 To run the tests
 
-    time vows test/*  --spec
+    time vows test/*  --spec    
 
 
