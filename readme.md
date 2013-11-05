@@ -22,7 +22,7 @@ rackup
 
 Create a branch and submit a pull request.
 
-To add/change team member simply edit the team.yaml file and add the image to the `public/img` folder
+To add/change team member simply edit the team.yaml file and add the image to the `public/images` folder
 
 
 
