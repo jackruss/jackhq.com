@@ -1,12 +1,18 @@
-.container
-  .offset-by-one.seven.columns
-    %ul
-      - @team.each_with_index do |mate, index|
-        - if (index % 2) == 0 
-          = haml :tile, :locals => { :mate => mate }
-  .seven.columns
-    %ul
-      - @team.each_with_index do |mate, index|
-        - if (index % 2) > 0 
-          = haml :tile, :locals => { :mate => mate }
-  .clear
+%ul.small-block-grid-2
+  - @team.each_with_index do |mate, index|
+    = haml :tile, :locals => { :mate => mate }
+
+
+/ / hello
+/ .container
+/   .offset-by-one.seven.columns
+/     %ul
+/       - @team.each_with_index do |mate, index|
+/         - if (index % 2) == 0 
+/           = haml :tile, :locals => { :mate => mate }
+/   .seven.columns
+/     %ul
+/       - @team.each_with_index do |mate, index|
+/         - if (index % 2) > 0 
+/           = haml :tile, :locals => { :mate => mate }
+/   .clear

@@ -1,0 +1,15 @@
+%li.mate
+  %ul.links
+    %li
+      %a{:href => "http://twitter.com/#{mate[:twitter]}"} 
+        %img{:src => '/images/small-twitter.jpg', :alt => 'twitter' }
+    %li
+      %a{:href => "http://github.com/#{mate[:github]}"} 
+        %img{:src => '/images/github-logo.png', :alt => 'github' }
+
+  .image
+    %img{:src => mate[:image], :alt => mate[:name]}
+  .mate-name= mate[:name]
+  .description
+    = mate[:title]
+  .clear

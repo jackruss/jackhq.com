@@ -1,15 +1,28 @@
-%li.mate
-  %ul.links
-    %li
-      %a{:href => "http://twitter.com/#{mate[:twitter]}"} 
-        %img{:src => '/images/small-twitter.jpg', :alt => 'twitter' }
-    %li
-      %a{:href => "http://github.com/#{mate[:github]}"} 
-        %img{:src => '/images/github-logo.png', :alt => 'github' }
+%li
+  .row
+    .small-4.columns
+      %img{:src => mate[:image], :alt => mate[:name]}
+    .small-6.columns
+      %h3
+        = mate[:name]
+      %p
+        = mate[:title]
+      %p
+        %a{:href => "http://github.com/#{mate[:github]}"} 
+          %span.fa-github
+        %a{:href => "http://twitter.com/#{mate[:twitter]}"} 
+          %span.fa-twitter
 
-  .image
-    %img{:src => mate[:image], :alt => mate[:name]}
-  .mate-name= mate[:name]
-  .description
-    = mate[:title]
-  .clear
+/ %li
+/       %a{:href => "http://twitter.com/#{mate[:twitter]}"} 
+/         %img{:src => '/images/small-twitter.jpg', :alt => 'twitter' }
+/     %li
+/       %a{:href => "http://github.com/#{mate[:github]}"} 
+/         %img{:src => '/images/github-logo.png', :alt => 'github' }
+
+/   .image
+/     %img{:src => mate[:image], :alt => mate[:name]}
+/   .mate-name= mate[:name]
+/   .description
+/     = mate[:title]
+/   .clear
