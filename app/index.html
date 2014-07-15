@@ -1,0 +1,22 @@
+<div id="app">
+  <header>
+    <center>
+      <img src="images/jackhq-logo.png" height="200px;" />
+    </center>
+    <h3 style="text-align: center;">A Division of CareKinesis, Inc</h3>
+  </header>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="col-md-6 col-md-offset-3">
+        <ul class="nav navbar-nav">
+          <li v-class="active: isCurrentView('team')"><a href="#/">Team</a></li>
+          <li v-class="active: isCurrentView('technology')"><a href="#/technology">Technology</a></li>
+          <li v-class="active: isCurrentView('philosophy')"><a href="#/philosophy">Philosophy</a></li>
+          <li v-class="active: isCurrentView('community')"><a href="#/community">Community</a></li>
+          <li v-class="active: isCurrentView('contact')"><a href="#/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div v-view="currentView"></div>
+</div>

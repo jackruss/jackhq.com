@@ -17,7 +17,7 @@
   -
     :name: Barrett Little
     :image: /images/barrett.jpg
-    :title: Senior Programmer/Analyst
+    :title: Senior Devops Programmer/Analyst
     :twitter: pblittle
     :github: pblittle
     :linked_in:
@@ -25,17 +25,11 @@
   -
     :name: Russell Niller
     :image: /images/russell.jpg
-    :title: Senior Programmer/Analyst
+    :title: Scrum Master I
     :twitter: rdniller
     :github: rdniller
     :linked_in:
     :blog:
-  -
-    :name: Dereck Curry
-    :image: /images/dereck_curry.jpg
-    :title: Senior Healthcare Informatics Engineer
-    :twitter: dereckcurry
-    :github: dereckatjackrussellsoftware
   -
     :name: Brook Carter
     :image: /images/brook.jpg
@@ -52,50 +46,66 @@
     :name: Raj Singh
     :image: /images/raj.jpg
     :title: Programmer/Analyst I
-    :twitter: 
+    :twitter:
     :github: rssingh
   -
     :name: Vietson Nguyen
     :image: /images/son.jpg
-    :title: Programmer/Analyst I
-    :twitter: 
+    :title: Interops Programmer/Analyst II
+    :twitter:
     :github: vsnguyen
   -
     :name: Bogan Painter
     :image: /images/bogan.jpg
     :title: Programmer/Analyst I
-    :twitter: 
+    :twitter:
     :github: boganp
   -
     :name: Mark Gunnels
     :image: /images/mark.jpg
-    :title: Senior Programmer/Analyst
+    :title: Senior Interops Programmer/Analyst
     :twitter: markgunnels
     :github: markgunnels
   -
     :name: Brent Cobb
     :image: /images/brent.jpeg
     :title: Programmer/Analyst I
-    :twitter: 
+    :twitter:
     :github: brentcobb
   -
     :name: Joel Villahermosa
     :image: /images/joel.jpg
-    :title: Apprentice
-    :twitter: 
+    :title: Programmer/Analyst I
+    :twitter:
     :github: joelv
   -
     :name: Stokes Player
     :image: /images/stokes.jpg
-    :title: Senior Programmer/Analyst 
+    :title: Senior Programmer/Analyst
     :twitter: stokesplayer
     :github: warrensplayer
   -
     :name: John Schweikart
     :image: /images/johns.jpg
     :title: Product Manager/Analyst
-    :twitter: 
-    :github: 
+    :twitter:
+    :github:
+  -
+    :name: Tejay Cardon
+    :image: /images/nobody.jpg
+    :title: Devops Programmer/Analyst I
+    :twitter:
+    :github:
 
-
-
+  -
+    :name: Debbie Rogina
+    :image: /images/nobody.jpg
+    :title: Programmer/Analyst I
+    :twitter: debbierogina
+    :github: drogina
+  -
+    :name: Jenni Kissinger
+    :image: /images/nobody.jpg
+    :title: Programmer/Analyst I
+    :twitter:
+    :github:

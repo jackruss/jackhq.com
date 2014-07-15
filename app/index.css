@@ -1,0 +1,10 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0,0,0, .7);
+}
+
+.title {
+  text-align: center;
+}
