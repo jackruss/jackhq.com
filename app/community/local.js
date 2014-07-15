@@ -1,34 +1,34 @@
 module.exports = [{
   name: 'Charleston Uber Users Group',
-  link: '#'
+  link: 'https://plus.google.com/u/1/communities/109291424733517240577'
 }, {
   name: 'Charleston CoderDojo',
-  link: '#'
+  link: 'http://coderdojochs.github.io/'
 }, {
   name: 'Charleston Hackathon',
-  link: '#'
+  link: 'http://hackathon.sparcedge.com/'
 }, {
   name: 'Charleston BarCamp',
-  link: '#'
+  link: 'http://barcampchs.org/'
 }, {
   name: 'Charleston CodeCamp',
-  link: '#'
+  link: 'http://www.chscodecamp.com/'
 }, {
   name: 'Charleston CodeRetreat',
-  link: '#'
+  link: 'http://coderetreat.org/events/code-retreat-charleston'
 }, {
   name: 'Charleston CodeShow',
-  link: '#'
+  link: 'http://www.chscodeshow.com/'
 }, {
-  name: 'Harbor Accelerator',
-  link: '#'
+  name: 'Harbor Entrepreneur Center',
+  link: 'http://harborec.com/'
 }, {
   name: 'Charleston AngularJS',
-  link: '#'
+  link: 'https://plus.google.com/u/1/communities/107184675171587960100'
 }, {
   name: 'Charleston NodeJS',
-  link: '#'
+  link: 'https://plus.google.com/u/1/communities/107184675171587960100'
 }, {
   name: 'Charleston CouchDb',
-  link: '#'
+  link: 'https://plus.google.com/u/1/communities/110165172629233011992'
 }]

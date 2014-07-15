@@ -103,7 +103,8 @@ module.exports = [{
 }, {
   name: 'Jenni Kissinger',
   title: 'Programmer/Analyst I',
-  image: 'images/jenni.jpg',
-  github: '',
+  image: 'images/jenni1.jpg',
+  twitter: 'jennikissinger',
+  github: 'jenjaina​',
   start: 2014
 }];

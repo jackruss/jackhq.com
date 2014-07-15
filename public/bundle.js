@@ -1,5 +1,5 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-module.exports = '<div class="container">\n  <header>\n    <h1 class="title"><a href="http://en.wikipedia.org/wiki/Community">Community</a></h1>\n  </header>\n  <div class="row">\n    <blockquote class="title">\n      A community is a social unit of any size that shares common values.\n    </blockquote>\n    <p class="col-md-8 col-md-offset-2">\n      At JRS, we are involved in several communities and understand the power\n      and importance of community. We are constantly striving to not only improve\n      ourselves, but our communities as a whole.  Our craft is constantly moving\n      and the only way to keep up is to embrace the community and learn and share.\n    </p>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Local</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      We host several local events and participant in local community driven events.\n    </p>\n  </div>\n  <div class="row">\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="local"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n  <div class="row">\n    <div class="col-md-8 col-md-offset-2">\n      <h3>Silicon Harbor</h3>\n      <p>The <a href="#">Silicon Harbor</a> has grown immensely and continues to grow,\n        the need for more outlets to grow talent is more significant than ever, and\n        the only way we will grow talent is to share and learn together.\n      </p>\n    </div>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Technical</a></h3>\n    <p class="col-md-8 col-md-offset-2">We also are involved in several technical\n    communities, this communities work together to maintain and manage specific\n    technologies.  By working together in these broad reaching communitees, we are\n    able to be part of the direction instead of having it dictated to us.</p>\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="technical"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Open Source</a></h3>\n    <p class="col-md-8 col-md-offset-2">JRS is a proponent of open source, all of our technology\n    stacks are based on open source platforms, we also have several open source projects and\n    technology tutorials.</p>\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="opensource"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n\n</div>\n';
+module.exports = '<div class="container">\n  <header>\n    <h1 class="title"><a href="http://en.wikipedia.org/wiki/Community">Community</a></h1>\n  </header>\n  <div class="row">\n    <blockquote class="title">\n      A community is a social unit of any size that shares common values.\n    </blockquote>\n    <p class="col-md-8 col-md-offset-2">\n      We also are involved in several technical communities that work together to\n      maintain and manage specific technologies. By working together in these broad reaching\n      communities, we are able to be part of the direction instead of having it dictated to us.\n    </p>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Local</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      We host several local events and participant in local community driven events.\n    </p>\n  </div>\n  <div class="row">\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="local"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n  <div class="row">\n    <div class="col-md-8 col-md-offset-2">\n      <h3>Silicon Harbor</h3>\n      <p>The <a href="#">Silicon Harbor</a> has grown immensely and continues to grow,\n        the need for more outlets to grow talent is more significant than ever, and\n        the only way we will grow talent is to share and learn together.\n      </p>\n    </div>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Technical</a></h3>\n    <p class="col-md-8 col-md-offset-2">We also are involved in several technical\n    communities. These communities work together to maintain and manage specific\n    technologies.  By working together in these broad reaching communitees, we are\n    able to be part of the direction instead of having it be dictated to us.</p>\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="technical"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Open Source</a></h3>\n    <p class="col-md-8 col-md-offset-2">JRS is a proponent of open source, and all of our technology stacks are based on open source platforms. We also have several open source projects and technology tutorials.</p>\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="opensource"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n\n</div>\n';
 },{}],2:[function(require,module,exports){
 module.exports = function() {
 
@@ -23,94 +23,97 @@ module.exports = function() {
 },{"./index.html":1,"./local":3,"./opensource":4,"./technical":5}],3:[function(require,module,exports){
 module.exports = [{
   name: 'Charleston Uber Users Group',
-  link: '#'
+  link: 'https://plus.google.com/u/1/communities/109291424733517240577'
 }, {
   name: 'Charleston CoderDojo',
-  link: '#'
+  link: 'http://coderdojochs.github.io/'
 }, {
   name: 'Charleston Hackathon',
-  link: '#'
+  link: 'http://hackathon.sparcedge.com/'
 }, {
   name: 'Charleston BarCamp',
-  link: '#'
+  link: 'http://barcampchs.org/'
 }, {
   name: 'Charleston CodeCamp',
-  link: '#'
+  link: 'http://www.chscodecamp.com/'
 }, {
   name: 'Charleston CodeRetreat',
-  link: '#'
+  link: 'http://coderetreat.org/events/code-retreat-charleston'
 }, {
   name: 'Charleston CodeShow',
-  link: '#'
+  link: 'http://www.chscodeshow.com/'
 }, {
-  name: 'Harbor Accelerator',
-  link: '#'
+  name: 'Harbor Entrepreneur Center',
+  link: 'http://harborec.com/'
 }, {
   name: 'Charleston AngularJS',
-  link: '#'
+  link: 'https://plus.google.com/u/1/communities/107184675171587960100'
 }, {
   name: 'Charleston NodeJS',
-  link: '#'
+  link: 'https://plus.google.com/u/1/communities/107184675171587960100'
 }, {
   name: 'Charleston CouchDb',
-  link: '#'
+  link: 'https://plus.google.com/u/1/communities/110165172629233011992'
 }]
 
 },{}],4:[function(require,module,exports){
 module.exports = [{
   name: 'Html2Haml',
-  link: '#'
+  link: 'http://html2haml.herokuapp.com'
 }, {
   name: 'ngUpload',
-  link: '#'
+  link: 'http://twilson63.github.io/ngUpload/'
 }, {
   name: 'express-coffee',
-  link: '#'
+  link: 'http://twilson63.github.io/express-coffee/'
 }, {
   name: 'node-cloudq',
-  link: '#'
+  link: 'http://twilson63.github.io/node-cloudq/'
 }, {
   name: 'cakefile-template',
-  link: '#'
+  link: 'http://twilson63.github.io/cakefile-template/'
 }, {
   name: 'docker-logstash',
   link: '#'
 }, {
   name: 'express-couchdb-core',
-  link: '#'
+  link: 'http://twilson63.github.io/express-couchdb-core'
 }, {
   name: 'express-couchUser',
-  link: '#'
+  link: 'http://twilson63.github.io/express-couchUser'
 }, {
   name: 'sql-templar',
-  link: '#'
+  link: 'http://twilson63.github.io/sql-templar'
 }, {
   name: 'zeke-bootstrap',
-  link: '#'
+  link: 'http://twilson63.github.io/zeke-bootstrap'
 }, {
   name: 'vue-director',
-  link: '#'
+  link: 'http://twilson63.github.io/vue-director'
 }, {
   name: 'express-couchFs',
-  link: '#'
+  link: 'http://twilson63.github.io/express-couchFs'
 }, {
   name: 'level-skv',
-  link: '#'
+  link: 'http://twilson63.github.io/level-skv'
 }, {
   name: 'w3',
-  link: '#'
+  link: 'http://twilson63.github.io/w3'
 }, {
   name: 's3fs-recipe',
-  link: '#'
+  link: 'http://twilson63.github.io/s3fs-recipe'
 }, {
   name: 'fakerize-medical',
-  link: '#'
+  link: 'http://jackruss.github.io/fakerize-medical'
 }, {
   name: 'sinatra-formhelpers',
-  link: '#'
+  link: 'http://twilson63.github.io/sinatra-formhelpers'
 }, {
   name: 's3foo',
-  link: '#'
+  link: 'http://twilson63.github.io/s3foo'
+}, {
+  name: 'node-csv2json',
+  link: 'http://twilson63.github.io/node-csv2json'
 }
 
 ];
@@ -118,25 +121,25 @@ module.exports = [{
 },{}],5:[function(require,module,exports){
 module.exports = [{
   name: 'AngularJS',
-  link: '#'
+  link: 'http://angularjs.org'
 }, {
   name: 'Chef',
-  link: '#'
+  link: 'http://www.getchef.com/chef/'
 }, {
   name: 'Clojure',
-  link: '#'
+  link: 'http://clojure.org'
 }, {
   name: 'CouchDb',
-  link: '#'
+  link: 'http://couchdb.apache.org/'
 }, {
   name: 'JavaScript',
-  link: '#'
+  link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
 }, {
   name: 'NodeJS',
-  link: '#'
+  link: 'http://nodejs.org'
 }, {
   name: 'Ruby',
-  link: '#'
+  link: 'http://ruby-lang.org'
 }];
 
 },{}],6:[function(require,module,exports){
@@ -157,7 +160,7 @@ module.exports = function() {
 };
 
 },{"./index.html":6}],8:[function(require,module,exports){
-module.exports = '<div id="app">\n  <header>\n    <center>\n      <img src="images/jackhq-logo.png" height="200px;" />\n    </center>\n    <h3 style="text-align: center;">A Division of CareKinesis, Inc</h3>\n  </header>\n  <nav class="navbar navbar-default">\n    <div class="container">\n      <div class="col-md-6 col-md-offset-3">\n        <ul class="nav navbar-nav">\n          <li v-class="active: isCurrentView(\'team\')"><a href="#/">Team</a></li>\n          <li v-class="active: isCurrentView(\'technology\')"><a href="#/technology">Technology</a></li>\n          <li v-class="active: isCurrentView(\'philosophy\')"><a href="#/philosophy">Philosophy</a></li>\n          <li v-class="active: isCurrentView(\'community\')"><a href="#/community">Community</a></li>\n          <li v-class="active: isCurrentView(\'contact\')"><a href="#/contact">Contact</a></li>\n        </ul>\n      </div>\n    </div>\n  </nav>\n  <div v-view="currentView"></div>\n</div>\n';
+module.exports = '<div id="app">\n  <header>\n    <div class="text-center">\n      <img src="images/jackhq-logo.png" height="200px;" />\n    </div>\n    <h3 class="text-center">A Division of <a href="http://www.carekinesis.com">CareKinesis, Inc</a></h3>\n  </header>\n  <nav class="navbar navbar-default">\n    <div class="container">\n      <div class="col-md-11 col-md-offset-1">\n        <ul class="nav navbar-nav">\n          <li v-class="active: isCurrentView(\'team\')"><a href="#/">Team</a></li>\n          <li v-class="active: isCurrentView(\'technology\')"><a href="#/technology">Technology</a></li>\n          <li v-class="active: isCurrentView(\'philosophy\')"><a href="#/philosophy">Philosophy</a></li>\n          <li v-class="active: isCurrentView(\'community\')"><a href="#/community">Community</a></li>\n        </ul>\n        <ul class="nav navbar-nav navbar-right">\n          <li v-class="active: isCurrentView(\'contact\')"><a href="#/contact">Contact</a></li>\n        </ul>\n      </div>\n    </div>\n  </nav>\n  <div v-view="currentView"></div>\n</div>\n';
 },{}],9:[function(require,module,exports){
 var domify = require('domify');
 var Vue = require('vue-director');
@@ -187,7 +190,7 @@ var app = new Vue({
 });
 
 },{"./community":2,"./contact":7,"./index.html":8,"./philosophy":11,"./team":13,"./technology":16,"domify":17,"vue-director":18}],10:[function(require,module,exports){
-module.exports = '<div class="container">\n  <header>\n    <h1 class="title">Philosophy</h1>\n  </header>\n  <div class="row">\n    <p class="col-md-8 col-md-offset-2">\n      At JRS, our number one responsibility is to provide\n      quality software to our clients or users.  At any given\n      time the process and workflow to provide such services need\n      to evolve and we understand this.  So we are constantly,\n      re-working our process to improve our productivity.\n    </p>\n  </div>\n  <div class="row">\n    <p class="col-md-8 col-md-offset-2">\n      It is not easy to write quality code with tight timelines and\n      complex user requirements.  We leverage several industry standard\n      and proven method that help us manage our development products and\n      process.\n    </p>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="http://en.wikipedia.org/wiki/Pair_programming">Pair Programming</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      Pair Programming is one the most controversal of techniques.  We\n      have found Pair Programming to be invaluable in our development process.\n      Not only does it help reduce common human bugs, but it helps the\n      developers to continue to share knowledge and grow.  Pair Programming\n      is one of the best teaching/learning processes for new developers.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">User Stories/Sprint Planning</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      The development team spends the up front time creating user-stores and a\n      sprint development plan for every feature.  The time preparing up from helps\n      prevent coding path tangents and provides a more focused execution during\n      the development sprint.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/Code_reviews">Code Reviews</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      Some people think that pair programming replaces code reviews, but we feel code reviews also\n      share a place in the development life-cycle.  The Code Review is focused on the code quality\n      and structure.  Is the code maintainable?  Can the code be refactored to provide a simpiler solution?\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title">\n      <a href="http://en.wikipedia.org/wiki/Unit_testing">Unit Testing</a>\n      /\n      <a href="http://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a>\n    </h3>\n    <p class="col-md-8 col-md-offset-2">\n      All production code should have unit tests, no matter what the code is, the tests should be isolated\n      and only test the specific code of the unit.  This goes for front-end JavaScript and Backend Serverside\n      code.  Our teams are very focused on testing and it is a requirement. It is all about confidence in\n      your deliverables, creating unit test helps to increase that confidence. Also it is a great way\n      to document edge cases and strange bugs.  When checking in our code our unit test are run using\n      continuous integration, no code is shipped unless covered and deployed by our CI servers.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">Integration Testing</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n\n    </p>\n  </div>\n\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">Automated Deployment</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n\n    </p>\n  </div>\n\n</div>\n';
+module.exports = '<div class="container">\n  <header>\n    <h1 class="title">Philosophy</h1>\n  </header>\n  <div class="row">\n    <p class="col-md-8 col-md-offset-2">\n      At JRS, our number one responsibility is to provide\n      quality software to our clients or users.  At any given time, the process and\n      workflow to provide such services needs to evolve.  In order to do this, we\n      are constantly re-working our process to improve our productivity.  If you\n      leave that last sentence the way it is, grammar should be: So, we are constantly\n      re-working our process to improve our productivity.\n    </p>\n  </div>\n  <div class="row">\n    <p class="col-md-8 col-md-offset-2">\n      It is not easy to write quality code with tight timelines and\n      complex user requirements.  We leverage several industry standards\n      and proven methods that help us manage our development products and\n      processes.\n    </p>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="http://en.wikipedia.org/wiki/Pair_programming">Pair Programming</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      Pair Programming is one of the most controversial of techniques.  We\n      have found Pair Programming to be invaluable in our development process.\n      Not only does it help reduce common human bugs, but it helps the\n      developers to continue to share knowledge and grow.  Pair Programming\n      is one of the best teaching/learning processes for new developers.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">User-Stories/Sprint Planning</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      The development team works with the product team creating user-stories and a\n      sprint development plan for every feature.  The time preparing helps\n      prevent tangents and provides a more focused execution during\n      the development sprint.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/Code_reviews">Code Reviews</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      Some people think that pair programming replaces code reviews, but we feel code reviews also\n      share a place in the development life-cycle.  The Code Review is focused on the code quality\n      and structure.  Is the code maintainable?  Can the code be refactored to provide a simpler solution?\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title">\n      <a href="http://en.wikipedia.org/wiki/Unit_testing">Unit Testing</a>\n      /\n      <a href="http://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a>\n    </h3>\n    <p class="col-md-8 col-md-offset-2">\n      All production code should have unit tests, no matter what the code is. The tests should be isolated\n      and only test the specific code of the unit.  This goes for front-end JavaScript and back-end Serverside\n      code.  Our teams are very focused on testing and it is a requirement. It is all about confidence in\n      your deliverables; creating unit tests helps to increase that confidence. Unit-tests are a great way\n      to document edge cases and strange bugs.\n    </p>\n    <p class="col-md-8 col-md-offset-2">\n      Continuous Integration is an automated process that runs all of your automated test after\n      every check-in to your repository.  It will alert you when your code is breaking the build.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">Integration Testing</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      Our main integration testing process is performed using a series of visual test cases and managed\n      by our testing team.  There is also some manual testing that is performed before every release.\n      This high-touch approach to integration testing allows us to focus on the core scenarios that\n      can turn releases into support disasters.\n    </p>\n  </div>\n\n  <!--\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">Automated Deployment</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n\n    </p>\n  </div>\n-->\n</div>\n';
 },{}],11:[function(require,module,exports){
 module.exports = function() {
 
@@ -341,13 +344,14 @@ module.exports = [{
 }, {
   name: 'Jenni Kissinger',
   title: 'Programmer/Analyst I',
-  image: 'images/jenni.jpg',
-  github: '',
+  image: 'images/jenni1.jpg',
+  twitter: 'jennikissinger',
+  github: 'jenjaina​',
   start: 2014
 }];
 
 },{}],15:[function(require,module,exports){
-module.exports = '<div class="container">\n  <header>\n    <h1 class="title">Technology</h1>\n  </header>\n  <div class="row">\n    <p class="col-md-8 col-md-offset-2">\n      At JRS, we have 6 development teams, each team uses\n      a different technology stack for their product lines.\n      Every stack must communicate via http/json api, which\n      provides a rich integration agmonst the technologies.\n      Overtime we will continue to add new technology, but\n      we also strive to be very selective to keep the on\n      boarding of developers as efficient as possible.\n    </p> \n\n  </div>\n  <div class="row">\n    <div class="col-md-4">\n      <h3 class="title">EireneRx</h3>\n      <ul class="list-group">\n        <li class="list-group-item">RubyOnRails</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">MySQL</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">EOM</h3>\n      <ul class="list-group">\n        <li class="list-group-item">RubyOnRails</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">MySQL</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">NiaRx</h3>\n      <ul class="list-group">\n        <li class="list-group-item">NodeJS</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n  </div>\n  <div class="row">\n    <div class="col-md-4">\n      <h3 class="title">DevOps</h3>\n      <ul class="list-group">\n        <li class="list-group-item">Chef</li>\n        <li class="list-group-item">Ruby</li>\n        <li class="list-group-item">Linux</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">InterOps - A</h3>\n      <ul class="list-group">\n        <li class="list-group-item">Clojure</li>\n        <li class="list-group-item">Java</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">InterOps - B</h3>\n      <ul class="list-group">\n        <li class="list-group-item">NodeJS</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n  </div>\n</div>\n';
+module.exports = '<div class="container">\n  <header>\n    <h1 class="title">Technology</h1>\n  </header>\n  <div class="row">\n    <p class="col-md-6 col-md-offset-3">\n      At JRS, we have 6 development teams. Each team uses\n      a different technology stack for its product line.\n      Every stack must communicate via http/json api, which\n      provides a rich integration amongst the technologies.\n      Over time, we will continue to add new technology, but\n      we also strive to be very selective to keep the on\n      boarding of developers as efficient as possible.\n    </p>\n\n  </div>\n  <div class="row">\n    <div class="col-md-4">\n      <h3 class="title">EireneRx</h3>\n      <ul class="list-group">\n        <li class="list-group-item">RubyOnRails</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">MySQL</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">EOM</h3>\n      <ul class="list-group">\n        <li class="list-group-item">RubyOnRails</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">MySQL</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">NiaRx</h3>\n      <ul class="list-group">\n        <li class="list-group-item">NodeJS</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n  </div>\n  <div class="row">\n    <div class="col-md-4">\n      <h3 class="title">DevOps</h3>\n      <ul class="list-group">\n        <li class="list-group-item">Chef</li>\n        <li class="list-group-item">Ruby</li>\n        <li class="list-group-item">Linux</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">InterOps - A</h3>\n      <ul class="list-group">\n        <li class="list-group-item">Clojure</li>\n        <li class="list-group-item">Java</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">InterOps - B</h3>\n      <ul class="list-group">\n        <li class="list-group-item">NodeJS</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n  </div>\n</div>\n';
 },{}],16:[function(require,module,exports){
 module.exports = function() {
 

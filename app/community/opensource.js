@@ -1,57 +1,60 @@
 module.exports = [{
   name: 'Html2Haml',
-  link: '#'
+  link: 'http://html2haml.herokuapp.com'
 }, {
   name: 'ngUpload',
-  link: '#'
+  link: 'http://twilson63.github.io/ngUpload/'
 }, {
   name: 'express-coffee',
-  link: '#'
+  link: 'http://twilson63.github.io/express-coffee/'
 }, {
   name: 'node-cloudq',
-  link: '#'
+  link: 'http://twilson63.github.io/node-cloudq/'
 }, {
   name: 'cakefile-template',
-  link: '#'
+  link: 'http://twilson63.github.io/cakefile-template/'
 }, {
   name: 'docker-logstash',
   link: '#'
 }, {
   name: 'express-couchdb-core',
-  link: '#'
+  link: 'http://twilson63.github.io/express-couchdb-core'
 }, {
   name: 'express-couchUser',
-  link: '#'
+  link: 'http://twilson63.github.io/express-couchUser'
 }, {
   name: 'sql-templar',
-  link: '#'
+  link: 'http://twilson63.github.io/sql-templar'
 }, {
   name: 'zeke-bootstrap',
-  link: '#'
+  link: 'http://twilson63.github.io/zeke-bootstrap'
 }, {
   name: 'vue-director',
-  link: '#'
+  link: 'http://twilson63.github.io/vue-director'
 }, {
   name: 'express-couchFs',
-  link: '#'
+  link: 'http://twilson63.github.io/express-couchFs'
 }, {
   name: 'level-skv',
-  link: '#'
+  link: 'http://twilson63.github.io/level-skv'
 }, {
   name: 'w3',
-  link: '#'
+  link: 'http://twilson63.github.io/w3'
 }, {
   name: 's3fs-recipe',
-  link: '#'
+  link: 'http://twilson63.github.io/s3fs-recipe'
 }, {
   name: 'fakerize-medical',
-  link: '#'
+  link: 'http://jackruss.github.io/fakerize-medical'
 }, {
   name: 'sinatra-formhelpers',
-  link: '#'
+  link: 'http://twilson63.github.io/sinatra-formhelpers'
 }, {
   name: 's3foo',
-  link: '#'
+  link: 'http://twilson63.github.io/s3foo'
+}, {
+  name: 'node-csv2json',
+  link: 'http://twilson63.github.io/node-csv2json'
 }
 
 ];

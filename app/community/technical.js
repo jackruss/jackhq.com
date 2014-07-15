@@ -1,22 +1,22 @@
 module.exports = [{
   name: 'AngularJS',
-  link: '#'
+  link: 'http://angularjs.org'
 }, {
   name: 'Chef',
-  link: '#'
+  link: 'http://www.getchef.com/chef/'
 }, {
   name: 'Clojure',
-  link: '#'
+  link: 'http://clojure.org'
 }, {
   name: 'CouchDb',
-  link: '#'
+  link: 'http://couchdb.apache.org/'
 }, {
   name: 'JavaScript',
-  link: '#'
+  link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
 }, {
   name: 'NodeJS',
-  link: '#'
+  link: 'http://nodejs.org'
 }, {
   name: 'Ruby',
-  link: '#'
+  link: 'http://ruby-lang.org'
 }];
