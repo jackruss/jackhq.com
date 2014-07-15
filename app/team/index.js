@@ -22,7 +22,7 @@ module.exports = function() {
     },
     template: require('./index.html'),
     created: function() {
-      initTwitterBadges();
+      setTimeout(initTwitterBadges, 100);
     }
   });
 };

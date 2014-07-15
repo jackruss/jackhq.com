@@ -8,6 +8,11 @@ module.exports = function() {
     route: {
       '/community': handler
     },
+    data: {
+      local: require('./local'),
+      technical: require('./technical'),
+      opensource: require('./opensource')
+    },
     template: require('./index.html')
   });
 };
