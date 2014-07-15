@@ -8,3 +8,17 @@ body {
 .title {
   text-align: center;
 }
+
+.main {
+  margin-bottom:20px;
+}
+
+.navbar-nav li {
+  padding-left:9px;
+  padding-right:9px;
+}
+
+.team-boxes {
+  margin-left:4%;
+  margin-right:4%;
+}
