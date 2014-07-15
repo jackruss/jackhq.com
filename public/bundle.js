@@ -1,5 +1,5 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-module.exports = '<div class="container">\n  <header>\n    <h1 class="title"><a href="http://en.wikipedia.org/wiki/Community">Community</a></h1>\n  </header>\n  <div class="row">\n    <p class="col-md-8 col-md-offset-2">\n      <blockquote>\n        A community is a social unit of any size that shares common values.\n      </blockquote>\n      At JRS, we are involved in several communities and understand the power\n      and importance of community. We are constantly striving to not only improve\n      ourselves, but our communities as a whole.  Our craft is constantly moving\n      and the only way to keep up is to embrace the community and learn and share.\n    </p>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Local</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      We host several local events and participant in local community driven events.\n    </p>\n    <ul class="list-group">\n      <li class="list-group-item"><a href="#">Charleston Uber User Group (CHUUG)</a></li>\n      <li class="list-group-item"><a href="#">Charelston CoderDojo</a></li>\n      <li class="list-group-item"><a href="#">Charleston Hackathon</a></li>\n      <li class="list-group-item"><a href="#">Charleston BarCamp</a></li>\n      <li class="list-group-item"><a href="#">Charleston CodeCamp</a></li>\n      <li class="list-group-item"><a href="#">Charleston CodeRetreat</a></li>\n      <li class="list-group-item"><a href="#">Charelston CodeShow</a></li>\n      <li class="list-group-item"><a href="#">Harbor Accelerator</a></li>\n      <li class="list-group-item"><a href="#">Charleston AngularJS</a></li>\n      <li class="list-group-item"><a href="#">Charleston NodeJS</a></li>\n      <li class="list-group-item"><a href="#">Charleston CouchDb</a></li>\n\n    </ul>\n    <p>The <a href="#">Silicon Harbor</a> has grown immensely and continues to grow,\n      the need for more outlets to grow talent is more significant than ever, and\n      the only way we will grow talent is to share and learn together.\n    </p>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Technical</a></h3>\n    <p class="col-md-8 col-md-offset-2">We also are involved in several technical\n    communities, this communities work together to maintain and manage specific\n    technologies.  By working together in these broad reaching communitees, we are\n    able to be part of the direction instead of having it dictated to us.</p>\n    <ul class="list-group">\n      <li><a href="">JavaScript</a></li>\n      <li><a href="">AngularJS</a></li>\n      <li><a href="#">NodeJS</a></li>\n      <li><a href="#">CouchDb</a></li>\n      <li><a href="">Ruby</a></li>\n      <li><a href="">Chef</a></li>\n      <li><a href="">Clojure</a></li>\n    </li>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Open Source</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n    </p>\n    <ul class="list-group">\n    </ul>\n  </div>\n\n</div>\n';
+module.exports = '<div class="container">\n  <header>\n    <h1 class="title"><a href="http://en.wikipedia.org/wiki/Community">Community</a></h1>\n  </header>\n  <div class="row">\n    <blockquote class="title">\n      A community is a social unit of any size that shares common values.\n    </blockquote>\n    <p class="col-md-8 col-md-offset-2">\n      At JRS, we are involved in several communities and understand the power\n      and importance of community. We are constantly striving to not only improve\n      ourselves, but our communities as a whole.  Our craft is constantly moving\n      and the only way to keep up is to embrace the community and learn and share.\n    </p>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Local</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      We host several local events and participant in local community driven events.\n    </p>\n  </div>\n  <div class="row">\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="local"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n  <div class="row">\n    <div class="col-md-8 col-md-offset-2">\n      <h3>Silicon Harbor</h3>\n      <p>The <a href="#">Silicon Harbor</a> has grown immensely and continues to grow,\n        the need for more outlets to grow talent is more significant than ever, and\n        the only way we will grow talent is to share and learn together.\n      </p>\n    </div>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Technical</a></h3>\n    <p class="col-md-8 col-md-offset-2">We also are involved in several technical\n    communities, this communities work together to maintain and manage specific\n    technologies.  By working together in these broad reaching communitees, we are\n    able to be part of the direction instead of having it dictated to us.</p>\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="technical"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Open Source</a></h3>\n    <p class="col-md-8 col-md-offset-2">JRS is a proponent of open source, all of our technology\n    stacks are based on open source platforms, we also have several open source projects and\n    technology tutorials.</p>\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="opensource"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n\n</div>\n';
 },{}],2:[function(require,module,exports){
 module.exports = function() {
 
@@ -11,13 +11,137 @@ module.exports = function() {
     route: {
       '/community': handler
     },
+    data: {
+      local: require('./local'),
+      technical: require('./technical'),
+      opensource: require('./opensource')
+    },
     template: require('./index.html')
   });
 };
 
-},{"./index.html":1}],3:[function(require,module,exports){
-module.exports = '';
+},{"./index.html":1,"./local":3,"./opensource":4,"./technical":5}],3:[function(require,module,exports){
+module.exports = [{
+  name: 'Charleston Uber Users Group',
+  link: '#'
+}, {
+  name: 'Charleston CoderDojo',
+  link: '#'
+}, {
+  name: 'Charleston Hackathon',
+  link: '#'
+}, {
+  name: 'Charleston BarCamp',
+  link: '#'
+}, {
+  name: 'Charleston CodeCamp',
+  link: '#'
+}, {
+  name: 'Charleston CodeRetreat',
+  link: '#'
+}, {
+  name: 'Charleston CodeShow',
+  link: '#'
+}, {
+  name: 'Harbor Accelerator',
+  link: '#'
+}, {
+  name: 'Charleston AngularJS',
+  link: '#'
+}, {
+  name: 'Charleston NodeJS',
+  link: '#'
+}, {
+  name: 'Charleston CouchDb',
+  link: '#'
+}]
+
 },{}],4:[function(require,module,exports){
+module.exports = [{
+  name: 'Html2Haml',
+  link: '#'
+}, {
+  name: 'ngUpload',
+  link: '#'
+}, {
+  name: 'express-coffee',
+  link: '#'
+}, {
+  name: 'node-cloudq',
+  link: '#'
+}, {
+  name: 'cakefile-template',
+  link: '#'
+}, {
+  name: 'docker-logstash',
+  link: '#'
+}, {
+  name: 'express-couchdb-core',
+  link: '#'
+}, {
+  name: 'express-couchUser',
+  link: '#'
+}, {
+  name: 'sql-templar',
+  link: '#'
+}, {
+  name: 'zeke-bootstrap',
+  link: '#'
+}, {
+  name: 'vue-director',
+  link: '#'
+}, {
+  name: 'express-couchFs',
+  link: '#'
+}, {
+  name: 'level-skv',
+  link: '#'
+}, {
+  name: 'w3',
+  link: '#'
+}, {
+  name: 's3fs-recipe',
+  link: '#'
+}, {
+  name: 'fakerize-medical',
+  link: '#'
+}, {
+  name: 'sinatra-formhelpers',
+  link: '#'
+}, {
+  name: 's3foo',
+  link: '#'
+}
+
+];
+
+},{}],5:[function(require,module,exports){
+module.exports = [{
+  name: 'AngularJS',
+  link: '#'
+}, {
+  name: 'Chef',
+  link: '#'
+}, {
+  name: 'Clojure',
+  link: '#'
+}, {
+  name: 'CouchDb',
+  link: '#'
+}, {
+  name: 'JavaScript',
+  link: '#'
+}, {
+  name: 'NodeJS',
+  link: '#'
+}, {
+  name: 'Ruby',
+  link: '#'
+}];
+
+},{}],6:[function(require,module,exports){
+module.exports = '<div class="container">\n  <header>\n    <h1 class="title">Contact Us</h1>\n  </header>\n  <div class="row">\n    <div class="col-md-5 col-md-offset-1">\n      <form novalidate v-on="submit: submit(contact)">\n        <div class="form-group">\n          <label>Name</label>\n          <input class="form-control" v-model="contact.name">\n        </div>\n        <div class="form-group">\n          <label>Email</label>\n          <input class="form-control" v-model="contact.email">\n        </div>\n        <div class="form-group">\n          <label>Phone</label>\n          <input class="form-control" v-model="contact.phone">\n        </div>\n        <div class="form-group">\n          <label>Details</label>\n          <textarea class="form-control" rows="6" v-model="contact.body"></textarea>\n        </div>\n        <div class="form-group">\n          <button class="btn btn-default">Submit</button>\n        </div>\n      </form>\n    </div>\n    <div class="col-md-6">\n      <iframe width="380" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=494+C+Wando+Park+Boulevard,+Mount+Pleasant,+SC&amp;aq=0&amp;oq=494+C+wando+park+,&amp;sll=32.841231,-79.867948&amp;sspn=0.013936,0.017982&amp;gl=us&amp;ie=UTF8&amp;hq=&amp;hnear=494+Wando+Park+Blvd,+Mt+Pleasant,+South+Carolina+29464&amp;t=m&amp;z=14&amp;ll=32.841231,-79.867948&amp;output=embed"></iframe>\n      <p>\n        <address>\n          494 C Wando Park Boulevard\n          Mount Pleasant, SC  29464\n        </address>\n        <br />\n        Phone:\n        843.606.6484\n        <br />\n        Email:\n        <a href=\'mailto://info@jackrussellsoftware.com\'>info@jackrussellsoftware.com</a>\n        <br />\n        Twitter:\n        <a href=\'http://twitter.com/jackhq\'>@jackhq</a>\n      </p>\n    </div>\n  </div>\n</div>\n';
+},{}],7:[function(require,module,exports){
 module.exports = function() {
 
   var handler = function() {
@@ -32,9 +156,9 @@ module.exports = function() {
   });
 };
 
-},{"./index.html":3}],5:[function(require,module,exports){
+},{"./index.html":6}],8:[function(require,module,exports){
 module.exports = '<div id="app">\n  <header>\n    <center>\n      <img src="images/jackhq-logo.png" height="200px;" />\n    </center>\n    <h3 style="text-align: center;">A Division of CareKinesis, Inc</h3>\n  </header>\n  <nav class="navbar navbar-default">\n    <div class="container">\n      <div class="col-md-6 col-md-offset-3">\n        <ul class="nav navbar-nav">\n          <li v-class="active: isCurrentView(\'team\')"><a href="#/">Team</a></li>\n          <li v-class="active: isCurrentView(\'technology\')"><a href="#/technology">Technology</a></li>\n          <li v-class="active: isCurrentView(\'philosophy\')"><a href="#/philosophy">Philosophy</a></li>\n          <li v-class="active: isCurrentView(\'community\')"><a href="#/community">Community</a></li>\n          <li v-class="active: isCurrentView(\'contact\')"><a href="#/contact">Contact</a></li>\n        </ul>\n      </div>\n    </div>\n  </nav>\n  <div v-view="currentView"></div>\n</div>\n';
-},{}],6:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 var domify = require('domify');
 var Vue = require('vue-director');
 var main = require('./index.html');
@@ -62,9 +186,9 @@ var app = new Vue({
   }
 });
 
-},{"./community":2,"./contact":4,"./index.html":5,"./philosophy":8,"./team":10,"./technology":13,"domify":14,"vue-director":15}],7:[function(require,module,exports){
+},{"./community":2,"./contact":7,"./index.html":8,"./philosophy":11,"./team":13,"./technology":16,"domify":17,"vue-director":18}],10:[function(require,module,exports){
 module.exports = '<div class="container">\n  <header>\n    <h1 class="title">Philosophy</h1>\n  </header>\n  <div class="row">\n    <p class="col-md-8 col-md-offset-2">\n      At JRS, our number one responsibility is to provide\n      quality software to our clients or users.  At any given\n      time the process and workflow to provide such services need\n      to evolve and we understand this.  So we are constantly,\n      re-working our process to improve our productivity.\n    </p>\n  </div>\n  <div class="row">\n    <p class="col-md-8 col-md-offset-2">\n      It is not easy to write quality code with tight timelines and\n      complex user requirements.  We leverage several industry standard\n      and proven method that help us manage our development products and\n      process.\n    </p>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="http://en.wikipedia.org/wiki/Pair_programming">Pair Programming</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      Pair Programming is one the most controversal of techniques.  We\n      have found Pair Programming to be invaluable in our development process.\n      Not only does it help reduce common human bugs, but it helps the\n      developers to continue to share knowledge and grow.  Pair Programming\n      is one of the best teaching/learning processes for new developers.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">User Stories/Sprint Planning</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      The development team spends the up front time creating user-stores and a\n      sprint development plan for every feature.  The time preparing up from helps\n      prevent coding path tangents and provides a more focused execution during\n      the development sprint.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/Code_reviews">Code Reviews</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      Some people think that pair programming replaces code reviews, but we feel code reviews also\n      share a place in the development life-cycle.  The Code Review is focused on the code quality\n      and structure.  Is the code maintainable?  Can the code be refactored to provide a simpiler solution?\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title">\n      <a href="http://en.wikipedia.org/wiki/Unit_testing">Unit Testing</a>\n      /\n      <a href="http://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a>\n    </h3>\n    <p class="col-md-8 col-md-offset-2">\n      All production code should have unit tests, no matter what the code is, the tests should be isolated\n      and only test the specific code of the unit.  This goes for front-end JavaScript and Backend Serverside\n      code.  Our teams are very focused on testing and it is a requirement. It is all about confidence in\n      your deliverables, creating unit test helps to increase that confidence. Also it is a great way\n      to document edge cases and strange bugs.  When checking in our code our unit test are run using\n      continuous integration, no code is shipped unless covered and deployed by our CI servers.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">Integration Testing</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n\n    </p>\n  </div>\n\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">Automated Deployment</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n\n    </p>\n  </div>\n\n</div>\n';
-},{}],8:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 module.exports = function() {
 
   var handler = function() {
@@ -79,9 +203,9 @@ module.exports = function() {
   });
 };
 
-},{"./index.html":7}],9:[function(require,module,exports){
+},{"./index.html":10}],12:[function(require,module,exports){
 module.exports = '<article class="container row">\n  <header class="col-md-offset-2">\n    <h1 style="text-align: center">The Jack Russell Software Team</h1>\n  </header>\n  <div class="list-group col-md-offset-1">\n    <div class="list-group-item col-md-5 col-md-offset-1" v-repeat="team">\n      <div class="media">\n        <div class="pull-left">\n          <img src="{{image}}" height="60px" width="60px" alt="{{name}}"/>\n        </div>\n        <div class="media-body">\n          <div class="pull-right">\n            <span class=\'label label-success\'>{{start}}</span>\n          </div>\n          <h4 class="media-header">{{name}}</h4>\n          <p>{{title}}</p>\n          <div>\n            <div class="pull-left" v-show="twitter">\n              <a href="https://twitter.com/{{twitter}}" class="twitter-follow-button" data-show-count="false">Follow @{{twitter}}</a>\n            </div>\n            <div class="pull-right" v-show="github">\n              <iframe src="http://ghbtns.com/github-btn.html?user={{github}}&type=follow&count=true"\n  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>\n            </div>\n          </div>\n        </div>\n    </div>\n  </div>\n</article>\n';
-},{}],10:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 module.exports = function() {
 
   var handler = function() {
@@ -106,12 +230,12 @@ module.exports = function() {
     },
     template: require('./index.html'),
     created: function() {
-      initTwitterBadges();
+      setTimeout(initTwitterBadges, 100);
     }
   });
 };
 
-},{"./index.html":9,"./team.js":11}],11:[function(require,module,exports){
+},{"./index.html":12,"./team.js":14}],14:[function(require,module,exports){
 module.exports = [{
   name: 'Tom Wilson',
   title: 'Chief Technologist',
@@ -222,9 +346,9 @@ module.exports = [{
   start: 2014
 }];
 
-},{}],12:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 module.exports = '<div class="container">\n  <header>\n    <h1 class="title">Technology</h1>\n  </header>\n  <div class="row">\n    <p class="col-md-8 col-md-offset-2">\n      At JRS, we have 6 development teams, each team uses\n      a different technology stack for their product lines.\n      Every stack must communicate via http/json api, which\n      provides a rich integration agmonst the technologies.\n      Overtime we will continue to add new technology, but\n      we also strive to be very selective to keep the on\n      boarding of developers as efficient as possible.\n    </p> \n\n  </div>\n  <div class="row">\n    <div class="col-md-4">\n      <h3 class="title">EireneRx</h3>\n      <ul class="list-group">\n        <li class="list-group-item">RubyOnRails</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">MySQL</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">EOM</h3>\n      <ul class="list-group">\n        <li class="list-group-item">RubyOnRails</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">MySQL</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">NiaRx</h3>\n      <ul class="list-group">\n        <li class="list-group-item">NodeJS</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n  </div>\n  <div class="row">\n    <div class="col-md-4">\n      <h3 class="title">DevOps</h3>\n      <ul class="list-group">\n        <li class="list-group-item">Chef</li>\n        <li class="list-group-item">Ruby</li>\n        <li class="list-group-item">Linux</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">InterOps - A</h3>\n      <ul class="list-group">\n        <li class="list-group-item">Clojure</li>\n        <li class="list-group-item">Java</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">InterOps - B</h3>\n      <ul class="list-group">\n        <li class="list-group-item">NodeJS</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n  </div>\n</div>\n';
-},{}],13:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 module.exports = function() {
 
   var handler = function() {
@@ -239,7 +363,7 @@ module.exports = function() {
   });
 };
 
-},{"./index.html":12}],14:[function(require,module,exports){
+},{"./index.html":15}],17:[function(require,module,exports){
 
 /**
  * Expose `parse`.
@@ -280,19 +404,25 @@ map.polyline =
 map.rect = [1, '<svg xmlns="http://www.w3.org/2000/svg" version="1.1">','</svg>'];
 
 /**
- * Parse `html` and return the children.
+ * Parse `html` and return a DOM Node instance, which could be a TextNode,
+ * HTML DOM Node of some kind (<div> for example), or a DocumentFragment
+ * instance, depending on the contents of the `html` string.
  *
- * @param {String} html
- * @return {Array}
+ * @param {String} html - HTML string to "domify"
+ * @param {Document} doc - The `document` instance to create the Node for
+ * @return {DOMNode} the TextNode, DOM Node, or DocumentFragment instance
  * @api private
  */
 
-function parse(html) {
+function parse(html, doc) {
   if ('string' != typeof html) throw new TypeError('String expected');
-  
+
+  // default to the global `document` object
+  if (!doc) doc = document;
+
   // tag name
   var m = /<([\w:]+)/.exec(html);
-  if (!m) return document.createTextNode(html);
+  if (!m) return doc.createTextNode(html);
 
   html = html.replace(/^\s+|\s+$/g, ''); // Remove leading/trailing whitespace
 
@@ -300,7 +430,7 @@ function parse(html) {
 
   // body support
   if (tag == 'body') {
-    var el = document.createElement('html');
+    var el = doc.createElement('html');
     el.innerHTML = html;
     return el.removeChild(el.lastChild);
   }
@@ -310,7 +440,7 @@ function parse(html) {
   var depth = wrap[0];
   var prefix = wrap[1];
   var suffix = wrap[2];
-  var el = document.createElement('div');
+  var el = doc.createElement('div');
   el.innerHTML = prefix + html + suffix;
   while (depth--) el = el.lastChild;
 
@@ -320,7 +450,7 @@ function parse(html) {
   }
 
   // several elements
-  var fragment = document.createDocumentFragment();
+  var fragment = doc.createDocumentFragment();
   while (el.firstChild) {
     fragment.appendChild(el.removeChild(el.firstChild));
   }
@@ -328,7 +458,7 @@ function parse(html) {
   return fragment;
 }
 
-},{}],15:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 var Router = require('director').Router;
 var Vue = require('vue');
 var _ = require('underscore');
@@ -351,7 +481,7 @@ module.exports = Vue.extend({
   }
 });
 
-},{"director":16,"underscore":17,"vue":38}],16:[function(require,module,exports){
+},{"director":19,"underscore":20,"vue":41}],19:[function(require,module,exports){
 
 
 //
@@ -1071,7 +1201,7 @@ Router.prototype.mount = function(routes, path) {
 
 
 }(typeof exports === "object" ? exports : window));
-},{}],17:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 //     Underscore.js 1.6.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -2416,7 +2546,7 @@ Router.prototype.mount = function(routes, path) {
   }
 }).call(this);
 
-},{}],18:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 var utils = require('./utils')
 
 function Batcher () {
@@ -2462,7 +2592,7 @@ BatcherProto.reset = function () {
 }
 
 module.exports = Batcher
-},{"./utils":42}],19:[function(require,module,exports){
+},{"./utils":45}],22:[function(require,module,exports){
 var Batcher        = require('./batcher'),
     bindingBatcher = new Batcher(),
     bindingId      = 1
@@ -2566,7 +2696,7 @@ BindingProto.unbind = function () {
 }
 
 module.exports = Binding
-},{"./batcher":18}],20:[function(require,module,exports){
+},{"./batcher":21}],23:[function(require,module,exports){
 var Emitter     = require('./emitter'),
     Observer    = require('./observer'),
     config      = require('./config'),
@@ -3604,7 +3734,7 @@ function getRoot (compiler) {
 }
 
 module.exports = Compiler
-},{"./binding":19,"./config":21,"./deps-parser":22,"./directive":23,"./emitter":34,"./exp-parser":35,"./observer":39,"./text-parser":40,"./utils":42,"./viewmodel":43}],21:[function(require,module,exports){
+},{"./binding":22,"./config":24,"./deps-parser":25,"./directive":26,"./emitter":37,"./exp-parser":38,"./observer":42,"./text-parser":43,"./utils":45,"./viewmodel":46}],24:[function(require,module,exports){
 var TextParser = require('./text-parser')
 
 module.exports = {
@@ -3624,7 +3754,7 @@ Object.defineProperty(module.exports, 'delimiters', {
         TextParser.setDelimiters(delimiters)
     }
 })
-},{"./text-parser":40}],22:[function(require,module,exports){
+},{"./text-parser":43}],25:[function(require,module,exports){
 var Emitter  = require('./emitter'),
     utils    = require('./utils'),
     Observer = require('./observer'),
@@ -3690,7 +3820,7 @@ module.exports = {
     }
     
 }
-},{"./emitter":34,"./observer":39,"./utils":42}],23:[function(require,module,exports){
+},{"./emitter":37,"./observer":42,"./utils":45}],26:[function(require,module,exports){
 var dirId           = 1,
     ARG_RE          = /^[\w\$-]+$/,
     FILTER_TOKEN_RE = /[^\s'"]+|'[^']+'|"[^"]+"/g,
@@ -3949,7 +4079,7 @@ function escapeQuote (v) {
 }
 
 module.exports = Directive
-},{"./text-parser":40}],24:[function(require,module,exports){
+},{"./text-parser":43}],27:[function(require,module,exports){
 var utils = require('../utils'),
     slice = [].slice
 
@@ -3991,7 +4121,7 @@ module.exports = {
         parent.insertBefore(frag, this.el)
     }
 }
-},{"../utils":42}],25:[function(require,module,exports){
+},{"../utils":45}],28:[function(require,module,exports){
 var utils    = require('../utils')
 
 /**
@@ -4048,7 +4178,7 @@ module.exports = {
         }
     }
 }
-},{"../utils":42}],26:[function(require,module,exports){
+},{"../utils":45}],29:[function(require,module,exports){
 var utils      = require('../utils'),
     config     = require('../config'),
     transition = require('../transition'),
@@ -4178,7 +4308,7 @@ directives.html    = require('./html')
 directives.style   = require('./style')
 directives.partial = require('./partial')
 directives.view    = require('./view')
-},{"../config":21,"../transition":41,"../utils":42,"./html":24,"./if":25,"./model":27,"./on":28,"./partial":29,"./repeat":30,"./style":31,"./view":32,"./with":33}],27:[function(require,module,exports){
+},{"../config":24,"../transition":44,"../utils":45,"./html":27,"./if":28,"./model":30,"./on":31,"./partial":32,"./repeat":33,"./style":34,"./view":35,"./with":36}],30:[function(require,module,exports){
 var utils = require('../utils'),
     isIE9 = navigator.userAgent.indexOf('MSIE 9.0') > 0,
     filter = [].filter
@@ -4353,7 +4483,7 @@ module.exports = {
         }
     }
 }
-},{"../utils":42}],28:[function(require,module,exports){
+},{"../utils":45}],31:[function(require,module,exports){
 var utils    = require('../utils')
 
 /**
@@ -4410,7 +4540,7 @@ module.exports = {
         this.el.removeEventListener('load', this.iframeBind)
     }
 }
-},{"../utils":42}],29:[function(require,module,exports){
+},{"../utils":45}],32:[function(require,module,exports){
 var utils = require('../utils')
 
 /**
@@ -4461,7 +4591,7 @@ module.exports = {
     }
 
 }
-},{"../utils":42}],30:[function(require,module,exports){
+},{"../utils":45}],33:[function(require,module,exports){
 var utils      = require('../utils'),
     config     = require('../config')
 
@@ -4708,7 +4838,7 @@ function indexOf (vms, obj) {
     }
     return -1
 }
-},{"../config":21,"../utils":42}],31:[function(require,module,exports){
+},{"../config":24,"../utils":45}],34:[function(require,module,exports){
 var prefixes = ['-webkit-', '-moz-', '-ms-']
 
 /**
@@ -4749,7 +4879,7 @@ module.exports = {
     }
 
 }
-},{}],32:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 /**
  *  Manages a conditional child VM using the
  *  binding's value as the component ID.
@@ -4806,7 +4936,7 @@ module.exports = {
     }
 
 }
-},{}],33:[function(require,module,exports){
+},{}],36:[function(require,module,exports){
 var utils = require('../utils')
 
 /**
@@ -4857,7 +4987,7 @@ module.exports = {
     }
 
 }
-},{"../utils":42}],34:[function(require,module,exports){
+},{"../utils":45}],37:[function(require,module,exports){
 var slice = [].slice
 
 function Emitter (ctx) {
@@ -4955,7 +5085,7 @@ EmitterProto.applyEmit = function (event) {
 }
 
 module.exports = Emitter
-},{}],35:[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 var utils           = require('./utils'),
     STR_SAVE_RE     = /"(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*'/g,
     STR_RESTORE_RE  = /"(\d+)"/g,
@@ -5146,7 +5276,7 @@ exports.eval = function (exp, compiler, data) {
     }
     return res
 }
-},{"./utils":42}],36:[function(require,module,exports){
+},{"./utils":45}],39:[function(require,module,exports){
 var utils    = require('./utils'),
     get      = utils.get,
     slice    = [].slice,
@@ -5337,7 +5467,7 @@ function stripQuotes (str) {
         return str.slice(1, -1)
     }
 }
-},{"./utils":42}],37:[function(require,module,exports){
+},{"./utils":45}],40:[function(require,module,exports){
 // string -> DOM conversion
 // wrappers originally from jQuery, scooped from component/domify
 var map = {
@@ -5422,7 +5552,7 @@ module.exports = function (template) {
     }
     return frag
 }
-},{}],38:[function(require,module,exports){
+},{}],41:[function(require,module,exports){
 var config      = require('./config'),
     ViewModel   = require('./viewmodel'),
     utils       = require('./utils'),
@@ -5609,7 +5739,7 @@ function inheritOptions (child, parent, topLevel) {
 }
 
 module.exports = ViewModel
-},{"./config":21,"./directives":26,"./filters":36,"./observer":39,"./transition":41,"./utils":42,"./viewmodel":43}],39:[function(require,module,exports){
+},{"./config":24,"./directives":29,"./filters":39,"./observer":42,"./transition":44,"./utils":45,"./viewmodel":46}],42:[function(require,module,exports){
 /* jshint proto:true */
 
 var Emitter  = require('./emitter'),
@@ -6056,7 +6186,7 @@ var pub = module.exports = {
     convert     : convert,
     convertKey  : convertKey
 }
-},{"./emitter":34,"./utils":42}],40:[function(require,module,exports){
+},{"./emitter":37,"./utils":45}],43:[function(require,module,exports){
 var openChar        = '{',
     endChar         = '}',
     ESCAPE_RE       = /[-.*+?^${}()|[\]\/\\]/g,
@@ -6153,7 +6283,7 @@ exports.parse         = parse
 exports.parseAttr     = parseAttr
 exports.setDelimiters = setDelimiters
 exports.delimiters    = [openChar, endChar]
-},{"./directive":23}],41:[function(require,module,exports){
+},{"./directive":26}],44:[function(require,module,exports){
 var endEvents  = sniffEndEvents(),
     config     = require('./config'),
     // batch enter animations so we only force the layout once
@@ -6382,7 +6512,7 @@ function sniffEndEvents () {
 // Expose some stuff for testing purposes
 transition.codes = codes
 transition.sniff = sniffEndEvents
-},{"./batcher":18,"./config":21}],42:[function(require,module,exports){
+},{"./batcher":21,"./config":24}],45:[function(require,module,exports){
 var config       = require('./config'),
     toString     = ({}).toString,
     win          = window,
@@ -6704,7 +6834,7 @@ function enableDebug () {
         }
     }
 }
-},{"./config":21,"./fragment":37,"./viewmodel":43}],43:[function(require,module,exports){
+},{"./config":24,"./fragment":40,"./viewmodel":46}],46:[function(require,module,exports){
 var Compiler   = require('./compiler'),
     utils      = require('./utils'),
     transition = require('./transition'),
@@ -6885,4 +7015,4 @@ function query (el) {
 }
 
 module.exports = ViewModel
-},{"./batcher":18,"./compiler":20,"./transition":41,"./utils":42}]},{},[6])
+},{"./batcher":21,"./compiler":23,"./transition":44,"./utils":45}]},{},[9])
