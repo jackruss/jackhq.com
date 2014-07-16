@@ -1,22 +1,35 @@
 <div id="app">
   <header>
-    <center>
+    <div class="text-center">
       <img src="images/jackhq-logo.png" height="200px;" />
-    </center>
-    <h3 style="text-align: center;">A Division of CareKinesis, Inc</h3>
+    </div>
+    <h3 class="text-center">A Division of <a href="http://www.carekinesis.com">CareKinesis, Inc</a></h3>
   </header>
   <nav class="navbar navbar-default">
     <div class="container">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-11 col-md-offset-1">
         <ul class="nav navbar-nav">
           <li v-class="active: isCurrentView('team')"><a href="#/">Team</a></li>
           <li v-class="active: isCurrentView('technology')"><a href="#/technology">Technology</a></li>
           <li v-class="active: isCurrentView('philosophy')"><a href="#/philosophy">Philosophy</a></li>
           <li v-class="active: isCurrentView('community')"><a href="#/community">Community</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
           <li v-class="active: isCurrentView('contact')"><a href="#/contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <div v-view="currentView" class="main"></div>
+  <footer class="well">
+    <div class="container">
+      <ul class="list-inline text-center">
+        <li>All Rights Reserved 2014</li>
+        <li>.</li>
+        <li><a class="btn btn-link" href="http://twitter.com/jackhq">twitter</a></li>
+        <li>.</li>
+        <li><a class="btn btn-link" href="http://github.com/jackruss">Github</a></li>
+      </ul>
+    </div>
+  </footer>
 </div>
