@@ -21,7 +21,7 @@ module.exports = [{
   start: 2008
 },{
   name: 'Russell Niller',
-  title: 'Scrum Master I',
+  title: 'Scrum Master',
   image: 'images/russell.jpg',
   twitter: 'rdniller',
   github: 'rdniller',
@@ -105,6 +105,6 @@ module.exports = [{
   title: 'Programmer/Analyst I',
   image: 'images/jenni1.jpg',
   twitter: 'jennikissinger',
-  github: 'jenjaina​',
+  github: 'jenjaina',
   start: 2014
 }];
