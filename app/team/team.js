@@ -21,7 +21,7 @@ module.exports = [{
   start: 2008
 },{
   name: 'Russell Niller',
-  title: 'Scrum Master I',
+  title: 'Scrum Master',
   image: 'images/russell.jpg',
   twitter: 'rdniller',
   github: 'rdniller',
@@ -92,6 +92,7 @@ module.exports = [{
   name: 'Tejay Cardon',
   title: 'Devops Programmer/Analyst I',
   image: 'images/tejay.jpg',
+  twitter: 'tejaycar',
   github: 'tejaycar',
   start: 2014
 }, {
@@ -106,6 +107,6 @@ module.exports = [{
   title: 'Programmer/Analyst I',
   image: 'images/jenni1.jpg',
   twitter: 'jennikissinger',
-  github: 'jenjaina​',
+  github: 'jenjaina',
   start: 2014
 }];
