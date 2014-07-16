@@ -72,6 +72,7 @@ module.exports = [{
   name: 'Joel Villahermosa',
   title: 'Programmer/Analyst I',
   image: 'images/joel.jpg',
+  twitter: 'Joel_0604',
   github: 'joelv',
   start: 2014
 }, {
