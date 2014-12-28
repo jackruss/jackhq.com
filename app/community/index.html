@@ -1,0 +1,53 @@
+<div class="container fadeIn">
+  <header>
+    <h1 class="title"><a href="http://en.wikipedia.org/wiki/Community">Community</a></h1>
+  </header>
+  <div class="row">
+    <blockquote class="title">
+      A community is a social unit of any size that shares common values.
+    </blockquote>
+    <p class="col-md-8 col-md-offset-2">
+      We also are involved in several technical communities that work together to
+      maintain and manage specific technologies. By working together in these broad reaching
+      communities, we are able to be part of the direction instead of having it dictated to us.
+    </p>
+  </div>
+  <div class="row">
+    <h3 class="title"><a href="#">Local</a></h3>
+    <p class="col-md-8 col-md-offset-2">
+      We host several local events and participant in local community driven events.
+    </p>
+  </div>
+  <div class="row">
+    <ul class="list-group col-md-offset-1">
+      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="local"><a href="{{link}}">{{name}}</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h3>Silicon Harbor</h3>
+      <p>The <a href="#">Silicon Harbor</a> has grown immensely and continues to grow,
+        the need for more outlets to grow talent is more significant than ever, and
+        the only way we will grow talent is to share and learn together.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <h3 class="title"><a href="#">Technical</a></h3>
+    <p class="col-md-8 col-md-offset-2">We also are involved in several technical
+    communities. These communities work together to maintain and manage specific
+    technologies.  By working together in these broad reaching communitees, we are
+    able to be part of the direction instead of having it be dictated to us.</p>
+    <ul class="list-group col-md-offset-1">
+      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="technical"><a href="{{link}}">{{name}}</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <h3 class="title"><a href="#">Open Source</a></h3>
+    <p class="col-md-8 col-md-offset-2">JRS is a proponent of open source, and all of our technology stacks are based on open source platforms. We also have several open source projects and technology tutorials.</p>
+    <ul class="list-group col-md-offset-1">
+      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="opensource"><a href="{{link}}">{{name}}</a></li>
+    </ul>
+  </div>
+
+</div>

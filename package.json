@@ -1,0 +1,29 @@
+{
+  "name": "jackhq.com",
+  "version": "0.0.0",
+  "description": "Jack Russell Software Team WebSite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jackruss/jackhq.com.git"
+  },
+  "author": "JRS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jackruss/jackhq.com/issues"
+  },
+  "homepage": "https://github.com/jackruss/jackhq.com",
+  "devDependencies": {
+    "atomify": "^3.1.5",
+    "handlebars": "^1.3.0",
+    "hbsfy": "^1.3.2"
+  },
+  "dependencies": {
+    "domify": "^1.3.0",
+    "vue": "^0.10.5",
+    "vue-director": "0.0.2"
+  }
+}
