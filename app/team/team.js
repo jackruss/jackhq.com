@@ -109,4 +109,11 @@ module.exports = [{
   twitter: 'jennikissinger',
   github: 'jenjaina',
   start: 2014
+}, {
+  name: 'Kevin Collins',
+  title: 'Programmer/Analyst I',
+  image: 'images/k2.jpg',
+  twitter: 'kevco54',
+  github: 'kevincol54',
+  start: 2014
 }];
