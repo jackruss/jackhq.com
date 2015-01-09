@@ -1,6 +1,6 @@
 {
   "name": "jackhq.com",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Jack Russell Software Team WebSite",
   "main": "index.js",
   "scripts": {
