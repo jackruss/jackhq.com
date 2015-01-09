@@ -1,1 +1,1 @@
-web: node script/prod.js
+web: npm start
