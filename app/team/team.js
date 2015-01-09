@@ -112,8 +112,8 @@ module.exports = [{
 }, {
   name: 'Kevin Collins',
   title: 'Programmer/Analyst I',
-  image: 'images/kevincol54.jpg',
-  twitter: 'kevincol54',
+  image: 'images/k2.jpg',
+  twitter: 'kevco54',
   github: 'kevincol54',
   start: 2014
 }];
