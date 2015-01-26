@@ -11,6 +11,6 @@ npm install w3 -g
 ## To run in development
 
 ```
-npm start
+npm run dev
 ```
 
