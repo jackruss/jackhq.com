@@ -95,14 +95,7 @@ module.exports = [{
   twitter: 'tejaycar',
   github: 'tejaycar',
   start: 2014
-}, {
-  name: 'Debbie Rogina',
-  title: 'Programmer/Analyst I',
-  image: 'images/debbie.jpeg',
-  twitter: 'debbierogina',
-  github: 'drogina',
-  start: 2014
-}, {
+},  {
   name: 'Jenni Kissinger',
   title: 'Programmer/Analyst I',
   image: 'images/jenni1.jpg',
@@ -115,5 +108,12 @@ module.exports = [{
   image: 'images/k2.jpg',
   twitter: 'kevco54',
   github: 'kevincol54',
+  start: 2014
+}, {
+  name: 'Michael Dion',
+  title: 'Programmer/Analyst I',
+  image: 'images/michael.jpg',
+  twitter: 'mwdion',
+  github: 'mwdion',
   start: 2014
 }];
