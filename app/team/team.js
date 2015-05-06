@@ -115,5 +115,11 @@ module.exports = [{
   image: 'images/michael.jpg',
   twitter: 'mwdion',
   github: 'mwdion',
-  start: 2014
+  start: 2015
+}, {
+  name: 'Brian Kelsey',
+  title: 'Programmer/Analyst II',
+  image: 'images/brian.jpg',
+  github: 'bkelsey',
+  start: 2015
 }];

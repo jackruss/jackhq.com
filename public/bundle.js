@@ -175,7 +175,7 @@ module.exports = function() {
 };
 
 },{"./index.html":6,"firebase/firebase":18}],8:[function(require,module,exports){
-module.exports = '<div id="app">\n  <header>\n    <div class="text-center">\n      <img src="images/jackhq-logo.png" height="200px;" />\n    </div>\n    <h3 class="text-center">A <a href="http://www.tabularasahealthcare.com">Tabula Rasa Healthcare</a> Division</h3>\n  </header>\n  <nav class="navbar navbar-default">\n    <div class="container">\n      <div class="col-md-11 col-md-offset-1">\n        <ul class="nav navbar-nav">\n          <li v-class="active: isCurrentView(\'team\')"><a href="#/">Team</a></li>\n          <li v-class="active: isCurrentView(\'technology\')"><a href="#/technology">Technology</a></li>\n          <li v-class="active: isCurrentView(\'philosophy\')"><a href="#/philosophy">Philosophy</a></li>\n          <li v-class="active: isCurrentView(\'community\')"><a href="#/community">Community</a></li>\n        </ul>\n        <ul class="nav navbar-nav navbar-right">\n          <li v-class="active: isCurrentView(\'contact\')"><a href="#/contact">Contact</a></li>\n        </ul>\n      </div>\n    </div>\n  </nav>\n  <div v-view="currentView" class="main"></div>\n  <footer class="well">\n    <div class="container">\n      <ul class="list-inline text-center">\n        <li>All Rights Reserved 2014</li>\n        <li>.</li>\n        <li><a class="btn btn-link" href="http://twitter.com/jackhq">twitter</a></li>\n        <li>.</li>\n        <li><a class="btn btn-link" href="http://github.com/jackruss">Github</a></li>\n      </ul>\n    </div>\n  </footer>\n</div>\n';
+module.exports = '<div id="app">\n  <header>\n    <div class="text-center">\n      <img src="images/jackhq-logo.png" height="200px;" />\n    </div>\n    <h3 class="text-center">A <a href="http://www.tabularasahealthcare.com">Tabula Rasa Healthcare</a> Division</h3>\n  </header>\n  <nav class="navbar navbar-default">\n    <div class="container">\n      <div class="col-md-11 col-md-offset-1">\n        <ul class="nav navbar-nav">\n          <li v-class="active: isCurrentView(\'team\')"><a href="#/">Team</a></li>\n          <li v-class="active: isCurrentView(\'technology\')"><a href="#/technology">Technology</a></li>\n          <li v-class="active: isCurrentView(\'philosophy\')"><a href="#/philosophy">Philosophy</a></li>\n          <li v-class="active: isCurrentView(\'community\')"><a href="#/community">Community</a></li>\n        </ul>\n        <ul class="nav navbar-nav navbar-right">\n          <li v-class="active: isCurrentView(\'contact\')"><a href="#/contact">Contact</a></li>\n        </ul>\n      </div>\n    </div>\n  </nav>\n  <div class="main container">\n    <div class="text-center" v-view="currentView"></div>\n  </div>\n  <footer class="well">\n    <div class="container">\n      <ul class="list-inline text-center">\n        <li>All Rights Reserved 2014</li>\n        <li>.</li>\n        <li><a class="btn btn-link" href="http://twitter.com/jackhq">twitter</a></li>\n        <li>.</li>\n        <li><a class="btn btn-link" href="http://github.com/jackruss">Github</a></li>\n      </ul>\n    </div>\n  </footer>\n</div>\n';
 },{}],9:[function(require,module,exports){
 var domify = require('domify');
 var Vue = require('vue-director');
@@ -222,7 +222,7 @@ module.exports = function() {
 };
 
 },{"./index.html":10}],12:[function(require,module,exports){
-module.exports = '<article class="container row fadeIn">\n  <header class="col-md-offset-2">\n    <h1 style="text-align: center">The Jack Russell Software Team</h1>\n  </header>\n  <div class="list-group col-md-offset-1">\n    <div class="list-group-item col-md-5 col-md-offset-1 glow" v-repeat="team">\n      <div class="media">\n        <div class="pull-left">\n          <img class="img-circle" src="{{image}}" height="60px" width="60px" alt="{{name}}"/>\n        </div>\n        <div class="media-body">\n          <div class="pull-right">\n            <span class=\'label label-success\'>{{start}}</span>\n          </div>\n          <h4 class="media-header">{{name}}</h4>\n          <p>{{title}}</p>\n          <div>\n            <div class="pull-left" v-show="twitter">\n              <a href="https://twitter.com/{{twitter}}" class="twitter-follow-button" data-show-count="false">Follow @{{twitter}}</a>\n            </div>\n            <div class="pull-right" v-show="github">\n              <iframe src="http://ghbtns.com/github-btn.html?user={{github}}&type=follow&count=true"\n  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>\n            </div>\n          </div>\n        </div>\n    </div>\n  </div>\n</article>\n';
+module.exports = '<article class="container row fadeIn">\n  <div class="list-group">\n    <div class="list-group-item col-md-5 col-md-offset-1 glow" v-repeat="team">\n      <div class="media">\n        <div class="media-body">\n          <div class="pull-left">\n            <span class=\'label label-success\'>{{start}}</span>\n          </div>\n          <div class="">\n            <img class="img-circle" src="{{image}}" height="60px" width="60px" alt="{{name}}"/>\n          </div>\n\n          <h4 class="media-header">{{name}}</h4>\n          <p>{{title}}</p>\n          <div>\n            <div class="pull-right" v-show="github">\n              <iframe src="http://ghbtns.com/github-btn.html?user={{github}}&type=follow&count=true"\n  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>\n            </div>\n          </div>\n        </div>\n    </div>\n  </div>\n</article>\n';
 },{}],13:[function(require,module,exports){
 module.exports = function() {
 
@@ -371,7 +371,13 @@ module.exports = [{
   image: 'images/michael.jpg',
   twitter: 'mwdion',
   github: 'mwdion',
-  start: 2014
+  start: 2015
+}, {
+  name: 'Brian Kelsey',
+  title: 'Programmer/Analyst II',
+  image: 'images/brian.jpg',
+  github: 'bkelsey',
+  start: 2015
 }];
 
 },{}],15:[function(require,module,exports){

@@ -1,23 +1,18 @@
 <article class="container row fadeIn">
-  <header class="col-md-offset-2">
-    <h1 style="text-align: center">The Jack Russell Software Team</h1>
-  </header>
-  <div class="list-group col-md-offset-1">
+  <div class="list-group">
     <div class="list-group-item col-md-5 col-md-offset-1 glow" v-repeat="team">
       <div class="media">
-        <div class="pull-left">
-          <img class="img-circle" src="{{image}}" height="60px" width="60px" alt="{{name}}"/>
-        </div>
         <div class="media-body">
-          <div class="pull-right">
+          <div class="pull-left">
             <span class='label label-success'>{{start}}</span>
           </div>
+          <div class="">
+            <img class="img-circle" src="{{image}}" height="60px" width="60px" alt="{{name}}"/>
+          </div>
+
           <h4 class="media-header">{{name}}</h4>
           <p>{{title}}</p>
           <div>
-            <div class="pull-left" v-show="twitter">
-              <a href="https://twitter.com/{{twitter}}" class="twitter-follow-button" data-show-count="false">Follow @{{twitter}}</a>
-            </div>
             <div class="pull-right" v-show="github">
               <iframe src="http://ghbtns.com/github-btn.html?user={{github}}&type=follow&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
