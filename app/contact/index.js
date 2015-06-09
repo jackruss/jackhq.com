@@ -7,7 +7,6 @@ module.exports = function() {
 
   };
   var submit = function(contact) {
-    console.log(contact);
     var ref = new Firebase('https://jackhq.firebaseio.com/contacts');
     ref.push(contact, function() {
       alert('Successfully Submitted!');

@@ -159,7 +159,6 @@ module.exports = function () {
 
   var handler = function handler() {};
   var submit = function submit(contact) {
-    console.log(contact);
     var ref = new Firebase('https://jackhq.firebaseio.com/contacts');
     ref.push(contact, function () {
       alert('Successfully Submitted!');
@@ -234,7 +233,6 @@ var app = new Vue({
     contact: require('./contact')() },
   methods: {
     isCurrentView: function isCurrentView(view) {
-      console.log(this.currentYear);
       return view === this.currentView;
     }
   }

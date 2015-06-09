@@ -27,7 +27,6 @@ var app = new Vue({
   },
   methods: {
     isCurrentView: function(view) {
-      console.log(this.currentYear)
       return view === this.currentView;
     }
   }
