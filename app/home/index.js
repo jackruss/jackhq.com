@@ -6,13 +6,11 @@ module.exports = function() {
 
   return Object.freeze({
     route: {
-      '/community': handler
+      '/': handler
     },
     data: {
-      local: require('./local'),
-      technical: require('./technical'),
-      opensource: require('./opensource'),
-      sectionTitle: "Community"
+      sectionTitle: "Index",
+      team: require('../team/team.js')
     },
     template: require('./index.html')
   });

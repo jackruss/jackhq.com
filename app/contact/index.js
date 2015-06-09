@@ -21,6 +21,9 @@ module.exports = function() {
       '/contact': handler
     },
     template: require('./index.html'),
+    data: {
+      sectionTitle: "Contact Us"
+    },
     methods: {
       submit: submit
     }

@@ -1,11 +1,11 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-module.exports = '<div class="container fadeIn">\n  <header>\n    <h1 class="title"><a href="http://en.wikipedia.org/wiki/Community">Community</a></h1>\n  </header>\n  <div class="row">\n    <blockquote class="title">\n      A community is a social unit of any size that shares common values.\n    </blockquote>\n    <p class="col-md-8 col-md-offset-2">\n      We also are involved in several technical communities that work together to\n      maintain and manage specific technologies. By working together in these broad reaching\n      communities, we are able to be part of the direction instead of having it dictated to us.\n    </p>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Local</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      We host several local events and participant in local community driven events.\n    </p>\n  </div>\n  <div class="row">\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="local"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n  <div class="row">\n    <div class="col-md-8 col-md-offset-2">\n      <h3>Silicon Harbor</h3>\n      <p>The <a href="#">Silicon Harbor</a> has grown immensely and continues to grow,\n        the need for more outlets to grow talent is more significant than ever, and\n        the only way we will grow talent is to share and learn together.\n      </p>\n    </div>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Technical</a></h3>\n    <p class="col-md-8 col-md-offset-2">We also are involved in several technical\n    communities. These communities work together to maintain and manage specific\n    technologies.  By working together in these broad reaching communitees, we are\n    able to be part of the direction instead of having it be dictated to us.</p>\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="technical"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="#">Open Source</a></h3>\n    <p class="col-md-8 col-md-offset-2">JRS is a proponent of open source, and all of our technology stacks are based on open source platforms. We also have several open source projects and technology tutorials.</p>\n    <ul class="list-group col-md-offset-1">\n      <li class="list-group-item col-md-4 col-md-offset-1" v-repeat="opensource"><a href="{{link}}">{{name}}</a></li>\n    </ul>\n  </div>\n\n</div>\n';
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+module.exports = '<section id="community" class="pt50 pb50">\n\n  <div class="container fadeIn">\n\n    <div class="row pb50">\n      <p class="lead text-center">A community is a social unit of any size that shares common values.</p>\n\n      <p class="col-md-10 col-md-offset-1">\n        We also are involved in several technical communities that work together to\n        maintain and manage specific technologies. By working together in these broad reaching\n        communities, we are able to be part of the direction instead of having it dictated to us.\n      </p>\n    </div>\n\n    <div class="row pb50">\n      <div class="col-sm-3">\n        <div class="page-header mt0">\n          <h2 class="m0 text-jrs-red">Local</h2>\n        </div>\n      </div>\n      <div class="col-sm-9">\n        <p>We host several local events and participant in local community driven events.</p>\n        <ul class="list-group">\n          <li class="list-group-item col-sm-4" v-repeat="local"><a href="{{link}}">{{name}}</a></li>\n        </ul>\n      </div>\n    </div>\n\n    <div class="row pb50">\n      <div class="col-sm-3">\n        <div class="page-header mt0">\n          <h2 class="m0 text-jrs-red">Silicon Harbor</h2>\n        </div>\n      </div>\n      <div class="col-sm-9">\n        <p>The Silicon Harbor has grown immensely and continues to grow,\n          the need for more outlets to grow talent is more significant than ever, and\n          the only way we will grow talent is to share and learn together.</p>\n      </div>\n    </div>\n\n    <div class="row pb50">\n      <div class="col-sm-3">\n        <div class="page-header mt0">\n          <h2 class="m0 text-jrs-red">Technical</h2>\n        </div>\n      </div>\n      <div class="col-sm-9">\n        <p>We also are involved in several technical communities. These communities work together to maintain and manage specific technologies. By working together in these broad reaching communitees, we are able to be part of the direction instead of having it be dictated to us.</p>\n        <ul class="list-group">\n          <li class="list-group-item col-sm-4" v-repeat="technical"><a href="{{link}}">{{name}}</a></li>\n        </ul>\n      </div>\n    </div>\n\n    <div class="row">\n      <div class="col-sm-3">\n        <div class="page-header mt0">\n          <h2 class="m0 text-jrs-red">Open Source</h2>\n        </div>\n      </div>\n      <div class="col-sm-9">\n        <p>The JRS is a proponent of open source, and all of our technology stacks are based on open source platforms. We also have several open source projects and technology tutorials.</p>\n        <ul class="list-group">\n          <li class="list-group-item col-sm-4" v-repeat="opensource"><a href="{{link}}">{{name}}</a></li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</section>';
 },{}],2:[function(require,module,exports){
-module.exports = function() {
+'use strict';
 
-  var handler = function() {
+module.exports = function () {
 
-  };
+  var handler = function handler() {};
 
   return Object.freeze({
     route: {
@@ -14,13 +14,16 @@ module.exports = function() {
     data: {
       local: require('./local'),
       technical: require('./technical'),
-      opensource: require('./opensource')
+      opensource: require('./opensource'),
+      sectionTitle: 'Community'
     },
     template: require('./index.html')
   });
 };
 
 },{"./index.html":1,"./local":3,"./opensource":4,"./technical":5}],3:[function(require,module,exports){
+'use strict';
+
 module.exports = [{
   name: 'Charleston Uber Users Group',
   link: 'https://plus.google.com/u/1/communities/109291424733517240577'
@@ -54,9 +57,11 @@ module.exports = [{
 }, {
   name: 'Charleston CouchDb',
   link: 'https://plus.google.com/u/1/communities/110165172629233011992'
-}]
+}];
 
 },{}],4:[function(require,module,exports){
+'use strict';
+
 module.exports = [{
   name: 'Html2Haml',
   link: 'http://html2haml.herokuapp.com'
@@ -114,11 +119,11 @@ module.exports = [{
 }, {
   name: 'node-csv2json',
   link: 'http://twilson63.github.io/node-csv2json'
-}
-
-];
+}];
 
 },{}],5:[function(require,module,exports){
+'use strict';
+
 module.exports = [{
   name: 'AngularJS',
   link: 'http://angularjs.org'
@@ -143,117 +148,157 @@ module.exports = [{
 }];
 
 },{}],6:[function(require,module,exports){
-module.exports = '<div class="container fadeIn">\n  <header>\n    <h1 class="title">Contact Us</h1>\n  </header>\n  <div class="row">\n    <div class="col-md-5 col-md-offset-1">\n      <div id="wufoo-zzp92a10nvj7pe">\n      Fill out my <a href="https://jackhq.wufoo.com/forms/zzp92a10nvj7pe">online form</a>.\n      </div>\n      <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.</div>\n      <script type="text/javascript">var zzp92a10nvj7pe;(function(d, t) {\n      var s = d.createElement(t), options = {\n      \'userName\':\'jackhq\',\n      \'formHash\':\'zzp92a10nvj7pe\',\n      \'autoResize\':true,\n      \'height\':\'597\',\n      \'async\':true,\n      \'host\':\'wufoo.com\',\n      \'header\':\'show\',\n      \'ssl\':true};\n      s.src = (\'https:\' == d.location.protocol ? \'https://\' : \'http://\') + \'www.wufoo.com/scripts/embed/form.js\';\n      s.onload = s.onreadystatechange = function() {\n      var rs = this.readyState; if (rs) if (rs != \'complete\') if (rs != \'loaded\') return;\n      try { zzp92a10nvj7pe = new WufooForm();zzp92a10nvj7pe.initialize(options);zzp92a10nvj7pe.display(); } catch (e) {}};\n      var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);\n      })(document, \'script\');</script>\n\n    </div>\n    <div class="col-md-6">\n      <iframe width="380" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=494+C+Wando+Park+Boulevard,+Mount+Pleasant,+SC&amp;aq=0&amp;oq=494+C+wando+park+,&amp;sll=32.841231,-79.867948&amp;sspn=0.013936,0.017982&amp;gl=us&amp;ie=UTF8&amp;hq=&amp;hnear=494+Wando+Park+Blvd,+Mt+Pleasant,+South+Carolina+29464&amp;t=m&amp;z=14&amp;ll=32.841231,-79.867948&amp;output=embed"></iframe>\n      <p>\n        <address>\n          494 C Wando Park Boulevard\n          Mount Pleasant, SC  29464\n        </address>\n        <br />\n        Phone:\n        843.606.6484\n        <br />\n        Email:\n        <a href=\'mailto://info@jackrussellsoftware.com\'>info@jackrussellsoftware.com</a>\n        <br />\n        Twitter:\n        <a href=\'http://twitter.com/jackhq\'>@jackhq</a>\n      </p>\n    </div>\n  </div>\n</div>\n';
+module.exports = '<section id="contact">\n\n  <div class="google-map">\n    <iframe style="pointer-events:none;" width="380" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=494+C+Wando+Park+Boulevard,+Mount+Pleasant,+SC&amp;aq=0&amp;oq=494+C+wando+park+,&amp;sll=32.841231,-79.867948&amp;sspn=0.013936,0.017982&amp;gl=us&amp;ie=UTF8&amp;hq=&amp;hnear=494+Wando+Park+Blvd,+Mt+Pleasant,+South+Carolina+29464&amp;t=m&amp;z=14&amp;ll=32.841231,-79.867948&amp;output=embed"></iframe>\n  </div>\n\n  <div class="container fadeIn pt50 pb50">\n    <div class="row">\n      <div class="col-sm-8">\n        <div class="well">\n          <div id="wufoo-zzp92a10nvj7pe">Fill out my <a href="https://jackhq.wufoo.com/forms/zzp92a10nvj7pe">online form</a>.</div>\n          <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.</div>\n          <script type="text/javascript">\n            var zzp92a10nvj7pe;(function(d, t) {\n              var s = d.createElement(t), options = {\n                \'userName\':\'jackhq\',\n                \'formHash\':\'zzp92a10nvj7pe\',\n                \'autoResize\':true,\n                \'height\':\'597\',\n                \'async\':true,\n                \'host\':\'wufoo.com\',\n                \'header\':\'show\',\n                \'ssl\':true\n              };\n              s.src = (\'https:\' == d.location.protocol ? \'https://\' : \'http://\') + \'www.wufoo.com/scripts/embed/form.js\';\n              s.onload = s.onreadystatechange = function() {\n              var rs = this.readyState; if (rs) if (rs != \'complete\') if (rs != \'loaded\') return;\n              try { zzp92a10nvj7pe = new WufooForm();zzp92a10nvj7pe.initialize(options);zzp92a10nvj7pe.display(); } catch (e) {}};\n              var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);\n            })(document, \'script\');\n          </script>\n        </div>\n      </div>\n      \n      <div class="col-sm-4">\n        <div class="well bg-jrs-yellow">\n          <p>\n            <address>\n              Jack Russell Software<br />\n              494 C Wando Park Boulevard<br />\n              Mount Pleasant, SC  29464\n            </address>\n            <br />\n            Phone: 843.606.6484\n            <br />\n            Email: <a href=\'mailto://info@jackrussellsoftware.com\'>info@jackrussellsoftware.com</a>\n            <br />\n            Twitter: <a href=\'http://twitter.com/jackhq\'>@jackhq</a>\n          </p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>';
 },{}],7:[function(require,module,exports){
+'use strict';
+
 require('firebase/firebase');
 
-module.exports = function() {
+module.exports = function () {
   var ref;
 
-  var handler = function() {
-
-  };
-  var submit = function(contact) {
+  var handler = function handler() {};
+  var submit = function submit(contact) {
     console.log(contact);
     var ref = new Firebase('https://jackhq.firebaseio.com/contacts');
-    ref.push(contact, function() {
+    ref.push(contact, function () {
       alert('Successfully Submitted!');
       this.$data.contact = {};
       window.location.href('#/');
     });
-  }
+  };
 
   return Object.freeze({
     route: {
       '/contact': handler
     },
     template: require('./index.html'),
+    data: {
+      sectionTitle: 'Contact Us'
+    },
     methods: {
       submit: submit
     }
   });
 };
 
-},{"./index.html":6,"firebase/firebase":18}],8:[function(require,module,exports){
-module.exports = '<div id="app">\n  <header>\n    <div class="text-center">\n      <img src="images/jackhq-logo.png" height="200px;" />\n    </div>\n    <h3 class="text-center">A <a href="http://www.tabularasahealthcare.com">Tabula Rasa Healthcare</a> Division</h3>\n  </header>\n  <nav class="navbar navbar-default">\n    <div class="container">\n      <div class="col-md-11 col-md-offset-1">\n        <ul class="nav navbar-nav">\n          <li v-class="active: isCurrentView(\'team\')"><a href="#/">Team</a></li>\n          <li v-class="active: isCurrentView(\'technology\')"><a href="#/technology">Technology</a></li>\n          <li v-class="active: isCurrentView(\'philosophy\')"><a href="#/philosophy">Philosophy</a></li>\n          <li v-class="active: isCurrentView(\'community\')"><a href="#/community">Community</a></li>\n        </ul>\n        <ul class="nav navbar-nav navbar-right">\n          <li v-class="active: isCurrentView(\'contact\')"><a href="#/contact">Contact</a></li>\n        </ul>\n      </div>\n    </div>\n  </nav>\n  <div class="main container">\n    <div class="text-center" v-view="currentView"></div>\n  </div>\n  <footer class="well">\n    <div class="container">\n      <ul class="list-inline text-center">\n        <li>All Rights Reserved 2014</li>\n        <li>.</li>\n        <li><a class="btn btn-link" href="http://twitter.com/jackhq">twitter</a></li>\n        <li>.</li>\n        <li><a class="btn btn-link" href="http://github.com/jackruss">Github</a></li>\n      </ul>\n    </div>\n  </footer>\n</div>\n';
+},{"./index.html":6,"firebase/firebase":20}],8:[function(require,module,exports){
+module.exports = '  <section id="hero" class="bg-jrs-yellow">\n    <div class="text-center">\n      <img src="images/jackhq-logo.png"/>\n    </div>\n  </section>\n\n  <section id="about" class="pt50 pb50">\n    <div class="container text-center">\n      <h2 class="pb50">About Us</h2>\n      <div class="col-sm-8 col-sm-offset-2">\n        <p>At JRS, our number one responsibility is to provide quality software to our clients or users.  At any given time, the process and workflow to provide such services needs to evolve.  In order to do this, we are constantly re-working our process to improve our productivity.  If you leave that last sentence the way it is, grammar should be: So, we are constantly re-working our process to improve our productivity.</p>\n      </div>\n    </div>\n  </section>\n\n  <section id="team" class="pt50 pb50 bg-jrs-red">\n    <div class="container">\n      <h2 class="text-center pb50">OUR TEAM</h2>\n      <div class="row">\n        <div class="col-sm-4 col-lg-3 text-center" v-repeat="team">\n          <div class="well">\n            <img class="img-circle" src="{{image}}" alt="{{name}}" height="100px">\n            <h3><span>{{name}}</span></h3>\n            <p>{{title}}</p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </section>';
 },{}],9:[function(require,module,exports){
-var domify = require('domify');
-var Vue = require('vue-director');
-var main = require('./index.html');
+'use strict';
 
-document.body.appendChild(
-  domify(main)
-);
+module.exports = function () {
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    currentView: 'team'
-  },
-  components: {
-    team: require('./team')(),
-    technology: require('./technology')(),
-    philosophy: require('./philosophy')(),
-    community: require('./community')(),
-    contact: require('./contact')()
-  },
-  methods: {
-    isCurrentView: function(view) {
-      return view === this.currentView;
-    }
-  }
-});
-
-},{"./community":2,"./contact":7,"./index.html":8,"./philosophy":11,"./team":13,"./technology":16,"domify":17,"vue-director":19}],10:[function(require,module,exports){
-module.exports = '<div class="container fadeIn">\n  <header>\n    <h1 class="title">Philosophy</h1>\n  </header>\n  <div class="row">\n    <p class="col-md-8 col-md-offset-2">\n      At JRS, our number one responsibility is to provide\n      quality software to our clients or users.  At any given time, the process and\n      workflow to provide such services needs to evolve.  In order to do this, we\n      are constantly re-working our process to improve our productivity.  If you\n      leave that last sentence the way it is, grammar should be: So, we are constantly\n      re-working our process to improve our productivity.\n    </p>\n  </div>\n  <div class="row">\n    <p class="col-md-8 col-md-offset-2">\n      It is not easy to write quality code with tight timelines and\n      complex user requirements.  We leverage several industry standards\n      and proven methods that help us manage our development products and\n      processes.\n    </p>\n  </div>\n  <div class="row">\n    <h3 class="title"><a href="http://en.wikipedia.org/wiki/Pair_programming">Pair Programming</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      Pair Programming is one of the most controversial of techniques.  We\n      have found Pair Programming to be invaluable in our development process.\n      Not only does it help reduce common human bugs, but it helps the\n      developers to continue to share knowledge and grow.  Pair Programming\n      is one of the best teaching/learning processes for new developers.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">User-Stories/Sprint Planning</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      The development team works with the product team creating user-stories and a\n      sprint development plan for every feature.  The time preparing helps\n      prevent tangents and provides a more focused execution during\n      the development sprint.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/Code_reviews">Code Reviews</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      Some people think that pair programming replaces code reviews, but we feel code reviews also\n      share a place in the development life-cycle.  The Code Review is focused on the code quality\n      and structure.  Is the code maintainable?  Can the code be refactored to provide a simpler solution?\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title">\n      <a href="http://en.wikipedia.org/wiki/Unit_testing">Unit Testing</a>\n      /\n      <a href="http://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a>\n    </h3>\n    <p class="col-md-8 col-md-offset-2">\n      All production code should have unit tests, no matter what the code is. The tests should be isolated\n      and only test the specific code of the unit.  This goes for front-end JavaScript and back-end Serverside\n      code.  Our teams are very focused on testing and it is a requirement. It is all about confidence in\n      your deliverables; creating unit tests helps to increase that confidence. Unit-tests are a great way\n      to document edge cases and strange bugs.\n    </p>\n    <p class="col-md-8 col-md-offset-2">\n      Continuous Integration is an automated process that runs all of your automated test after\n      every check-in to your repository.  It will alert you when your code is breaking the build.\n    </p>\n  </div>\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">Integration Testing</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n      Our main integration testing process is performed using a series of visual test cases and managed\n      by our testing team.  There is also some manual testing that is performed before every release.\n      This high-touch approach to integration testing allows us to focus on the core scenarios that\n      can turn releases into support disasters.\n    </p>\n  </div>\n\n  <!--\n  <div class="row">\n    <h3  class="title"><a href="http://en.wikipedia.org/wiki/User_stories">Automated Deployment</a></h3>\n    <p class="col-md-8 col-md-offset-2">\n\n    </p>\n  </div>\n-->\n</div>\n';
-},{}],11:[function(require,module,exports){
-module.exports = function() {
-
-  var handler = function() {
-
-  };
-
-  return Object.freeze({
-    route: {
-      '/philosophy': handler
-    },
-    template: require('./index.html')
-  });
-};
-
-},{"./index.html":10}],12:[function(require,module,exports){
-module.exports = '<article class="container row fadeIn">\n  <div class="list-group">\n    <div class="list-group-item col-md-5 col-md-offset-1 glow" v-repeat="team">\n      <div class="media">\n        <div class="media-body">\n          <div class="pull-left">\n            <span class=\'label label-success\'>{{start}}</span>\n          </div>\n          <div class="">\n            <img class="img-circle" src="{{image}}" height="60px" width="60px" alt="{{name}}"/>\n          </div>\n\n          <h4 class="media-header">{{name}}</h4>\n          <p>{{title}}</p>\n          <div>\n            <div class="pull-right" v-show="github">\n              <iframe src="http://ghbtns.com/github-btn.html?user={{github}}&type=follow&count=true"\n  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>\n            </div>\n          </div>\n        </div>\n    </div>\n  </div>\n</article>\n';
-},{}],13:[function(require,module,exports){
-module.exports = function() {
-
-  var handler = function() {
-
-  };
-
-  function initTwitterBadges() {
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){
-      js=d.createElement(s);
-      js.id=id;
-      js.src=p+'://platform.twitter.com/widgets.js';
-      fjs.parentNode.insertBefore(js,fjs);
-    }}(document, 'script', 'twitter-wjs');
-  }
+  var handler = function handler() {};
 
   return Object.freeze({
     route: {
       '/': handler
     },
     data: {
+      sectionTitle: 'Index',
+      team: require('../team/team.js')
+    },
+    template: require('./index.html')
+  });
+};
+
+},{"../team/team.js":16,"./index.html":8}],10:[function(require,module,exports){
+module.exports = '<div id="app">\n  <header id="header" role="banner" class="navbar navbar-static-top m0">\n    <nav id="navigation" class="collapse navbar-collapse jrs-navbar-collapse">\n      <div class="container">\n        <div class="navbar-header">\n          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".jrs-navbar-collapse">\n            <span class="icon-bar"></span>\n            <span class="icon-bar"></span>\n            <span class="icon-bar"></span>\n          </button>\n          <a class="navbar-brand" href="#" title="Jack Russell Software">Jack Russell Software</a>\n        </div>\n        <ul class="nav navbar-nav navbar-right jrs-navbar-collapse">\n          <li v-class="active: isCurrentView(\'team\')"><a href="#/team">Team</a></li>\n          <li v-class="active: isCurrentView(\'technology\')"><a href="#/technology">Technology</a></li>\n          <li v-class="active: isCurrentView(\'philosophy\')"><a href="#/philosophy">Philosophy</a></li>\n          <li v-class="active: isCurrentView(\'community\')"><a href="#/community">Community</a></li>\n          <li v-class="active: isCurrentView(\'contact\')"><a href="#/contact">Contact</a></li>\n        </ul>\n      </div>\n    </nav>\n  </header>\n\n  <section id="sectionTitle" class="bg-jrs-yellow" v-show="currentView != \'home\'">\n    <div class="container pt50 pb50">\n      <h1 class="m0">{{ currentView }}</h1>\n    </div>\n  </section>\n\n  <main id="main" role="content">\n    <div v-view="currentView"></div>\n  </main>\n\n  <footer id="footer" role="contentinfo" class="pt50 pb50">\n    <div class="container">\n      <div class="row">\n        <div class="col-sm-6">\n          <p class="m0">&copy; {{currentYear}} <a href="http://www.jackrussellsoftware.com/">Jack Russell Software</a>, A <a href="http://www.tabularasahealthcare.com">Tabula Rasa Healthcare</a> Company</p>\n        </div>\n        <div class="col-sm-6">\n          <ul class="list-inline m0 text-right">\n            <li><a href="http://twitter.com/jackhq">Twitter</a></li>\n            <li>/<li>\n            <li><a href="http://github.com/jackruss">Github</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </footer>\n</div>\n';
+},{}],11:[function(require,module,exports){
+'use strict';
+
+var domify = require('domify');
+var Vue = require('vue-director');
+var main = require('./index.html');
+
+document.body.appendChild(domify(main));
+
+var getCurrentYear = function getCurrentYear() {
+  var date = new Date();
+  return date.getFullYear();
+};
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    currentView: 'home',
+    currentYear: getCurrentYear()
+  },
+  components: {
+    team: require('./team')(),
+    home: require('./home')(),
+    technology: require('./technology')(),
+    philosophy: require('./philosophy')(),
+    community: require('./community')(),
+    contact: require('./contact')() },
+  methods: {
+    isCurrentView: function isCurrentView(view) {
+      console.log(this.currentYear);
+      return view === this.currentView;
+    }
+  }
+});
+
+},{"./community":2,"./contact":7,"./home":9,"./index.html":10,"./philosophy":13,"./team":15,"./technology":18,"domify":19,"vue-director":21}],12:[function(require,module,exports){
+module.exports = '<section id="philosophy" class="pt50 pb50">\n  <div class="container">\n\n    <div class="pb50">\n      <p class="">At JRS, our number one responsibility is to provide\n        quality software to our clients or users.  At any given time, the process and\n        workflow to provide such services needs to evolve.  In order to do this, we\n        are constantly re-working our process to improve our productivity.  If you\n        leave that last sentence the way it is, grammar should be: So, we are constantly\n        re-working our process to improve our productivity.</p>\n\n      <p>It is not easy to write quality code with tight timelines and\n        complex user requirements.  We leverage several industry standards\n        and proven methods that help us manage our development products and\n        processes.</p>\n    </div>\n\n    <div class="panel panel-default">\n      <div class="panel-heading">\n        <h3 class="panel-title">Pair Programming</h3>\n      </div>\n      <div class="panel-body">\n        Pair Programming is one of the most controversial of techniques.  We\n        have found Pair Programming to be invaluable in our development process.\n        Not only does it help reduce common human bugs, but it helps the\n        developers to continue to share knowledge and grow.  Pair Programming\n        is one of the best teaching/learning processes for new developers.\n      </div>\n    </div>\n\n    <div class="panel panel-default">\n      <div class="panel-heading">\n        <h3 class="panel-title">User-Stories/Sprint Planning</h3>\n      </div>\n      <div class="panel-body">\n        The development team works with the product team creating user-stories and a\n        sprint development plan for every feature.  The time preparing helps\n        prevent tangents and provides a more focused execution during\n        the development sprint.\n      </div>\n    </div>\n\n    <div class="panel panel-default">\n      <div class="panel-heading">\n        <h3 class="panel-title"></h3>\n      </div>\n      <div class="panel-body">\n        The development team works with the product team creating user-stories and a\n        sprint development plan for every feature.  The time preparing helps\n        prevent tangents and provides a more focused execution during\n        the development sprint.\n      </div>\n    </div>\n\n    <div class="panel panel-default">\n      <div class="panel-heading">\n        <h3 class="panel-title">Code Reviews</h3>\n      </div>\n      <div class="panel-body">\n        Some people think that pair programming replaces code reviews, but we feel code reviews also\n        share a place in the development life-cycle.  The Code Review is focused on the code quality\n        and structure.  Is the code maintainable?  Can the code be refactored to provide a simpler solution?\n      </div>\n    </div>\n\n    <div class="panel panel-default">\n      <div class="panel-heading">\n        <h3 class="panel-title">Unit Testing / Continuous Integration</h3>\n      </div>\n      <div class="panel-body">\n        <p>All production code should have unit tests, no matter what the code is. The tests should be isolated\n          and only test the specific code of the unit.  This goes for front-end JavaScript and back-end Serverside\n          code.  Our teams are very focused on testing and it is a requirement. It is all about confidence in\n          your deliverables; creating unit tests helps to increase that confidence. Unit-tests are a great way\n          to document edge cases and strange bugs.</p>\n\n        <p>Continuous Integration is an automated process that runs all of your automated test after\n      every check-in to your repository.  It will alert you when your code is breaking the build.</p>\n      </div>\n    </div>\n\n    <div class="panel panel-default">\n      <div class="panel-heading">\n        <h3 class="panel-title">Integration Testing</h3>\n      </div>\n      <div class="panel-body">\n        <p>Our main integration testing process is performed using a series of visual test cases and managed\n          by our testing team.  There is also some manual testing that is performed before every release.\n          This high-touch approach to integration testing allows us to focus on the core scenarios that\n          can turn releases into support disasters.</p>\n      </div>\n    </div>\n  </div>\n</section>';
+},{}],13:[function(require,module,exports){
+'use strict';
+
+module.exports = function () {
+
+  var handler = function handler() {};
+
+  return Object.freeze({
+    route: {
+      '/philosophy': handler
+    },
+    data: {
+      sectionTitle: 'Our Philosophy'
+    },
+    template: require('./index.html')
+  });
+};
+
+},{"./index.html":12}],14:[function(require,module,exports){
+module.exports = '<!-- team -->\n<section id="team" class="pt50 pb50">\n  <div class="container">\n      <div class="row">\n        <div class="col-sm-4 col-lg-3 text-center" v-repeat="team">\n          <div class="well">\n            <img class="img-circle" src="{{image}}" alt="{{name}}" height="100px">\n            <h3><span>{{name}}</span></h3>\n            <p>{{title}}</p>\n          </div>\n        </div>\n      </div>\n  </div>\n</section><!-- //team -->';
+},{}],15:[function(require,module,exports){
+'use strict';
+
+module.exports = function () {
+
+  var handler = function handler() {};
+
+  function initTwitterBadges() {
+    !(function (d, s, id) {
+      var js,
+          fjs = d.getElementsByTagName(s)[0],
+          p = /^http:/.test(d.location) ? 'http' : 'https';if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    })(document, 'script', 'twitter-wjs');
+  }
+
+  return Object.freeze({
+    route: {
+      '/team': handler },
+    data: {
+      sectionTitle: 'Our Team',
       team: require('./team.js')
     },
     template: require('./index.html'),
-    created: function() {
+    created: function created() {
       setTimeout(initTwitterBadges, 100);
     }
   });
 };
 
-},{"./index.html":12,"./team.js":14}],14:[function(require,module,exports){
+},{"./index.html":14,"./team.js":16}],16:[function(require,module,exports){
+'use strict';
+
 module.exports = [{
   name: 'Tom Wilson',
   title: 'Chief Technologist',
@@ -261,7 +306,7 @@ module.exports = [{
   twitter: 'twilson63',
   github: 'twilson63',
   start: 2007
-},{
+}, {
   name: 'Andrew Kennedy',
   title: 'Senior Programer/Analyst',
   image: 'images/andrew.jpg',
@@ -275,7 +320,7 @@ module.exports = [{
   twitter: 'pblittle',
   github: 'pblittle',
   start: 2008
-},{
+}, {
   name: 'Russell Niller',
   title: 'Scrum Master',
   image: 'images/russell.jpg',
@@ -351,7 +396,7 @@ module.exports = [{
   twitter: 'tejaycar',
   github: 'tejaycar',
   start: 2014
-},  {
+}, {
   name: 'Jenni Kissinger',
   title: 'Programmer/Analyst I',
   image: 'images/jenni1.jpg',
@@ -380,24 +425,27 @@ module.exports = [{
   start: 2015
 }];
 
-},{}],15:[function(require,module,exports){
-module.exports = '<div class="container fadeIn">\n  <header>\n    <h1 class="title">Technology</h1>\n  </header>\n  <div class="row">\n    <p class="col-md-6 col-md-offset-3">\n      At JRS, we have 6 development teams. Each team uses\n      a different technology stack for its product line.\n      Every stack must communicate via http/json api, which\n      provides a rich integration amongst the technologies.\n      Over time, we will continue to add new technology, but\n      we also strive to be very selective to keep the on\n      boarding of developers as efficient as possible.\n    </p>\n\n  </div>\n  <div class="row">\n    <div class="col-md-4">\n      <h3 class="title">EireneRx</h3>\n      <ul class="list-group">\n        <li class="list-group-item">RubyOnRails</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">MySQL</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">EOM</h3>\n      <ul class="list-group">\n        <li class="list-group-item">RubyOnRails</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">MySQL</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">NiaRx</h3>\n      <ul class="list-group">\n        <li class="list-group-item">NodeJS</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n  </div>\n  <div class="row">\n    <div class="col-md-4">\n      <h3 class="title">DevOps</h3>\n      <ul class="list-group">\n        <li class="list-group-item">Chef</li>\n        <li class="list-group-item">Ruby</li>\n        <li class="list-group-item">Linux</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">InterOps - A</h3>\n      <ul class="list-group">\n        <li class="list-group-item">Clojure</li>\n        <li class="list-group-item">Java</li>\n      </ul>\n    </div>\n    <div class="col-md-4">\n      <h3 class="title">InterOps - B</h3>\n      <ul class="list-group">\n        <li class="list-group-item">NodeJS</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n  </div>\n</div>\n';
-},{}],16:[function(require,module,exports){
-module.exports = function() {
+},{}],17:[function(require,module,exports){
+module.exports = '<div class="container fadeIn pt50 pb50">\n  <div class="row">\n    <div class="col-sm-10 col-sm-offset-1">\n    <p>At JRS, we have 6 development teams. Each team uses a different technology stack for its product line. Every stack must communicate via http/json api, which provides a rich integration amongst the technologies.  Over time, we will continue to add new technology, but we also strive to be very selective to keep the on boarding of developers as efficient as possible.</p>\n  </div>\n\n  <div class="row">\n    <div class="col-sm-4">\n      <h3 class="title">EireneRx</h3>\n      <ul class="list-group">\n        <li class="list-group-item">RubyOnRails</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">MySQL</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n    <div class="col-sm-4">\n      <h3 class="title">EOM</h3>\n      <ul class="list-group">\n        <li class="list-group-item">RubyOnRails</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">MySQL</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n    <div class="col-sm-4">\n      <h3 class="title">NiaRx</h3>\n      <ul class="list-group">\n        <li class="list-group-item">NodeJS</li>\n        <li class="list-group-item">AngularJS</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n  </div>\n  <div class="row">\n    <div class="col-sm-4">\n      <h3 class="title">DevOps</h3>\n      <ul class="list-group">\n        <li class="list-group-item">Chef</li>\n        <li class="list-group-item">Ruby</li>\n        <li class="list-group-item">Linux</li>\n      </ul>\n    </div>\n    <div class="col-sm-4">\n      <h3 class="title">InterOps - A</h3>\n      <ul class="list-group">\n        <li class="list-group-item">Clojure</li>\n        <li class="list-group-item">Java</li>\n      </ul>\n    </div>\n    <div class="col-sm-4">\n      <h3 class="title">InterOps - B</h3>\n      <ul class="list-group">\n        <li class="list-group-item">NodeJS</li>\n        <li class="list-group-item">CouchDb</li>\n      </ul>\n    </div>\n  </div>\n</div>\n';
+},{}],18:[function(require,module,exports){
+'use strict';
 
-  var handler = function() {
+module.exports = function () {
 
-  };
+  var handler = function handler() {};
 
   return Object.freeze({
     route: {
       '/technology': handler
     },
+    data: {
+      sectionTitle: 'Our Technology'
+    },
     template: require('./index.html')
   });
 };
 
-},{"./index.html":15}],17:[function(require,module,exports){
+},{"./index.html":17}],19:[function(require,module,exports){
 
 /**
  * Expose `parse`.
@@ -442,14 +490,15 @@ map.colgroup =
 map.caption =
 map.tfoot = [1, '<table>', '</table>'];
 
-map.text =
-map.circle =
+map.polyline =
 map.ellipse =
+map.polygon =
+map.circle =
+map.text =
 map.line =
 map.path =
-map.polygon =
-map.polyline =
-map.rect = [1, '<svg xmlns="http://www.w3.org/2000/svg" version="1.1">','</svg>'];
+map.rect =
+map.g = [1, '<svg xmlns="http://www.w3.org/2000/svg" version="1.1">','</svg>'];
 
 /**
  * Parse `html` and return a DOM Node instance, which could be a TextNode,
@@ -506,7 +555,7 @@ function parse(html, doc) {
   return fragment;
 }
 
-},{}],18:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 /* Firebase v1.0.24 - License: https://www.firebase.com/terms/terms-of-service.html */ (function() {var scope={};(function(){"use strict";function m(c,b){if(0===c.length||0===b.length)return c.concat(b);var a=c[c.length-1],d=Math.round(a/1099511627776)||32,e;if(32===d)e=c.concat(b);else{e=b;var a=a|0,f=c.slice(0,c.length-1),g;for(void 0===f&&(f=[]);32<=d;d-=32)f.push(a),a=0;if(0===d)e=f.concat(e);else{for(g=0;g<e.length;g++)f.push(a|e[g]>>>d),a=e[g]<<32-d;g=e.length?e[e.length-1]:0;e=Math.round(g/1099511627776)||32;f.push(n(d+e&31,32<d+e?a:f.pop(),1));e=f}}return e}
 function p(c){var b=c.length;return 0===b?0:32*(b-1)+(Math.round(c[b-1]/1099511627776)||32)}function n(c,b,a){return 32===c?b:(a?b|0:b<<32-c)+1099511627776*c}function r(c){c?(this.c=c.c.slice(0),this.b=c.b.slice(0),this.a=c.a):this.reset()}
 r.prototype={d:512,reset:function(){this.c=this.e.slice(0);this.b=[];this.a=0;return this},update:function(c){if("string"===typeof c){c=unescape(encodeURIComponent(c));var b=[],a,d=0;for(a=0;a<c.length;a++)d=d<<8|c.charCodeAt(a),3===(a&3)&&(b.push(d),d=0);a&3&&b.push(n(8*(a&3),d));c=b}a=this.b=m(this.b,c);b=this.a;c=this.a=b+p(c);for(b=this.d+b&-this.d;b<=c;b+=this.d)s(this,a.splice(0,16));return this},e:[1732584193,4023233417,2562383102,271733878,3285377520],f:[1518500249,1859775393,2400959708,3395469782]};
@@ -667,7 +716,7 @@ E.prototype.$d=function(a){L("FirebaseRef.setOnDisconnect(value) being deprecate
 E.prototype.Ob=function(a){x("Firebase.unauth",0,1,arguments.length);z("Firebase.unauth",1,a,!0);this.m.Ob(a)};E.prototype.unauth=E.prototype.Ob;E.goOffline=function(){x("Firebase.goOffline",0,0,arguments.length);Y.qb().Ma()};E.goOnline=function(){x("Firebase.goOnline",0,0,arguments.length);Y.qb().ib()};
 function Lb(a,b){v(!b||!0===a||!1===a,"Can't turn on custom loggers persistently.");!0===a?("undefined"!==typeof console&&("function"===typeof console.log?Jb=q(console.log,console):"object"===typeof console.log&&(Jb=function(a){console.log(a)})),b&&ob.set("logging_enabled",!0)):a?Jb=a:(Jb=null,ob.remove("logging_enabled"))}E.enableLogging=Lb;E.ServerValue={TIMESTAMP:{".sv":"timestamp"}};E.SDK_VERSION="1.0.24";E.INTERNAL=Z;E.Context=Y;})();
 
-},{}],19:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 var Router = require('director').Router;
 var Vue = require('vue');
 var _ = require('underscore');
@@ -690,7 +739,7 @@ module.exports = Vue.extend({
   }
 });
 
-},{"director":20,"underscore":21,"vue":42}],20:[function(require,module,exports){
+},{"director":22,"underscore":23,"vue":44}],22:[function(require,module,exports){
 
 
 //
@@ -1416,10 +1465,10 @@ Router.prototype.mount = function(routes, path) {
 
 
 }(typeof exports === "object" ? exports : window));
-},{}],21:[function(require,module,exports){
-//     Underscore.js 1.7.0
+},{}],23:[function(require,module,exports){
+//     Underscore.js 1.8.3
 //     http://underscorejs.org
-//     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+//     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 //     Underscore may be freely distributed under the MIT license.
 
 (function() {
@@ -1440,7 +1489,6 @@ Router.prototype.mount = function(routes, path) {
   var
     push             = ArrayProto.push,
     slice            = ArrayProto.slice,
-    concat           = ArrayProto.concat,
     toString         = ObjProto.toString,
     hasOwnProperty   = ObjProto.hasOwnProperty;
 
@@ -1449,7 +1497,11 @@ Router.prototype.mount = function(routes, path) {
   var
     nativeIsArray      = Array.isArray,
     nativeKeys         = Object.keys,
-    nativeBind         = FuncProto.bind;
+    nativeBind         = FuncProto.bind,
+    nativeCreate       = Object.create;
+
+  // Naked function reference for surrogate-prototype-swapping.
+  var Ctor = function(){};
 
   // Create a safe reference to the Underscore object for use below.
   var _ = function(obj) {
@@ -1471,12 +1523,12 @@ Router.prototype.mount = function(routes, path) {
   }
 
   // Current version.
-  _.VERSION = '1.7.0';
+  _.VERSION = '1.8.3';
 
   // Internal function that returns an efficient (for current engines) version
   // of the passed-in callback, to be repeatedly applied in other Underscore
   // functions.
-  var createCallback = function(func, context, argCount) {
+  var optimizeCb = function(func, context, argCount) {
     if (context === void 0) return func;
     switch (argCount == null ? 3 : argCount) {
       case 1: return function(value) {
@@ -1500,11 +1552,59 @@ Router.prototype.mount = function(routes, path) {
   // A mostly-internal function to generate callbacks that can be applied
   // to each element in a collection, returning the desired result — either
   // identity, an arbitrary callback, a property matcher, or a property accessor.
-  _.iteratee = function(value, context, argCount) {
+  var cb = function(value, context, argCount) {
     if (value == null) return _.identity;
-    if (_.isFunction(value)) return createCallback(value, context, argCount);
-    if (_.isObject(value)) return _.matches(value);
+    if (_.isFunction(value)) return optimizeCb(value, context, argCount);
+    if (_.isObject(value)) return _.matcher(value);
     return _.property(value);
+  };
+  _.iteratee = function(value, context) {
+    return cb(value, context, Infinity);
+  };
+
+  // An internal function for creating assigner functions.
+  var createAssigner = function(keysFunc, undefinedOnly) {
+    return function(obj) {
+      var length = arguments.length;
+      if (length < 2 || obj == null) return obj;
+      for (var index = 1; index < length; index++) {
+        var source = arguments[index],
+            keys = keysFunc(source),
+            l = keys.length;
+        for (var i = 0; i < l; i++) {
+          var key = keys[i];
+          if (!undefinedOnly || obj[key] === void 0) obj[key] = source[key];
+        }
+      }
+      return obj;
+    };
+  };
+
+  // An internal function for creating a new object that inherits from another.
+  var baseCreate = function(prototype) {
+    if (!_.isObject(prototype)) return {};
+    if (nativeCreate) return nativeCreate(prototype);
+    Ctor.prototype = prototype;
+    var result = new Ctor;
+    Ctor.prototype = null;
+    return result;
+  };
+
+  var property = function(key) {
+    return function(obj) {
+      return obj == null ? void 0 : obj[key];
+    };
+  };
+
+  // Helper for collection methods to determine whether a collection
+  // should be iterated as an array or as an object
+  // Related: http://people.mozilla.org/~jorendorff/es6-draft.html#sec-tolength
+  // Avoids a very nasty iOS 8 JIT bug on ARM-64. #2094
+  var MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
+  var getLength = property('length');
+  var isArrayLike = function(collection) {
+    var length = getLength(collection);
+    return typeof length == 'number' && length >= 0 && length <= MAX_ARRAY_INDEX;
   };
 
   // Collection Functions
@@ -1514,11 +1614,10 @@ Router.prototype.mount = function(routes, path) {
   // Handles raw objects in addition to array-likes. Treats all
   // sparse array-likes as if they were dense.
   _.each = _.forEach = function(obj, iteratee, context) {
-    if (obj == null) return obj;
-    iteratee = createCallback(iteratee, context);
-    var i, length = obj.length;
-    if (length === +length) {
-      for (i = 0; i < length; i++) {
+    iteratee = optimizeCb(iteratee, context);
+    var i, length;
+    if (isArrayLike(obj)) {
+      for (i = 0, length = obj.length; i < length; i++) {
         iteratee(obj[i], i, obj);
       }
     } else {
@@ -1532,77 +1631,66 @@ Router.prototype.mount = function(routes, path) {
 
   // Return the results of applying the iteratee to each element.
   _.map = _.collect = function(obj, iteratee, context) {
-    if (obj == null) return [];
-    iteratee = _.iteratee(iteratee, context);
-    var keys = obj.length !== +obj.length && _.keys(obj),
+    iteratee = cb(iteratee, context);
+    var keys = !isArrayLike(obj) && _.keys(obj),
         length = (keys || obj).length,
-        results = Array(length),
-        currentKey;
+        results = Array(length);
     for (var index = 0; index < length; index++) {
-      currentKey = keys ? keys[index] : index;
+      var currentKey = keys ? keys[index] : index;
       results[index] = iteratee(obj[currentKey], currentKey, obj);
     }
     return results;
   };
 
-  var reduceError = 'Reduce of empty array with no initial value';
+  // Create a reducing function iterating left or right.
+  function createReduce(dir) {
+    // Optimized iterator function as using arguments.length
+    // in the main function will deoptimize the, see #1991.
+    function iterator(obj, iteratee, memo, keys, index, length) {
+      for (; index >= 0 && index < length; index += dir) {
+        var currentKey = keys ? keys[index] : index;
+        memo = iteratee(memo, obj[currentKey], currentKey, obj);
+      }
+      return memo;
+    }
+
+    return function(obj, iteratee, memo, context) {
+      iteratee = optimizeCb(iteratee, context, 4);
+      var keys = !isArrayLike(obj) && _.keys(obj),
+          length = (keys || obj).length,
+          index = dir > 0 ? 0 : length - 1;
+      // Determine the initial value if none is provided.
+      if (arguments.length < 3) {
+        memo = obj[keys ? keys[index] : index];
+        index += dir;
+      }
+      return iterator(obj, iteratee, memo, keys, index, length);
+    };
+  }
 
   // **Reduce** builds up a single result from a list of values, aka `inject`,
   // or `foldl`.
-  _.reduce = _.foldl = _.inject = function(obj, iteratee, memo, context) {
-    if (obj == null) obj = [];
-    iteratee = createCallback(iteratee, context, 4);
-    var keys = obj.length !== +obj.length && _.keys(obj),
-        length = (keys || obj).length,
-        index = 0, currentKey;
-    if (arguments.length < 3) {
-      if (!length) throw new TypeError(reduceError);
-      memo = obj[keys ? keys[index++] : index++];
-    }
-    for (; index < length; index++) {
-      currentKey = keys ? keys[index] : index;
-      memo = iteratee(memo, obj[currentKey], currentKey, obj);
-    }
-    return memo;
-  };
+  _.reduce = _.foldl = _.inject = createReduce(1);
 
   // The right-associative version of reduce, also known as `foldr`.
-  _.reduceRight = _.foldr = function(obj, iteratee, memo, context) {
-    if (obj == null) obj = [];
-    iteratee = createCallback(iteratee, context, 4);
-    var keys = obj.length !== + obj.length && _.keys(obj),
-        index = (keys || obj).length,
-        currentKey;
-    if (arguments.length < 3) {
-      if (!index) throw new TypeError(reduceError);
-      memo = obj[keys ? keys[--index] : --index];
-    }
-    while (index--) {
-      currentKey = keys ? keys[index] : index;
-      memo = iteratee(memo, obj[currentKey], currentKey, obj);
-    }
-    return memo;
-  };
+  _.reduceRight = _.foldr = createReduce(-1);
 
   // Return the first value which passes a truth test. Aliased as `detect`.
   _.find = _.detect = function(obj, predicate, context) {
-    var result;
-    predicate = _.iteratee(predicate, context);
-    _.some(obj, function(value, index, list) {
-      if (predicate(value, index, list)) {
-        result = value;
-        return true;
-      }
-    });
-    return result;
+    var key;
+    if (isArrayLike(obj)) {
+      key = _.findIndex(obj, predicate, context);
+    } else {
+      key = _.findKey(obj, predicate, context);
+    }
+    if (key !== void 0 && key !== -1) return obj[key];
   };
 
   // Return all the elements that pass a truth test.
   // Aliased as `select`.
   _.filter = _.select = function(obj, predicate, context) {
     var results = [];
-    if (obj == null) return results;
-    predicate = _.iteratee(predicate, context);
+    predicate = cb(predicate, context);
     _.each(obj, function(value, index, list) {
       if (predicate(value, index, list)) results.push(value);
     });
@@ -1611,19 +1699,17 @@ Router.prototype.mount = function(routes, path) {
 
   // Return all the elements for which a truth test fails.
   _.reject = function(obj, predicate, context) {
-    return _.filter(obj, _.negate(_.iteratee(predicate)), context);
+    return _.filter(obj, _.negate(cb(predicate)), context);
   };
 
   // Determine whether all of the elements match a truth test.
   // Aliased as `all`.
   _.every = _.all = function(obj, predicate, context) {
-    if (obj == null) return true;
-    predicate = _.iteratee(predicate, context);
-    var keys = obj.length !== +obj.length && _.keys(obj),
-        length = (keys || obj).length,
-        index, currentKey;
-    for (index = 0; index < length; index++) {
-      currentKey = keys ? keys[index] : index;
+    predicate = cb(predicate, context);
+    var keys = !isArrayLike(obj) && _.keys(obj),
+        length = (keys || obj).length;
+    for (var index = 0; index < length; index++) {
+      var currentKey = keys ? keys[index] : index;
       if (!predicate(obj[currentKey], currentKey, obj)) return false;
     }
     return true;
@@ -1632,24 +1718,22 @@ Router.prototype.mount = function(routes, path) {
   // Determine if at least one element in the object matches a truth test.
   // Aliased as `any`.
   _.some = _.any = function(obj, predicate, context) {
-    if (obj == null) return false;
-    predicate = _.iteratee(predicate, context);
-    var keys = obj.length !== +obj.length && _.keys(obj),
-        length = (keys || obj).length,
-        index, currentKey;
-    for (index = 0; index < length; index++) {
-      currentKey = keys ? keys[index] : index;
+    predicate = cb(predicate, context);
+    var keys = !isArrayLike(obj) && _.keys(obj),
+        length = (keys || obj).length;
+    for (var index = 0; index < length; index++) {
+      var currentKey = keys ? keys[index] : index;
       if (predicate(obj[currentKey], currentKey, obj)) return true;
     }
     return false;
   };
 
-  // Determine if the array or object contains a given value (using `===`).
-  // Aliased as `include`.
-  _.contains = _.include = function(obj, target) {
-    if (obj == null) return false;
-    if (obj.length !== +obj.length) obj = _.values(obj);
-    return _.indexOf(obj, target) >= 0;
+  // Determine if the array or object contains a given item (using `===`).
+  // Aliased as `includes` and `include`.
+  _.contains = _.includes = _.include = function(obj, item, fromIndex, guard) {
+    if (!isArrayLike(obj)) obj = _.values(obj);
+    if (typeof fromIndex != 'number' || guard) fromIndex = 0;
+    return _.indexOf(obj, item, fromIndex) >= 0;
   };
 
   // Invoke a method (with arguments) on every item in a collection.
@@ -1657,7 +1741,8 @@ Router.prototype.mount = function(routes, path) {
     var args = slice.call(arguments, 2);
     var isFunc = _.isFunction(method);
     return _.map(obj, function(value) {
-      return (isFunc ? method : value[method]).apply(value, args);
+      var func = isFunc ? method : value[method];
+      return func == null ? func : func.apply(value, args);
     });
   };
 
@@ -1669,13 +1754,13 @@ Router.prototype.mount = function(routes, path) {
   // Convenience version of a common use case of `filter`: selecting only objects
   // containing specific `key:value` pairs.
   _.where = function(obj, attrs) {
-    return _.filter(obj, _.matches(attrs));
+    return _.filter(obj, _.matcher(attrs));
   };
 
   // Convenience version of a common use case of `find`: getting the first object
   // containing specific `key:value` pairs.
   _.findWhere = function(obj, attrs) {
-    return _.find(obj, _.matches(attrs));
+    return _.find(obj, _.matcher(attrs));
   };
 
   // Return the maximum element (or element-based computation).
@@ -1683,7 +1768,7 @@ Router.prototype.mount = function(routes, path) {
     var result = -Infinity, lastComputed = -Infinity,
         value, computed;
     if (iteratee == null && obj != null) {
-      obj = obj.length === +obj.length ? obj : _.values(obj);
+      obj = isArrayLike(obj) ? obj : _.values(obj);
       for (var i = 0, length = obj.length; i < length; i++) {
         value = obj[i];
         if (value > result) {
@@ -1691,7 +1776,7 @@ Router.prototype.mount = function(routes, path) {
         }
       }
     } else {
-      iteratee = _.iteratee(iteratee, context);
+      iteratee = cb(iteratee, context);
       _.each(obj, function(value, index, list) {
         computed = iteratee(value, index, list);
         if (computed > lastComputed || computed === -Infinity && result === -Infinity) {
@@ -1708,7 +1793,7 @@ Router.prototype.mount = function(routes, path) {
     var result = Infinity, lastComputed = Infinity,
         value, computed;
     if (iteratee == null && obj != null) {
-      obj = obj.length === +obj.length ? obj : _.values(obj);
+      obj = isArrayLike(obj) ? obj : _.values(obj);
       for (var i = 0, length = obj.length; i < length; i++) {
         value = obj[i];
         if (value < result) {
@@ -1716,7 +1801,7 @@ Router.prototype.mount = function(routes, path) {
         }
       }
     } else {
-      iteratee = _.iteratee(iteratee, context);
+      iteratee = cb(iteratee, context);
       _.each(obj, function(value, index, list) {
         computed = iteratee(value, index, list);
         if (computed < lastComputed || computed === Infinity && result === Infinity) {
@@ -1731,7 +1816,7 @@ Router.prototype.mount = function(routes, path) {
   // Shuffle a collection, using the modern version of the
   // [Fisher-Yates shuffle](http://en.wikipedia.org/wiki/Fisher–Yates_shuffle).
   _.shuffle = function(obj) {
-    var set = obj && obj.length === +obj.length ? obj : _.values(obj);
+    var set = isArrayLike(obj) ? obj : _.values(obj);
     var length = set.length;
     var shuffled = Array(length);
     for (var index = 0, rand; index < length; index++) {
@@ -1747,7 +1832,7 @@ Router.prototype.mount = function(routes, path) {
   // The internal `guard` argument allows it to work with `map`.
   _.sample = function(obj, n, guard) {
     if (n == null || guard) {
-      if (obj.length !== +obj.length) obj = _.values(obj);
+      if (!isArrayLike(obj)) obj = _.values(obj);
       return obj[_.random(obj.length - 1)];
     }
     return _.shuffle(obj).slice(0, Math.max(0, n));
@@ -1755,7 +1840,7 @@ Router.prototype.mount = function(routes, path) {
 
   // Sort the object's values by a criterion produced by an iteratee.
   _.sortBy = function(obj, iteratee, context) {
-    iteratee = _.iteratee(iteratee, context);
+    iteratee = cb(iteratee, context);
     return _.pluck(_.map(obj, function(value, index, list) {
       return {
         value: value,
@@ -1777,7 +1862,7 @@ Router.prototype.mount = function(routes, path) {
   var group = function(behavior) {
     return function(obj, iteratee, context) {
       var result = {};
-      iteratee = _.iteratee(iteratee, context);
+      iteratee = cb(iteratee, context);
       _.each(obj, function(value, index) {
         var key = iteratee(value, index, obj);
         behavior(result, value, key);
@@ -1805,37 +1890,24 @@ Router.prototype.mount = function(routes, path) {
     if (_.has(result, key)) result[key]++; else result[key] = 1;
   });
 
-  // Use a comparator function to figure out the smallest index at which
-  // an object should be inserted so as to maintain order. Uses binary search.
-  _.sortedIndex = function(array, obj, iteratee, context) {
-    iteratee = _.iteratee(iteratee, context, 1);
-    var value = iteratee(obj);
-    var low = 0, high = array.length;
-    while (low < high) {
-      var mid = low + high >>> 1;
-      if (iteratee(array[mid]) < value) low = mid + 1; else high = mid;
-    }
-    return low;
-  };
-
   // Safely create a real, live array from anything iterable.
   _.toArray = function(obj) {
     if (!obj) return [];
     if (_.isArray(obj)) return slice.call(obj);
-    if (obj.length === +obj.length) return _.map(obj, _.identity);
+    if (isArrayLike(obj)) return _.map(obj, _.identity);
     return _.values(obj);
   };
 
   // Return the number of elements in an object.
   _.size = function(obj) {
     if (obj == null) return 0;
-    return obj.length === +obj.length ? obj.length : _.keys(obj).length;
+    return isArrayLike(obj) ? obj.length : _.keys(obj).length;
   };
 
   // Split a collection into two arrays: one whose elements all satisfy the given
   // predicate, and one whose elements all do not satisfy the predicate.
   _.partition = function(obj, predicate, context) {
-    predicate = _.iteratee(predicate, context);
+    predicate = cb(predicate, context);
     var pass = [], fail = [];
     _.each(obj, function(value, key, obj) {
       (predicate(value, key, obj) ? pass : fail).push(value);
@@ -1852,30 +1924,27 @@ Router.prototype.mount = function(routes, path) {
   _.first = _.head = _.take = function(array, n, guard) {
     if (array == null) return void 0;
     if (n == null || guard) return array[0];
-    if (n < 0) return [];
-    return slice.call(array, 0, n);
+    return _.initial(array, array.length - n);
   };
 
   // Returns everything but the last entry of the array. Especially useful on
   // the arguments object. Passing **n** will return all the values in
-  // the array, excluding the last N. The **guard** check allows it to work with
-  // `_.map`.
+  // the array, excluding the last N.
   _.initial = function(array, n, guard) {
     return slice.call(array, 0, Math.max(0, array.length - (n == null || guard ? 1 : n)));
   };
 
   // Get the last element of an array. Passing **n** will return the last N
-  // values in the array. The **guard** check allows it to work with `_.map`.
+  // values in the array.
   _.last = function(array, n, guard) {
     if (array == null) return void 0;
     if (n == null || guard) return array[array.length - 1];
-    return slice.call(array, Math.max(array.length - n, 0));
+    return _.rest(array, Math.max(0, array.length - n));
   };
 
   // Returns everything but the first entry of the array. Aliased as `tail` and `drop`.
   // Especially useful on the arguments object. Passing an **n** will return
-  // the rest N values in the array. The **guard**
-  // check allows it to work with `_.map`.
+  // the rest N values in the array.
   _.rest = _.tail = _.drop = function(array, n, guard) {
     return slice.call(array, n == null || guard ? 1 : n);
   };
@@ -1886,18 +1955,20 @@ Router.prototype.mount = function(routes, path) {
   };
 
   // Internal implementation of a recursive `flatten` function.
-  var flatten = function(input, shallow, strict, output) {
-    if (shallow && _.every(input, _.isArray)) {
-      return concat.apply(output, input);
-    }
-    for (var i = 0, length = input.length; i < length; i++) {
+  var flatten = function(input, shallow, strict, startIndex) {
+    var output = [], idx = 0;
+    for (var i = startIndex || 0, length = getLength(input); i < length; i++) {
       var value = input[i];
-      if (!_.isArray(value) && !_.isArguments(value)) {
-        if (!strict) output.push(value);
-      } else if (shallow) {
-        push.apply(output, value);
-      } else {
-        flatten(value, shallow, strict, output);
+      if (isArrayLike(value) && (_.isArray(value) || _.isArguments(value))) {
+        //flatten current level of array or arguments object
+        if (!shallow) value = flatten(value, shallow, strict);
+        var j = 0, len = value.length;
+        output.length += len;
+        while (j < len) {
+          output[idx++] = value[j++];
+        }
+      } else if (!strict) {
+        output[idx++] = value;
       }
     }
     return output;
@@ -1905,7 +1976,7 @@ Router.prototype.mount = function(routes, path) {
 
   // Flatten out an array, either recursively (by default), or just one level.
   _.flatten = function(array, shallow) {
-    return flatten(array, shallow, false, []);
+    return flatten(array, shallow, false);
   };
 
   // Return a version of the array that does not contain the specified value(s).
@@ -1917,27 +1988,26 @@ Router.prototype.mount = function(routes, path) {
   // been sorted, you have the option of using a faster algorithm.
   // Aliased as `unique`.
   _.uniq = _.unique = function(array, isSorted, iteratee, context) {
-    if (array == null) return [];
     if (!_.isBoolean(isSorted)) {
       context = iteratee;
       iteratee = isSorted;
       isSorted = false;
     }
-    if (iteratee != null) iteratee = _.iteratee(iteratee, context);
+    if (iteratee != null) iteratee = cb(iteratee, context);
     var result = [];
     var seen = [];
-    for (var i = 0, length = array.length; i < length; i++) {
-      var value = array[i];
+    for (var i = 0, length = getLength(array); i < length; i++) {
+      var value = array[i],
+          computed = iteratee ? iteratee(value, i, array) : value;
       if (isSorted) {
-        if (!i || seen !== value) result.push(value);
-        seen = value;
+        if (!i || seen !== computed) result.push(value);
+        seen = computed;
       } else if (iteratee) {
-        var computed = iteratee(value, i, array);
-        if (_.indexOf(seen, computed) < 0) {
+        if (!_.contains(seen, computed)) {
           seen.push(computed);
           result.push(value);
         }
-      } else if (_.indexOf(result, value) < 0) {
+      } else if (!_.contains(result, value)) {
         result.push(value);
       }
     }
@@ -1947,16 +2017,15 @@ Router.prototype.mount = function(routes, path) {
   // Produce an array that contains the union: each distinct element from all of
   // the passed-in arrays.
   _.union = function() {
-    return _.uniq(flatten(arguments, true, true, []));
+    return _.uniq(flatten(arguments, true, true));
   };
 
   // Produce an array that contains every item shared between all the
   // passed-in arrays.
   _.intersection = function(array) {
-    if (array == null) return [];
     var result = [];
     var argsLength = arguments.length;
-    for (var i = 0, length = array.length; i < length; i++) {
+    for (var i = 0, length = getLength(array); i < length; i++) {
       var item = array[i];
       if (_.contains(result, item)) continue;
       for (var j = 1; j < argsLength; j++) {
@@ -1970,7 +2039,7 @@ Router.prototype.mount = function(routes, path) {
   // Take the difference between one array and a number of other arrays.
   // Only the elements present in just the first array will remain.
   _.difference = function(array) {
-    var rest = flatten(slice.call(arguments, 1), true, true, []);
+    var rest = flatten(arguments, true, true, 1);
     return _.filter(array, function(value){
       return !_.contains(rest, value);
     });
@@ -1978,23 +2047,28 @@ Router.prototype.mount = function(routes, path) {
 
   // Zip together multiple lists into a single array -- elements that share
   // an index go together.
-  _.zip = function(array) {
-    if (array == null) return [];
-    var length = _.max(arguments, 'length').length;
-    var results = Array(length);
-    for (var i = 0; i < length; i++) {
-      results[i] = _.pluck(arguments, i);
+  _.zip = function() {
+    return _.unzip(arguments);
+  };
+
+  // Complement of _.zip. Unzip accepts an array of arrays and groups
+  // each array's elements on shared indices
+  _.unzip = function(array) {
+    var length = array && _.max(array, getLength).length || 0;
+    var result = Array(length);
+
+    for (var index = 0; index < length; index++) {
+      result[index] = _.pluck(array, index);
     }
-    return results;
+    return result;
   };
 
   // Converts lists into objects. Pass either a single array of `[key, value]`
   // pairs, or two parallel arrays of the same length -- one of keys, and one of
   // the corresponding values.
   _.object = function(list, values) {
-    if (list == null) return {};
     var result = {};
-    for (var i = 0, length = list.length; i < length; i++) {
+    for (var i = 0, length = getLength(list); i < length; i++) {
       if (values) {
         result[list[i]] = values[i];
       } else {
@@ -2004,40 +2078,73 @@ Router.prototype.mount = function(routes, path) {
     return result;
   };
 
+  // Generator function to create the findIndex and findLastIndex functions
+  function createPredicateIndexFinder(dir) {
+    return function(array, predicate, context) {
+      predicate = cb(predicate, context);
+      var length = getLength(array);
+      var index = dir > 0 ? 0 : length - 1;
+      for (; index >= 0 && index < length; index += dir) {
+        if (predicate(array[index], index, array)) return index;
+      }
+      return -1;
+    };
+  }
+
+  // Returns the first index on an array-like that passes a predicate test
+  _.findIndex = createPredicateIndexFinder(1);
+  _.findLastIndex = createPredicateIndexFinder(-1);
+
+  // Use a comparator function to figure out the smallest index at which
+  // an object should be inserted so as to maintain order. Uses binary search.
+  _.sortedIndex = function(array, obj, iteratee, context) {
+    iteratee = cb(iteratee, context, 1);
+    var value = iteratee(obj);
+    var low = 0, high = getLength(array);
+    while (low < high) {
+      var mid = Math.floor((low + high) / 2);
+      if (iteratee(array[mid]) < value) low = mid + 1; else high = mid;
+    }
+    return low;
+  };
+
+  // Generator function to create the indexOf and lastIndexOf functions
+  function createIndexFinder(dir, predicateFind, sortedIndex) {
+    return function(array, item, idx) {
+      var i = 0, length = getLength(array);
+      if (typeof idx == 'number') {
+        if (dir > 0) {
+            i = idx >= 0 ? idx : Math.max(idx + length, i);
+        } else {
+            length = idx >= 0 ? Math.min(idx + 1, length) : idx + length + 1;
+        }
+      } else if (sortedIndex && idx && length) {
+        idx = sortedIndex(array, item);
+        return array[idx] === item ? idx : -1;
+      }
+      if (item !== item) {
+        idx = predicateFind(slice.call(array, i, length), _.isNaN);
+        return idx >= 0 ? idx + i : -1;
+      }
+      for (idx = dir > 0 ? i : length - 1; idx >= 0 && idx < length; idx += dir) {
+        if (array[idx] === item) return idx;
+      }
+      return -1;
+    };
+  }
+
   // Return the position of the first occurrence of an item in an array,
   // or -1 if the item is not included in the array.
   // If the array is large and already in sort order, pass `true`
   // for **isSorted** to use binary search.
-  _.indexOf = function(array, item, isSorted) {
-    if (array == null) return -1;
-    var i = 0, length = array.length;
-    if (isSorted) {
-      if (typeof isSorted == 'number') {
-        i = isSorted < 0 ? Math.max(0, length + isSorted) : isSorted;
-      } else {
-        i = _.sortedIndex(array, item);
-        return array[i] === item ? i : -1;
-      }
-    }
-    for (; i < length; i++) if (array[i] === item) return i;
-    return -1;
-  };
-
-  _.lastIndexOf = function(array, item, from) {
-    if (array == null) return -1;
-    var idx = array.length;
-    if (typeof from == 'number') {
-      idx = from < 0 ? idx + from + 1 : Math.min(idx, from + 1);
-    }
-    while (--idx >= 0) if (array[idx] === item) return idx;
-    return -1;
-  };
+  _.indexOf = createIndexFinder(1, _.findIndex, _.sortedIndex);
+  _.lastIndexOf = createIndexFinder(-1, _.findLastIndex);
 
   // Generate an integer Array containing an arithmetic progression. A port of
   // the native Python `range()` function. See
   // [the Python documentation](http://docs.python.org/library/functions.html#range).
   _.range = function(start, stop, step) {
-    if (arguments.length <= 1) {
+    if (stop == null) {
       stop = start || 0;
       start = 0;
     }
@@ -2056,25 +2163,25 @@ Router.prototype.mount = function(routes, path) {
   // Function (ahem) Functions
   // ------------------
 
-  // Reusable constructor function for prototype setting.
-  var Ctor = function(){};
+  // Determines whether to execute a function as a constructor
+  // or a normal function with the provided arguments
+  var executeBound = function(sourceFunc, boundFunc, context, callingContext, args) {
+    if (!(callingContext instanceof boundFunc)) return sourceFunc.apply(context, args);
+    var self = baseCreate(sourceFunc.prototype);
+    var result = sourceFunc.apply(self, args);
+    if (_.isObject(result)) return result;
+    return self;
+  };
 
   // Create a function bound to a given object (assigning `this`, and arguments,
   // optionally). Delegates to **ECMAScript 5**'s native `Function.bind` if
   // available.
   _.bind = function(func, context) {
-    var args, bound;
     if (nativeBind && func.bind === nativeBind) return nativeBind.apply(func, slice.call(arguments, 1));
     if (!_.isFunction(func)) throw new TypeError('Bind must be called on a function');
-    args = slice.call(arguments, 2);
-    bound = function() {
-      if (!(this instanceof bound)) return func.apply(context, args.concat(slice.call(arguments)));
-      Ctor.prototype = func.prototype;
-      var self = new Ctor;
-      Ctor.prototype = null;
-      var result = func.apply(self, args.concat(slice.call(arguments)));
-      if (_.isObject(result)) return result;
-      return self;
+    var args = slice.call(arguments, 2);
+    var bound = function() {
+      return executeBound(func, bound, context, this, args.concat(slice.call(arguments)));
     };
     return bound;
   };
@@ -2084,15 +2191,16 @@ Router.prototype.mount = function(routes, path) {
   // as a placeholder, allowing any combination of arguments to be pre-filled.
   _.partial = function(func) {
     var boundArgs = slice.call(arguments, 1);
-    return function() {
-      var position = 0;
-      var args = boundArgs.slice();
-      for (var i = 0, length = args.length; i < length; i++) {
-        if (args[i] === _) args[i] = arguments[position++];
+    var bound = function() {
+      var position = 0, length = boundArgs.length;
+      var args = Array(length);
+      for (var i = 0; i < length; i++) {
+        args[i] = boundArgs[i] === _ ? arguments[position++] : boundArgs[i];
       }
       while (position < arguments.length) args.push(arguments[position++]);
-      return func.apply(this, args);
+      return executeBound(func, bound, this, this, args);
     };
+    return bound;
   };
 
   // Bind a number of an object's methods to that object. Remaining arguments
@@ -2112,7 +2220,7 @@ Router.prototype.mount = function(routes, path) {
   _.memoize = function(func, hasher) {
     var memoize = function(key) {
       var cache = memoize.cache;
-      var address = hasher ? hasher.apply(this, arguments) : key;
+      var address = '' + (hasher ? hasher.apply(this, arguments) : key);
       if (!_.has(cache, address)) cache[address] = func.apply(this, arguments);
       return cache[address];
     };
@@ -2131,9 +2239,7 @@ Router.prototype.mount = function(routes, path) {
 
   // Defers a function, scheduling it to run after the current call stack has
   // cleared.
-  _.defer = function(func) {
-    return _.delay.apply(_, [func, 1].concat(slice.call(arguments, 1)));
-  };
+  _.defer = _.partial(_.delay, _, 1);
 
   // Returns a function, that, when invoked, will only be triggered at most once
   // during a given window of time. Normally, the throttled function will run
@@ -2158,8 +2264,10 @@ Router.prototype.mount = function(routes, path) {
       context = this;
       args = arguments;
       if (remaining <= 0 || remaining > wait) {
-        clearTimeout(timeout);
-        timeout = null;
+        if (timeout) {
+          clearTimeout(timeout);
+          timeout = null;
+        }
         previous = now;
         result = func.apply(context, args);
         if (!timeout) context = args = null;
@@ -2180,7 +2288,7 @@ Router.prototype.mount = function(routes, path) {
     var later = function() {
       var last = _.now() - timestamp;
 
-      if (last < wait && last > 0) {
+      if (last < wait && last >= 0) {
         timeout = setTimeout(later, wait - last);
       } else {
         timeout = null;
@@ -2233,7 +2341,7 @@ Router.prototype.mount = function(routes, path) {
     };
   };
 
-  // Returns a function that will only be executed after being called N times.
+  // Returns a function that will only be executed on and after the Nth call.
   _.after = function(times, func) {
     return function() {
       if (--times < 1) {
@@ -2242,15 +2350,14 @@ Router.prototype.mount = function(routes, path) {
     };
   };
 
-  // Returns a function that will only be executed before being called N times.
+  // Returns a function that will only be executed up to (but not including) the Nth call.
   _.before = function(times, func) {
     var memo;
     return function() {
       if (--times > 0) {
         memo = func.apply(this, arguments);
-      } else {
-        func = null;
       }
+      if (times <= 1) func = null;
       return memo;
     };
   };
@@ -2262,13 +2369,47 @@ Router.prototype.mount = function(routes, path) {
   // Object Functions
   // ----------------
 
-  // Retrieve the names of an object's properties.
+  // Keys in IE < 9 that won't be iterated by `for key in ...` and thus missed.
+  var hasEnumBug = !{toString: null}.propertyIsEnumerable('toString');
+  var nonEnumerableProps = ['valueOf', 'isPrototypeOf', 'toString',
+                      'propertyIsEnumerable', 'hasOwnProperty', 'toLocaleString'];
+
+  function collectNonEnumProps(obj, keys) {
+    var nonEnumIdx = nonEnumerableProps.length;
+    var constructor = obj.constructor;
+    var proto = (_.isFunction(constructor) && constructor.prototype) || ObjProto;
+
+    // Constructor is a special case.
+    var prop = 'constructor';
+    if (_.has(obj, prop) && !_.contains(keys, prop)) keys.push(prop);
+
+    while (nonEnumIdx--) {
+      prop = nonEnumerableProps[nonEnumIdx];
+      if (prop in obj && obj[prop] !== proto[prop] && !_.contains(keys, prop)) {
+        keys.push(prop);
+      }
+    }
+  }
+
+  // Retrieve the names of an object's own properties.
   // Delegates to **ECMAScript 5**'s native `Object.keys`
   _.keys = function(obj) {
     if (!_.isObject(obj)) return [];
     if (nativeKeys) return nativeKeys(obj);
     var keys = [];
     for (var key in obj) if (_.has(obj, key)) keys.push(key);
+    // Ahem, IE < 9.
+    if (hasEnumBug) collectNonEnumProps(obj, keys);
+    return keys;
+  };
+
+  // Retrieve all the property names of an object.
+  _.allKeys = function(obj) {
+    if (!_.isObject(obj)) return [];
+    var keys = [];
+    for (var key in obj) keys.push(key);
+    // Ahem, IE < 9.
+    if (hasEnumBug) collectNonEnumProps(obj, keys);
     return keys;
   };
 
@@ -2281,6 +2422,21 @@ Router.prototype.mount = function(routes, path) {
       values[i] = obj[keys[i]];
     }
     return values;
+  };
+
+  // Returns the results of applying the iteratee to each element of the object
+  // In contrast to _.map it returns an object
+  _.mapObject = function(obj, iteratee, context) {
+    iteratee = cb(iteratee, context);
+    var keys =  _.keys(obj),
+          length = keys.length,
+          results = {},
+          currentKey;
+      for (var index = 0; index < length; index++) {
+        currentKey = keys[index];
+        results[currentKey] = iteratee(obj[currentKey], currentKey, obj);
+      }
+      return results;
   };
 
   // Convert an object into a list of `[key, value]` pairs.
@@ -2315,37 +2471,38 @@ Router.prototype.mount = function(routes, path) {
   };
 
   // Extend a given object with all the properties in passed-in object(s).
-  _.extend = function(obj) {
-    if (!_.isObject(obj)) return obj;
-    var source, prop;
-    for (var i = 1, length = arguments.length; i < length; i++) {
-      source = arguments[i];
-      for (prop in source) {
-        if (hasOwnProperty.call(source, prop)) {
-            obj[prop] = source[prop];
-        }
-      }
+  _.extend = createAssigner(_.allKeys);
+
+  // Assigns a given object with all the own properties in the passed-in object(s)
+  // (https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+  _.extendOwn = _.assign = createAssigner(_.keys);
+
+  // Returns the first key on an object that passes a predicate test
+  _.findKey = function(obj, predicate, context) {
+    predicate = cb(predicate, context);
+    var keys = _.keys(obj), key;
+    for (var i = 0, length = keys.length; i < length; i++) {
+      key = keys[i];
+      if (predicate(obj[key], key, obj)) return key;
     }
-    return obj;
   };
 
   // Return a copy of the object only containing the whitelisted properties.
-  _.pick = function(obj, iteratee, context) {
-    var result = {}, key;
+  _.pick = function(object, oiteratee, context) {
+    var result = {}, obj = object, iteratee, keys;
     if (obj == null) return result;
-    if (_.isFunction(iteratee)) {
-      iteratee = createCallback(iteratee, context);
-      for (key in obj) {
-        var value = obj[key];
-        if (iteratee(value, key, obj)) result[key] = value;
-      }
+    if (_.isFunction(oiteratee)) {
+      keys = _.allKeys(obj);
+      iteratee = optimizeCb(oiteratee, context);
     } else {
-      var keys = concat.apply([], slice.call(arguments, 1));
-      obj = new Object(obj);
-      for (var i = 0, length = keys.length; i < length; i++) {
-        key = keys[i];
-        if (key in obj) result[key] = obj[key];
-      }
+      keys = flatten(arguments, false, false, 1);
+      iteratee = function(value, key, obj) { return key in obj; };
+      obj = Object(obj);
+    }
+    for (var i = 0, length = keys.length; i < length; i++) {
+      var key = keys[i];
+      var value = obj[key];
+      if (iteratee(value, key, obj)) result[key] = value;
     }
     return result;
   };
@@ -2355,7 +2512,7 @@ Router.prototype.mount = function(routes, path) {
     if (_.isFunction(iteratee)) {
       iteratee = _.negate(iteratee);
     } else {
-      var keys = _.map(concat.apply([], slice.call(arguments, 1)), String);
+      var keys = _.map(flatten(arguments, false, false, 1), String);
       iteratee = function(value, key) {
         return !_.contains(keys, key);
       };
@@ -2364,15 +2521,15 @@ Router.prototype.mount = function(routes, path) {
   };
 
   // Fill in a given object with default properties.
-  _.defaults = function(obj) {
-    if (!_.isObject(obj)) return obj;
-    for (var i = 1, length = arguments.length; i < length; i++) {
-      var source = arguments[i];
-      for (var prop in source) {
-        if (obj[prop] === void 0) obj[prop] = source[prop];
-      }
-    }
-    return obj;
+  _.defaults = createAssigner(_.allKeys, true);
+
+  // Creates an object that inherits from the given prototype object.
+  // If additional properties are provided then they will be added to the
+  // created object.
+  _.create = function(prototype, props) {
+    var result = baseCreate(prototype);
+    if (props) _.extendOwn(result, props);
+    return result;
   };
 
   // Create a (shallow-cloned) duplicate of an object.
@@ -2388,6 +2545,19 @@ Router.prototype.mount = function(routes, path) {
     interceptor(obj);
     return obj;
   };
+
+  // Returns whether an object has a given set of `key:value` pairs.
+  _.isMatch = function(object, attrs) {
+    var keys = _.keys(attrs), length = keys.length;
+    if (object == null) return !length;
+    var obj = Object(object);
+    for (var i = 0; i < length; i++) {
+      var key = keys[i];
+      if (attrs[key] !== obj[key] || !(key in obj)) return false;
+    }
+    return true;
+  };
+
 
   // Internal recursive comparison function for `isEqual`.
   var eq = function(a, b, aStack, bStack) {
@@ -2423,74 +2593,76 @@ Router.prototype.mount = function(routes, path) {
         // of `NaN` are not equivalent.
         return +a === +b;
     }
-    if (typeof a != 'object' || typeof b != 'object') return false;
+
+    var areArrays = className === '[object Array]';
+    if (!areArrays) {
+      if (typeof a != 'object' || typeof b != 'object') return false;
+
+      // Objects with different constructors are not equivalent, but `Object`s or `Array`s
+      // from different frames are.
+      var aCtor = a.constructor, bCtor = b.constructor;
+      if (aCtor !== bCtor && !(_.isFunction(aCtor) && aCtor instanceof aCtor &&
+                               _.isFunction(bCtor) && bCtor instanceof bCtor)
+                          && ('constructor' in a && 'constructor' in b)) {
+        return false;
+      }
+    }
     // Assume equality for cyclic structures. The algorithm for detecting cyclic
     // structures is adapted from ES 5.1 section 15.12.3, abstract operation `JO`.
+
+    // Initializing stack of traversed objects.
+    // It's done here since we only need them for objects and arrays comparison.
+    aStack = aStack || [];
+    bStack = bStack || [];
     var length = aStack.length;
     while (length--) {
       // Linear search. Performance is inversely proportional to the number of
       // unique nested structures.
       if (aStack[length] === a) return bStack[length] === b;
     }
-    // Objects with different constructors are not equivalent, but `Object`s
-    // from different frames are.
-    var aCtor = a.constructor, bCtor = b.constructor;
-    if (
-      aCtor !== bCtor &&
-      // Handle Object.create(x) cases
-      'constructor' in a && 'constructor' in b &&
-      !(_.isFunction(aCtor) && aCtor instanceof aCtor &&
-        _.isFunction(bCtor) && bCtor instanceof bCtor)
-    ) {
-      return false;
-    }
+
     // Add the first object to the stack of traversed objects.
     aStack.push(a);
     bStack.push(b);
-    var size, result;
+
     // Recursively compare objects and arrays.
-    if (className === '[object Array]') {
+    if (areArrays) {
       // Compare array lengths to determine if a deep comparison is necessary.
-      size = a.length;
-      result = size === b.length;
-      if (result) {
-        // Deep compare the contents, ignoring non-numeric properties.
-        while (size--) {
-          if (!(result = eq(a[size], b[size], aStack, bStack))) break;
-        }
+      length = a.length;
+      if (length !== b.length) return false;
+      // Deep compare the contents, ignoring non-numeric properties.
+      while (length--) {
+        if (!eq(a[length], b[length], aStack, bStack)) return false;
       }
     } else {
       // Deep compare objects.
       var keys = _.keys(a), key;
-      size = keys.length;
+      length = keys.length;
       // Ensure that both objects contain the same number of properties before comparing deep equality.
-      result = _.keys(b).length === size;
-      if (result) {
-        while (size--) {
-          // Deep compare each member
-          key = keys[size];
-          if (!(result = _.has(b, key) && eq(a[key], b[key], aStack, bStack))) break;
-        }
+      if (_.keys(b).length !== length) return false;
+      while (length--) {
+        // Deep compare each member
+        key = keys[length];
+        if (!(_.has(b, key) && eq(a[key], b[key], aStack, bStack))) return false;
       }
     }
     // Remove the first object from the stack of traversed objects.
     aStack.pop();
     bStack.pop();
-    return result;
+    return true;
   };
 
   // Perform a deep comparison to check if two objects are equal.
   _.isEqual = function(a, b) {
-    return eq(a, b, [], []);
+    return eq(a, b);
   };
 
   // Is a given array, string, or object empty?
   // An "empty" object has no enumerable own-properties.
   _.isEmpty = function(obj) {
     if (obj == null) return true;
-    if (_.isArray(obj) || _.isString(obj) || _.isArguments(obj)) return obj.length === 0;
-    for (var key in obj) if (_.has(obj, key)) return false;
-    return true;
+    if (isArrayLike(obj) && (_.isArray(obj) || _.isString(obj) || _.isArguments(obj))) return obj.length === 0;
+    return _.keys(obj).length === 0;
   };
 
   // Is a given value a DOM element?
@@ -2510,14 +2682,14 @@ Router.prototype.mount = function(routes, path) {
     return type === 'function' || type === 'object' && !!obj;
   };
 
-  // Add some isType methods: isArguments, isFunction, isString, isNumber, isDate, isRegExp.
-  _.each(['Arguments', 'Function', 'String', 'Number', 'Date', 'RegExp'], function(name) {
+  // Add some isType methods: isArguments, isFunction, isString, isNumber, isDate, isRegExp, isError.
+  _.each(['Arguments', 'Function', 'String', 'Number', 'Date', 'RegExp', 'Error'], function(name) {
     _['is' + name] = function(obj) {
       return toString.call(obj) === '[object ' + name + ']';
     };
   });
 
-  // Define a fallback version of the method in browsers (ahem, IE), where
+  // Define a fallback version of the method in browsers (ahem, IE < 9), where
   // there isn't any inspectable "Arguments" type.
   if (!_.isArguments(arguments)) {
     _.isArguments = function(obj) {
@@ -2525,8 +2697,9 @@ Router.prototype.mount = function(routes, path) {
     };
   }
 
-  // Optimize `isFunction` if appropriate. Work around an IE 11 bug.
-  if (typeof /./ !== 'function') {
+  // Optimize `isFunction` if appropriate. Work around some typeof bugs in old v8,
+  // IE 11 (#1621), and in Safari 8 (#1929).
+  if (typeof /./ != 'function' && typeof Int8Array != 'object') {
     _.isFunction = function(obj) {
       return typeof obj == 'function' || false;
     };
@@ -2578,6 +2751,7 @@ Router.prototype.mount = function(routes, path) {
     return value;
   };
 
+  // Predicate-generating functions. Often useful outside of Underscore.
   _.constant = function(value) {
     return function() {
       return value;
@@ -2586,30 +2760,28 @@ Router.prototype.mount = function(routes, path) {
 
   _.noop = function(){};
 
-  _.property = function(key) {
-    return function(obj) {
+  _.property = property;
+
+  // Generates a function for a given object that returns a given property.
+  _.propertyOf = function(obj) {
+    return obj == null ? function(){} : function(key) {
       return obj[key];
     };
   };
 
-  // Returns a predicate for checking whether an object has a given set of `key:value` pairs.
-  _.matches = function(attrs) {
-    var pairs = _.pairs(attrs), length = pairs.length;
+  // Returns a predicate for checking whether an object has a given set of
+  // `key:value` pairs.
+  _.matcher = _.matches = function(attrs) {
+    attrs = _.extendOwn({}, attrs);
     return function(obj) {
-      if (obj == null) return !length;
-      obj = new Object(obj);
-      for (var i = 0; i < length; i++) {
-        var pair = pairs[i], key = pair[0];
-        if (pair[1] !== obj[key] || !(key in obj)) return false;
-      }
-      return true;
+      return _.isMatch(obj, attrs);
     };
   };
 
   // Run a function **n** times.
   _.times = function(n, iteratee, context) {
     var accum = Array(Math.max(0, n));
-    iteratee = createCallback(iteratee, context, 1);
+    iteratee = optimizeCb(iteratee, context, 1);
     for (var i = 0; i < n; i++) accum[i] = iteratee(i);
     return accum;
   };
@@ -2658,10 +2830,12 @@ Router.prototype.mount = function(routes, path) {
 
   // If the value of the named `property` is a function then invoke it with the
   // `object` as context; otherwise, return it.
-  _.result = function(object, property) {
-    if (object == null) return void 0;
-    var value = object[property];
-    return _.isFunction(value) ? object[property]() : value;
+  _.result = function(object, property, fallback) {
+    var value = object == null ? void 0 : object[property];
+    if (value === void 0) {
+      value = fallback;
+    }
+    return _.isFunction(value) ? value.call(object) : value;
   };
 
   // Generate a unique integer id (unique within the entire client session).
@@ -2776,8 +2950,8 @@ Router.prototype.mount = function(routes, path) {
   // underscore functions. Wrapped objects may be chained.
 
   // Helper function to continue chaining intermediate results.
-  var result = function(obj) {
-    return this._chain ? _(obj).chain() : obj;
+  var result = function(instance, obj) {
+    return instance._chain ? _(obj).chain() : obj;
   };
 
   // Add your own custom functions to the Underscore object.
@@ -2787,7 +2961,7 @@ Router.prototype.mount = function(routes, path) {
       _.prototype[name] = function() {
         var args = [this._wrapped];
         push.apply(args, arguments);
-        return result.call(this, func.apply(_, args));
+        return result(this, func.apply(_, args));
       };
     });
   };
@@ -2802,7 +2976,7 @@ Router.prototype.mount = function(routes, path) {
       var obj = this._wrapped;
       method.apply(obj, arguments);
       if ((name === 'shift' || name === 'splice') && obj.length === 0) delete obj[0];
-      return result.call(this, obj);
+      return result(this, obj);
     };
   });
 
@@ -2810,13 +2984,21 @@ Router.prototype.mount = function(routes, path) {
   _.each(['concat', 'join', 'slice'], function(name) {
     var method = ArrayProto[name];
     _.prototype[name] = function() {
-      return result.call(this, method.apply(this._wrapped, arguments));
+      return result(this, method.apply(this._wrapped, arguments));
     };
   });
 
   // Extracts the result from a wrapped and chained object.
   _.prototype.value = function() {
     return this._wrapped;
+  };
+
+  // Provide unwrapping proxy for some methods used in engine operations
+  // such as arithmetic and JSON stringification.
+  _.prototype.valueOf = _.prototype.toJSON = _.prototype.value;
+
+  _.prototype.toString = function() {
+    return '' + this._wrapped;
   };
 
   // AMD registration happens at the end for compatibility with AMD loaders
@@ -2833,7 +3015,7 @@ Router.prototype.mount = function(routes, path) {
   }
 }.call(this));
 
-},{}],22:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 var utils = require('./utils')
 
 function Batcher () {
@@ -2879,7 +3061,7 @@ BatcherProto.reset = function () {
 }
 
 module.exports = Batcher
-},{"./utils":47}],23:[function(require,module,exports){
+},{"./utils":49}],25:[function(require,module,exports){
 var Batcher        = require('./batcher'),
     bindingBatcher = new Batcher(),
     bindingId      = 1
@@ -2983,7 +3165,7 @@ BindingProto.unbind = function () {
 }
 
 module.exports = Binding
-},{"./batcher":22}],24:[function(require,module,exports){
+},{"./batcher":24}],26:[function(require,module,exports){
 var Emitter     = require('./emitter'),
     Observer    = require('./observer'),
     config      = require('./config'),
@@ -4021,7 +4203,7 @@ function getRoot (compiler) {
 }
 
 module.exports = Compiler
-},{"./binding":23,"./config":25,"./deps-parser":26,"./directive":27,"./emitter":38,"./exp-parser":39,"./observer":43,"./text-parser":45,"./utils":47,"./viewmodel":48}],25:[function(require,module,exports){
+},{"./binding":25,"./config":27,"./deps-parser":28,"./directive":29,"./emitter":40,"./exp-parser":41,"./observer":45,"./text-parser":47,"./utils":49,"./viewmodel":50}],27:[function(require,module,exports){
 var TextParser = require('./text-parser')
 
 module.exports = {
@@ -4041,7 +4223,7 @@ Object.defineProperty(module.exports, 'delimiters', {
         TextParser.setDelimiters(delimiters)
     }
 })
-},{"./text-parser":45}],26:[function(require,module,exports){
+},{"./text-parser":47}],28:[function(require,module,exports){
 var Emitter  = require('./emitter'),
     utils    = require('./utils'),
     Observer = require('./observer'),
@@ -4107,7 +4289,7 @@ module.exports = {
     }
     
 }
-},{"./emitter":38,"./observer":43,"./utils":47}],27:[function(require,module,exports){
+},{"./emitter":40,"./observer":45,"./utils":49}],29:[function(require,module,exports){
 var dirId           = 1,
     ARG_RE          = /^[\w\$-]+$/,
     FILTER_TOKEN_RE = /[^\s'"]+|'[^']+'|"[^"]+"/g,
@@ -4366,7 +4548,7 @@ function escapeQuote (v) {
 }
 
 module.exports = Directive
-},{"./text-parser":45}],28:[function(require,module,exports){
+},{"./text-parser":47}],30:[function(require,module,exports){
 var utils = require('../utils'),
     slice = [].slice
 
@@ -4408,7 +4590,7 @@ module.exports = {
         parent.insertBefore(frag, this.el)
     }
 }
-},{"../utils":47}],29:[function(require,module,exports){
+},{"../utils":49}],31:[function(require,module,exports){
 var utils    = require('../utils')
 
 /**
@@ -4465,7 +4647,7 @@ module.exports = {
         }
     }
 }
-},{"../utils":47}],30:[function(require,module,exports){
+},{"../utils":49}],32:[function(require,module,exports){
 var utils      = require('../utils'),
     config     = require('../config'),
     transition = require('../transition'),
@@ -4595,7 +4777,7 @@ directives.html    = require('./html')
 directives.style   = require('./style')
 directives.partial = require('./partial')
 directives.view    = require('./view')
-},{"../config":25,"../transition":46,"../utils":47,"./html":28,"./if":29,"./model":31,"./on":32,"./partial":33,"./repeat":34,"./style":35,"./view":36,"./with":37}],31:[function(require,module,exports){
+},{"../config":27,"../transition":48,"../utils":49,"./html":30,"./if":31,"./model":33,"./on":34,"./partial":35,"./repeat":36,"./style":37,"./view":38,"./with":39}],33:[function(require,module,exports){
 var utils = require('../utils'),
     isIE9 = navigator.userAgent.indexOf('MSIE 9.0') > 0,
     filter = [].filter
@@ -4770,7 +4952,7 @@ module.exports = {
         }
     }
 }
-},{"../utils":47}],32:[function(require,module,exports){
+},{"../utils":49}],34:[function(require,module,exports){
 var utils    = require('../utils')
 
 /**
@@ -4829,7 +5011,7 @@ module.exports = {
         this.el.removeEventListener('load', this.iframeBind)
     }
 }
-},{"../utils":47}],33:[function(require,module,exports){
+},{"../utils":49}],35:[function(require,module,exports){
 var utils = require('../utils')
 
 /**
@@ -4880,7 +5062,7 @@ module.exports = {
     }
 
 }
-},{"../utils":47}],34:[function(require,module,exports){
+},{"../utils":49}],36:[function(require,module,exports){
 var utils      = require('../utils'),
     config     = require('../config')
 
@@ -5127,7 +5309,7 @@ function indexOf (vms, obj) {
     }
     return -1
 }
-},{"../config":25,"../utils":47}],35:[function(require,module,exports){
+},{"../config":27,"../utils":49}],37:[function(require,module,exports){
 var prefixes = ['-webkit-', '-moz-', '-ms-']
 
 /**
@@ -5174,7 +5356,7 @@ module.exports = {
     }
 
 }
-},{}],36:[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 /**
  *  Manages a conditional child VM using the
  *  binding's value as the component ID.
@@ -5231,7 +5413,7 @@ module.exports = {
     }
 
 }
-},{}],37:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 var utils = require('../utils')
 
 /**
@@ -5282,7 +5464,7 @@ module.exports = {
     }
 
 }
-},{"../utils":47}],38:[function(require,module,exports){
+},{"../utils":49}],40:[function(require,module,exports){
 var slice = [].slice
 
 function Emitter (ctx) {
@@ -5380,7 +5562,7 @@ EmitterProto.applyEmit = function (event) {
 }
 
 module.exports = Emitter
-},{}],39:[function(require,module,exports){
+},{}],41:[function(require,module,exports){
 var utils           = require('./utils'),
     STR_SAVE_RE     = /"(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*'/g,
     STR_RESTORE_RE  = /"(\d+)"/g,
@@ -5571,7 +5753,7 @@ exports.eval = function (exp, compiler, data) {
     }
     return res
 }
-},{"./utils":47}],40:[function(require,module,exports){
+},{"./utils":49}],42:[function(require,module,exports){
 var utils    = require('./utils'),
     get      = utils.get,
     slice    = [].slice,
@@ -5763,7 +5945,7 @@ function stripQuotes (str) {
         return str.slice(1, -1)
     }
 }
-},{"./utils":47}],41:[function(require,module,exports){
+},{"./utils":49}],43:[function(require,module,exports){
 // string -> DOM conversion
 // wrappers originally from jQuery, scooped from component/domify
 var map = {
@@ -5831,7 +6013,7 @@ module.exports = function (templateString) {
     }
     return frag
 }
-},{}],42:[function(require,module,exports){
+},{}],44:[function(require,module,exports){
 var config      = require('./config'),
     ViewModel   = require('./viewmodel'),
     utils       = require('./utils'),
@@ -6020,7 +6202,7 @@ function inheritOptions (child, parent, topLevel) {
 }
 
 module.exports = ViewModel
-},{"./config":25,"./directives":30,"./filters":40,"./observer":43,"./transition":46,"./utils":47,"./viewmodel":48}],43:[function(require,module,exports){
+},{"./config":27,"./directives":32,"./filters":42,"./observer":45,"./transition":48,"./utils":49,"./viewmodel":50}],45:[function(require,module,exports){
 /* jshint proto:true */
 
 var Emitter  = require('./emitter'),
@@ -6467,7 +6649,7 @@ var pub = module.exports = {
     convert     : convert,
     convertKey  : convertKey
 }
-},{"./emitter":38,"./utils":47}],44:[function(require,module,exports){
+},{"./emitter":40,"./utils":49}],46:[function(require,module,exports){
 var toFragment = require('./fragment');
 
 /**
@@ -6515,7 +6697,7 @@ module.exports = function(template) {
     return toFragment(templateNode.outerHTML);
 }
 
-},{"./fragment":41}],45:[function(require,module,exports){
+},{"./fragment":43}],47:[function(require,module,exports){
 var openChar        = '{',
     endChar         = '}',
     ESCAPE_RE       = /[-.*+?^${}()|[\]\/\\]/g,
@@ -6612,7 +6794,7 @@ exports.parse         = parse
 exports.parseAttr     = parseAttr
 exports.setDelimiters = setDelimiters
 exports.delimiters    = [openChar, endChar]
-},{"./directive":27}],46:[function(require,module,exports){
+},{"./directive":29}],48:[function(require,module,exports){
 var endEvents  = sniffEndEvents(),
     config     = require('./config'),
     // batch enter animations so we only force the layout once
@@ -6841,7 +7023,7 @@ function sniffEndEvents () {
 // Expose some stuff for testing purposes
 transition.codes = codes
 transition.sniff = sniffEndEvents
-},{"./batcher":22,"./config":25}],47:[function(require,module,exports){
+},{"./batcher":24,"./config":27}],49:[function(require,module,exports){
 var config       = require('./config'),
     toString     = ({}).toString,
     win          = window,
@@ -7168,7 +7350,7 @@ function enableDebug () {
         }
     }
 }
-},{"./config":25,"./fragment":41,"./template-parser.js":44,"./viewmodel":48}],48:[function(require,module,exports){
+},{"./config":27,"./fragment":43,"./template-parser.js":46,"./viewmodel":50}],50:[function(require,module,exports){
 var Compiler   = require('./compiler'),
     utils      = require('./utils'),
     transition = require('./transition'),
@@ -7360,4 +7542,4 @@ function query (el) {
 
 module.exports = ViewModel
 
-},{"./batcher":22,"./compiler":24,"./transition":46,"./utils":47}]},{},[9])
+},{"./batcher":24,"./compiler":26,"./transition":48,"./utils":49}]},{},[11]);

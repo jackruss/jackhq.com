@@ -15,9 +15,10 @@ module.exports = function() {
 
   return Object.freeze({
     route: {
-      '/': handler
+      '/team': handler,
     },
     data: {
+      sectionTitle: 'Our Team',
       team: require('./team.js')
     },
     template: require('./index.html'),
