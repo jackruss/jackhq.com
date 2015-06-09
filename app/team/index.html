@@ -1,24 +1,14 @@
-<article class="container row fadeIn">
-  <div class="list-group">
-    <div class="list-group-item col-md-5 col-md-offset-1 glow" v-repeat="team">
-      <div class="media">
-        <div class="media-body">
-          <div class="pull-left">
-            <span class='label label-success'>{{start}}</span>
-          </div>
-          <div class="">
-            <img class="img-circle" src="{{image}}" height="60px" width="60px" alt="{{name}}"/>
-          </div>
-
-          <h4 class="media-header">{{name}}</h4>
-          <p>{{title}}</p>
-          <div>
-            <div class="pull-right" v-show="github">
-              <iframe src="http://ghbtns.com/github-btn.html?user={{github}}&type=follow&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
-            </div>
+<!-- team -->
+<section id="team" class="pt50 pb50">
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-lg-3 text-center" v-repeat="team">
+          <div class="well">
+            <img class="img-circle" src="{{image}}" alt="{{name}}" height="100px">
+            <h3><span>{{name}}</span></h3>
+            <p>{{title}}</p>
           </div>
         </div>
-    </div>
+      </div>
   </div>
-</article>
+</section><!-- //team -->

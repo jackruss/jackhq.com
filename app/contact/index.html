@@ -1,48 +1,54 @@
-<div class="container fadeIn">
-  <header>
-    <h1 class="title">Contact Us</h1>
-  </header>
-  <div class="row">
-    <div class="col-md-5 col-md-offset-1">
-      <div id="wufoo-zzp92a10nvj7pe">
-      Fill out my <a href="https://jackhq.wufoo.com/forms/zzp92a10nvj7pe">online form</a>.
-      </div>
-      <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.</div>
-      <script type="text/javascript">var zzp92a10nvj7pe;(function(d, t) {
-      var s = d.createElement(t), options = {
-      'userName':'jackhq',
-      'formHash':'zzp92a10nvj7pe',
-      'autoResize':true,
-      'height':'597',
-      'async':true,
-      'host':'wufoo.com',
-      'header':'show',
-      'ssl':true};
-      s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-      s.onload = s.onreadystatechange = function() {
-      var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-      try { zzp92a10nvj7pe = new WufooForm();zzp92a10nvj7pe.initialize(options);zzp92a10nvj7pe.display(); } catch (e) {}};
-      var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-      })(document, 'script');</script>
+<section id="contact">
 
-    </div>
-    <div class="col-md-6">
-      <iframe width="380" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=494+C+Wando+Park+Boulevard,+Mount+Pleasant,+SC&amp;aq=0&amp;oq=494+C+wando+park+,&amp;sll=32.841231,-79.867948&amp;sspn=0.013936,0.017982&amp;gl=us&amp;ie=UTF8&amp;hq=&amp;hnear=494+Wando+Park+Blvd,+Mt+Pleasant,+South+Carolina+29464&amp;t=m&amp;z=14&amp;ll=32.841231,-79.867948&amp;output=embed"></iframe>
-      <p>
-        <address>
-          494 C Wando Park Boulevard
-          Mount Pleasant, SC  29464
-        </address>
-        <br />
-        Phone:
-        843.606.6484
-        <br />
-        Email:
-        <a href='mailto://info@jackrussellsoftware.com'>info@jackrussellsoftware.com</a>
-        <br />
-        Twitter:
-        <a href='http://twitter.com/jackhq'>@jackhq</a>
-      </p>
+  <div class="google-map">
+    <iframe style="pointer-events:none;" width="380" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=494+C+Wando+Park+Boulevard,+Mount+Pleasant,+SC&amp;aq=0&amp;oq=494+C+wando+park+,&amp;sll=32.841231,-79.867948&amp;sspn=0.013936,0.017982&amp;gl=us&amp;ie=UTF8&amp;hq=&amp;hnear=494+Wando+Park+Blvd,+Mt+Pleasant,+South+Carolina+29464&amp;t=m&amp;z=14&amp;ll=32.841231,-79.867948&amp;output=embed"></iframe>
+  </div>
+
+  <div class="container fadeIn pt50 pb50">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="well">
+          <div id="wufoo-zzp92a10nvj7pe">Fill out my <a href="https://jackhq.wufoo.com/forms/zzp92a10nvj7pe">online form</a>.</div>
+          <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.</div>
+          <script type="text/javascript">
+            var zzp92a10nvj7pe;(function(d, t) {
+              var s = d.createElement(t), options = {
+                'userName':'jackhq',
+                'formHash':'zzp92a10nvj7pe',
+                'autoResize':true,
+                'height':'597',
+                'async':true,
+                'host':'wufoo.com',
+                'header':'show',
+                'ssl':true
+              };
+              s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+              s.onload = s.onreadystatechange = function() {
+              var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+              try { zzp92a10nvj7pe = new WufooForm();zzp92a10nvj7pe.initialize(options);zzp92a10nvj7pe.display(); } catch (e) {}};
+              var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+            })(document, 'script');
+          </script>
+        </div>
+      </div>
+      
+      <div class="col-sm-4">
+        <div class="well bg-jrs-yellow">
+          <p>
+            <address>
+              Jack Russell Software<br />
+              494 C Wando Park Boulevard<br />
+              Mount Pleasant, SC  29464
+            </address>
+            <br />
+            Phone: 843.606.6484
+            <br />
+            Email: <a href='mailto://info@jackrussellsoftware.com'>info@jackrussellsoftware.com</a>
+            <br />
+            Twitter: <a href='http://twitter.com/jackhq'>@jackhq</a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>

@@ -8,6 +8,9 @@ module.exports = function() {
     route: {
       '/philosophy': handler
     },
+    data: {
+      sectionTitle: "Our Philosophy"
+    },
     template: require('./index.html')
   });
 };

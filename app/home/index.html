@@ -1,0 +1,29 @@
+  <section id="hero" class="bg-jrs-yellow">
+    <div class="text-center">
+      <img src="images/jackhq-logo.png"/>
+    </div>
+  </section>
+
+  <section id="about" class="pt50 pb50">
+    <div class="container text-center">
+      <h2 class="pb50">About Us</h2>
+      <div class="col-sm-8 col-sm-offset-2">
+        <p>At JRS, our number one responsibility is to provide quality software to our clients or users.  At any given time, the process and workflow to provide such services needs to evolve.  In order to do this, we are constantly re-working our process to improve our productivity.  If you leave that last sentence the way it is, grammar should be: So, we are constantly re-working our process to improve our productivity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="pt50 pb50 bg-jrs-red">
+    <div class="container">
+      <h2 class="text-center pb50">OUR TEAM</h2>
+      <div class="row">
+        <div class="col-sm-4 col-lg-3 text-center" v-repeat="team">
+          <div class="well">
+            <img class="img-circle" src="{{image}}" alt="{{name}}" height="100px">
+            <h3><span>{{name}}</span></h3>
+            <p>{{title}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -7,7 +7,6 @@ module.exports = function() {
 
   };
   var submit = function(contact) {
-    console.log(contact);
     var ref = new Firebase('https://jackhq.firebaseio.com/contacts');
     ref.push(contact, function() {
       alert('Successfully Submitted!');
@@ -21,6 +20,9 @@ module.exports = function() {
       '/contact': handler
     },
     template: require('./index.html'),
+    data: {
+      sectionTitle: "Contact Us"
+    },
     methods: {
       submit: submit
     }

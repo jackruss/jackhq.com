@@ -8,6 +8,9 @@ module.exports = function() {
     route: {
       '/technology': handler
     },
+    data: {
+      sectionTitle: "Our Technology"
+    },
     template: require('./index.html')
   });
 };
