@@ -122,4 +122,11 @@ module.exports = [{
   image: 'images/brian.jpg',
   github: 'bkelsey',
   start: 2015
+}, {
+  name: 'Amanda Hodges',
+  title: 'Senior Programmer/Analyst',
+  image: 'images/amanda.jpg',
+  github: 'ahodges13',
+  start: 2015
+
 }];
