@@ -7,14 +7,14 @@ module.exports = [{
   start: 2007
 },{
   name: 'Andrew Kennedy',
-  title: 'Senior Programer/Analyst',
+  title: 'Software Architect',
   image: 'images/andrew.jpg',
   twitter: 'akennedy',
   github: 'akennedy',
   start: 2008
 }, {
   name: 'Barrett Little',
-  title: 'Senior Devops Programmer/Analyst',
+  title: 'Director of DevOps',
   image: 'images/barrett.jpg',
   twitter: 'pblittle',
   github: 'pblittle',
@@ -33,12 +33,6 @@ module.exports = [{
   github: 'brookcarter',
   start: 2011
 }, {
-  name: 'Kevin Stewart',
-  title: 'Programmer/Analyst II',
-  image: 'images/kevin.jpg',
-  github: 'kdstew',
-  start: 2012
-}, {
   name: 'Raj Singh',
   title: 'Programmer/Analyst I',
   image: 'images/raj.jpg',
@@ -52,7 +46,7 @@ module.exports = [{
   start: 2012
 }, {
   name: 'Bogan Painter',
-  title: 'Programmer/Analyst I',
+  title: 'Programmer/Analyst II',
   image: 'images/bogan.jpg',
   github: 'boganp',
   start: 2013
@@ -76,13 +70,6 @@ module.exports = [{
   github: 'joelv',
   start: 2014
 }, {
-  name: 'Stokes Player',
-  title: 'Senior Programmer/Analyst',
-  image: 'images/stokes.jpg',
-  twitter: 'stokesplayer',
-  github: 'warrensplayer',
-  start: 2013
-}, {
   name: 'John Schwikart',
   title: 'Product Manager/Analyst',
   image: 'images/johns.jpg',
@@ -97,7 +84,7 @@ module.exports = [{
   start: 2014
 },  {
   name: 'Jenni Kissinger',
-  title: 'Programmer/Analyst I',
+  title: 'Programmer/Analyst II',
   image: 'images/jenni1.jpg',
   twitter: 'jennikissinger',
   github: 'jenjaina',
@@ -129,4 +116,21 @@ module.exports = [{
   github: 'ahodges13',
   start: 2015
 
+}, {
+  name: 'Phillip Gibson',
+  title: 'Progammer/Analyst II',
+  image: 'images/phillip.jpg',
+  github: '',
+  start: 2015
+}, {
+  name: 'Pete Schnabel',
+  title: 'Programmer/Analyst I',
+  image: 'images/pete.jpg',
+  github: '',
+  start: 2015
+}, {
+  name: 'Tiffany Robinson',
+  title: 'Programmer/Analyst I',
+  image: 'images/tiffany.jpg',
+  start: 2015
 }];

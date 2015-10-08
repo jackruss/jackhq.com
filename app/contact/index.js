@@ -1,4 +1,4 @@
-require('firebase/firebase');
+///var Firebase = require('firebase');
 
 module.exports = function() {
   var ref;
@@ -7,13 +7,12 @@ module.exports = function() {
 
   };
   var submit = function(contact) {
-    console.log(contact);
-    var ref = new Firebase('https://jackhq.firebaseio.com/contacts');
-    ref.push(contact, function() {
-      alert('Successfully Submitted!');
-      this.$data.contact = {};
-      window.location.href('#/');
-    });
+    // var ref = new Firebase('https://jackhq.firebaseio.com/contacts');
+    // ref.push(contact, function() {
+    //   alert('Successfully Submitted!');
+    //   this.$data.contact = {};
+    //   window.location.href('#/');
+    // });
   }
 
   return Object.freeze({
