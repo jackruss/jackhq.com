@@ -120,17 +120,18 @@ module.exports = [{
   name: 'Phillip Gibson',
   title: 'Progammer/Analyst II',
   image: 'images/phillip.jpg',
-  github: '',
+  github: 'renolc',
   start: 2015
 }, {
   name: 'Pete Schnabel',
   title: 'Programmer/Analyst I',
   image: 'images/pete.jpg',
-  github: '',
+  github: 'peteplays',
   start: 2015
 }, {
   name: 'Tiffany Robinson',
   title: 'Programmer/Analyst I',
   image: 'images/tiffany.jpg',
+  github: 'tiffanyRossyRobinson',
   start: 2015
 }];

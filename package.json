@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "tap test",
-    "build": "node scripts/build",
+    "build": "browserify app/index.js -t stringify -o public/bundle.js",
     "dev": "node scripts/dev",
     "start": "w3 $PORT --directory public"
   },
