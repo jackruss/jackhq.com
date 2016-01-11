@@ -23,11 +23,8 @@ module.exports = function() {
 
 },{"./index.html":1,"./local":3,"./opensource":4,"./technical":5}],3:[function(require,module,exports){
 module.exports = [{
-  name: 'Charleston Uber Users Group',
-  link: 'https://plus.google.com/u/1/communities/109291424733517240577'
-}, {
-  name: 'Charleston CoderDojo',
-  link: 'http://coderdojochs.github.io/'
+  name: 'Charleston Tech Slack',
+  link: 'https://charlestontechslack.herokuapp.com/'
 }, {
   name: 'Charleston Hackathon',
   link: 'http://hackathon.sparcedge.com/'
@@ -38,23 +35,11 @@ module.exports = [{
   name: 'Charleston CodeCamp',
   link: 'http://www.chscodecamp.com/'
 }, {
-  name: 'Charleston CodeRetreat',
-  link: 'http://coderetreat.org/events/code-retreat-charleston'
-}, {
   name: 'Charleston CodeShow',
   link: 'http://www.chscodeshow.com/'
 }, {
   name: 'Harbor Entrepreneur Center',
   link: 'http://harborec.com/'
-}, {
-  name: 'Charleston AngularJS',
-  link: 'https://plus.google.com/u/1/communities/107184675171587960100'
-}, {
-  name: 'Charleston NodeJS',
-  link: 'https://plus.google.com/u/1/communities/107184675171587960100'
-}, {
-  name: 'Charleston CouchDb',
-  link: 'https://plus.google.com/u/1/communities/110165172629233011992'
 }]
 
 },{}],4:[function(require,module,exports){
