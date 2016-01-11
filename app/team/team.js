@@ -40,7 +40,7 @@ module.exports = [{
   start: 2013
 }, {
   name: 'Vietson Nguyen',
-  title: 'Interops Programmer/Analyst I',
+  title: 'Interops Programmer/Analyst II',
   image: 'images/son.jpg',
   github: 'vsnguyen',
   start: 2012
@@ -58,7 +58,7 @@ module.exports = [{
   start: 2013
 }, {
   name: 'Brent Cobb',
-  title: 'Programmer/Analyst I',
+  title: 'Programmer/Analyst II',
   image: 'images/brent.jpeg',
   github: 'brentcobb',
   start: 2013
