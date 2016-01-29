@@ -14,9 +14,6 @@ module.exports = [{
   name: 'cakefile-template',
   link: 'http://twilson63.github.io/cakefile-template/'
 }, {
-  name: 'docker-logstash',
-  link: '#'
-}, {
   name: 'express-couchdb-core',
   link: 'http://twilson63.github.io/express-couchdb-core'
 }, {
@@ -44,8 +41,8 @@ module.exports = [{
   name: 's3fs-recipe',
   link: 'http://twilson63.github.io/s3fs-recipe'
 }, {
-  name: 'fakerize-medical',
-  link: 'http://jackruss.github.io/fakerize-medical'
+  name: 'faker-medical',
+  link: 'http://jackruss.github.io/faker-medical'
 }, {
   name: 'sinatra-formhelpers',
   link: 'http://twilson63.github.io/sinatra-formhelpers'
