@@ -23,14 +23,8 @@ module.exports = function() {
 
 },{"./index.html":1,"./local":3,"./opensource":4,"./technical":5}],3:[function(require,module,exports){
 module.exports = [{
-  name: 'Charleston Uber Users Group',
-  link: 'https://plus.google.com/u/1/communities/109291424733517240577'
-}, {
-  name: 'Charleston CoderDojo',
-  link: 'http://coderdojochs.github.io/'
-}, {
-  name: 'Charleston Hackathon',
-  link: 'http://hackathon.sparcedge.com/'
+  name: 'Charleston Tech Slack',
+  link: 'https://charlestontechslack.herokuapp.com/'
 }, {
   name: 'Charleston BarCamp',
   link: 'http://barcampchs.org/'
@@ -38,23 +32,11 @@ module.exports = [{
   name: 'Charleston CodeCamp',
   link: 'http://www.chscodecamp.com/'
 }, {
-  name: 'Charleston CodeRetreat',
-  link: 'http://coderetreat.org/events/code-retreat-charleston'
-}, {
   name: 'Charleston CodeShow',
   link: 'http://www.chscodeshow.com/'
 }, {
   name: 'Harbor Entrepreneur Center',
   link: 'http://harborec.com/'
-}, {
-  name: 'Charleston AngularJS',
-  link: 'https://plus.google.com/u/1/communities/107184675171587960100'
-}, {
-  name: 'Charleston NodeJS',
-  link: 'https://plus.google.com/u/1/communities/107184675171587960100'
-}, {
-  name: 'Charleston CouchDb',
-  link: 'https://plus.google.com/u/1/communities/110165172629233011992'
 }]
 
 },{}],4:[function(require,module,exports){
@@ -73,9 +55,6 @@ module.exports = [{
 }, {
   name: 'cakefile-template',
   link: 'http://twilson63.github.io/cakefile-template/'
-}, {
-  name: 'docker-logstash',
-  link: '#'
 }, {
   name: 'express-couchdb-core',
   link: 'http://twilson63.github.io/express-couchdb-core'
@@ -104,8 +83,8 @@ module.exports = [{
   name: 's3fs-recipe',
   link: 'http://twilson63.github.io/s3fs-recipe'
 }, {
-  name: 'fakerize-medical',
-  link: 'http://jackruss.github.io/fakerize-medical'
+  name: 'faker-medical',
+  link: 'http://jackruss.github.io/faker-medical'
 }, {
   name: 'sinatra-formhelpers',
   link: 'http://twilson63.github.io/sinatra-formhelpers'
@@ -300,7 +279,7 @@ module.exports = [{
   start: 2013
 }, {
   name: 'Vietson Nguyen',
-  title: 'Interops Programmer/Analyst I',
+  title: 'Interops Programmer/Analyst II',
   image: 'images/son.jpg',
   github: 'vsnguyen',
   start: 2012
@@ -318,7 +297,7 @@ module.exports = [{
   start: 2013
 }, {
   name: 'Brent Cobb',
-  title: 'Programmer/Analyst I',
+  title: 'Programmer/Analyst II',
   image: 'images/brent.jpeg',
   github: 'brentcobb',
   start: 2013
