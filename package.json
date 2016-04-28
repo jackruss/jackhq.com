@@ -6,8 +6,8 @@
   "scripts": {
     "test": "tap test",
     "build": "browserify app/index.js -t stringify -o public/bundle.js",
-    "dev": "node scripts/dev",
-    "start": "w3 $PORT --directory public"
+    "dev": "node server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
